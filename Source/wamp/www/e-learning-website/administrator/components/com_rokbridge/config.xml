@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params>
+    <param name="bridge_path" default="forum" size="40" type="text" label="Bridge Path:" description="Path relative to Joomla! root for forum bridge" />
+ 	<param name="phpbb3_path" default="distribution" size="40" type="text" label="phpBB3 Path:" description="Path relative to Joomla! root for phpBB3 forum" />
+	<param name="sef_enable" type="radio" default="0" label="SEF Enabled" description="EXPERIMENTAL: Enable SEF URLs in the bridge">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+	</param>
+	<param name="sef_rewrite" type="radio" default="0" label="SEF Rewrite" description="EXPERIMENTAL: Enable Apache SEF Rewrite URLs in the bridge. Requires SEF Enabled to be true">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+	</param>
+	<param name="force_remember" type="radio" default="0" label="Force Remember me" description="Force 'Remember Me' during phpBB3 login">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+	</param>
+	<param name="link_format" type="list" default="bridged" label="Link Format" description="Controls the kind of links used in Joomla">
+		<option value="bridged">Bridged Links</option>
+		<option value="synced">Synced Links</option>
+	</param>
+ </params>
+</config>

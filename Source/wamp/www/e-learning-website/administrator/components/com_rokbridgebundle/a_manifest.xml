@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.10" method="upgrade">
+	<name>RokBridge Bundle</name>
+	<creationDate>November 5, 2010</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0-RC14</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>
+		RokBridge Install Bundle
+	</description>	
+	<installfile>installer/install.php</installfile>
+	<uninstallfile>installer/uninstall.php</uninstallfile>
+	<administration>
+		<files>
+			<folder>installer</folder>
+		</files>
+	</administration>
+	<cogs>
+		<component name="com_rokbridge" folder="com_rokbridge" enabled="true" access="0" core="true" uninstall="true">RokBridge</component>
+		<module name="mod_rokbridge_latest_posts" folder="mod_rokbridge_latest_posts" published="false" access="0" core="true" uninstall="true">RokBridge Latest Posts</module>
+		<module name="mod_rokbridge_login" folder="mod_rokbridge_login" published="false" access="0" core="true" uninstall="true">RokBridge Login</module>
+		<module name="mod_rokbridge_members" folder="mod_rokbridge_members" published="false" access="0" core="true" uninstall="true">RokBridge Memebers</module>
+		<plugin name="phpbb3_user" group="user" folder="plg_user_rokbridge" published="true" access="0" core="true" uninstall="true">RokBridge User</plugin>
+		<plugin name="phpbb3_auth" group="authentication" folder="plg_authentication_rokbridge" published="true" access="0" core="true" uninstall="true">RokBridge Authentication</plugin>
+	</cogs>
+</install>

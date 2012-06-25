@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>RokBridge Members</name>
+	<author>RocketTheme, LLC</author>
+	<creationDate>November 5, 2010</creationDate>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.0-RC14</version>
+	<description>The RokBridge Members module shows the latest members, top members, or online members from a RokBridge enabled phpBB3 forum.</description>
+	<files>
+		<filename module="mod_rokbridge_members">mod_rokbridge_members.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+		<folder>assets/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_rokbridge_members.ini</language>
+	</languages>
+	<params>
+	    <param name="modulemode" type="list" default="1" label="ROKBRIDGE_MODULEMODE_LABEL" description="ROKBRIDGE_MODULEMODE_DESC">
+			<option value="latest">ROKBRIDGE_MODE_LATEST</option>
+			<option value="top">ROKBRIDGE_MODE_TOP</option>
+			<option value="online">ROKBRIDGE_MODE_ONLINE</option>
+		</param>
+		<param name="limit" type="text" default="20" size="5" label="ROKBRIDGE_NUMBEROFMEMBERS_LABEL" description="ROKBRIDGE_NUMBEROFMEMBERS_DESC" />
+		<param name="formatdate" type="list" default="%d/%m/%Y %H:%M" label="ROKBRIDGE_DATEFORMAT_LABEL" description="ROKBRIDGE_DATEFORMAT_DESC">
+			<option value="%d/%m/%Y %H:%M">22/10/2008 12:30</option>
+			<option value="%m/%d/%Y %H:%M">10/22/2008 12:30</option>
+			<option value="%d/%m/%Y">22/10/2008</option>
+			<option value="%m/%d/%Y">10/22/2008</option>
+			<option value="%d %B %Y %H:%M">22 October 2008 12:30</option>
+			<option value="%B %d, %Y %H:%M">October 22, 2008 12:30</option>
+			<option value="%d %b. %Y %H:%M">22 Oct. 2008 12:30</option>
+			<option value="%b. %d, %Y %H:%M">Oct. 22, 2008 12:30</option>
+		</param>
+		<param name="showextra" type="radio" default="0" label="ROKBRIDGE_SHOWEXTRA_LABEL" description="ROKBRIDGE_SHOWEXTRA_DESC">
+			<option value="0">ROKBRIDGE_NO</option>
+			<option value="1">ROKBRIDGE_YES</option>
+		</param>
+		<param name="showavatar" type="list" default="1" label="ROKBRIDGE_SHOWAVATAR_LABEL" description="ROKBRIDGE_SHOWAVATAR_DESC">
+			<option value="0">ROKBRIDGE_USERNAME</option>
+			<option value="1">ROKBRIDGE_AVATAR</option>
+			<option value="2">ROKBRIDGE_AVATAR_USERNAME</option>
+		</param>
+		<param name="avatar_size" type="text" default="32" size="3" label="ROKBRIDGE_AVATAR_SIZE_LABEL" description="ROKBRIDGE_AVATAR_SIZE_DESC" />
+		<param name="default_avatar" type="text" default="modules/mod_rokbridge_members/assets/default-avatar.png" size="50" label="ROKBRIDGE_DEFAULT_AVATAR_LABEL" description="ROKBRIDGE_DEFAULT_AVATAR_DESC" />
+		<param name="showprofilelink" type="radio" default="1" label="ROKBRIDGE_SHOWPROFILE_LABEL" description="ROKBRIDGE_SHOWPROFILE_DESC">
+			<option value="0">ROKBRIDGE_NO</option>
+			<option value="1">ROKBRIDGE_YES</option>
+		</param>
+		<param name="profiletargetwin" type="list" default="_top" label="ROKBRIDGE_PROFTARGET_WINDOW_LABEL" description="ROKBRIDGE_PROFTARGET_WINDOW_DESC">
+			<option value="_top">_top</option>
+			<option value="_blank">_blank</option>
+			<option value="_parent">_parent</option>
+			<option value="_self">_self</option>
+		</param>
+		<param name="onlinetime" type="text" default="5" label="ROKBRIDGE_ONLINETIME_LABEL" description="ROKBRIDGE_ONLINETIME_DESC" size="5" />
+		<param name="showonlinecount" type="radio" default="1" label="ROKBRIDGE_SHOWONLINE_LABEL" description="ROKBRIDGE_SHOWONLINE_DESC">
+			<option value="0">ROKBRIDGE_NO</option>
+			<option value="1">ROKBRIDGE_YES</option>
+		</param>
+  	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="ROKBRIDGE_CACHE_LABEL" description="ROKBRIDGE_CACHE_DESC">
+			<option value="1">ROKBRIDGE_CACHE_GLOBAL</option>
+			<option value="0">ROKBRIDGE_CACHE_OFF</option>
+		</param>
+		<param name="cache_time" type="text" default="15" label="ROKBRIDGE_CACHE_TIME_LABEL" description="ROKBRIDGE_CACHE_TIME_DESC" />
+		<param name="moduleclass_sfx" type="text" default="" label="PARAMMODULECLASSSUFFIX_LABEL" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

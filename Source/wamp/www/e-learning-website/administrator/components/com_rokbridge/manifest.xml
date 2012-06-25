@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.10" method="upgrade">
+	<name>RokBridge</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>November 5, 2010</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0-RC14</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>
+		RokBridge Administrator Component
+	</description>
+
+	<!-- Install Database Section -->
+	<install />
+	<!-- Uninstall Database Section -->
+	<uninstall />
+
+	<!-- Site Main Language File Copy Section -->
+	<languages />	
+	
+	<!-- Site Main File Copy Section -->
+	<files folder="components/com_rokbridge">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>rokbridge.php</filename>
+		<folder>models</folder>
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu controller="rokbridge" img="components/com_rokbridge/images/rokbridge.png">RokBridge</menu>
+
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="administrator/components/com_rokbridge">
+			<filename>helper.php</filename>
+			<filename>rokbridge.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<folder>assets</folder>
+			<folder>forum</folder>
+			<folder>images</folder>
+			<folder>install</folder>
+			<folder>models</folder>
+			<folder>phpbb</folder>
+			<folder>views</folder>
+		</files>
+		
+		<!-- Administration Language File Copy Section -->
+		<languages folder="administrator/language/en-GB">
+			<language tag="en-GB">en-GB.com_rokbridge.ini</language>
+		</languages>
+	</administration>
+	
+	<installfile>install/install.rokbridge.php</installfile>
+	<uninstallfile>install/uninstall.rokbridge.php</uninstallfile>
+</install>

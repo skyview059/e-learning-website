@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="authentication">
+	<name>Authentication - phpBB3</name>
+	<author>Rocketwerx, LLC</author>
+	<creationDate>January 2009</creationDate>
+	<copyright>(C) 2009 Rocketwerx. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@rocketwerx.com</authorEmail>
+	<authorUrl>www.rocketwerx.com</authorUrl>
+	<version>1.0</version>
+	<description>An phpBB3 authentication plugin</description>
+	<files>
+		<filename plugin="phpbb3_auth">phpbb3_auth.php</filename>
+	</files>
+</install>

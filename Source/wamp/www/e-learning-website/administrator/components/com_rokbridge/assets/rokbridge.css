@@ -1,0 +1,17 @@
+table.adminlist tbody tr td.centeralign,
+table.adminlist tbody tr td.status {text-align:center;}
+p.testurl {font-size:120%;font-weight:bold;text-align:center;}
+div.icon-48-rokbridge {background-image:url(rokbridge-48.png);}
+
+td.status { font-weight: bold;text-align:center;}
+td.status span {display:block;width:113px;height:21px;color:#fff;text-shadow: 1px 1px #333;line-height:21px;text-indent:30px;text-align:left;margin:0 auto;}
+tr.installed td.status span { background:url(status-installed.png);}
+tr.notinstalled td.status span { background:url(status-notinstalled.png);}
+
+.centeralign a {background:url(button-bg.png);display:block;width:82px;height:18px;line-height:18px;text-shadow: 1px 1px #fff;margin:0 auto;}
+.centeralign a:link, .centeralign a:hover, .centeralign a:visited {color:#333;text-decoration:none;}
+
+.note {background:#FFF7A6 url(note-bg.png) repeat-x;}
+.note .corner {background: url(note-corner.png) 100% 0 no-repeat;color:#333;padding:15px;font-size:120%;}
+.note h3 {margin:0 0 10px;}
+
