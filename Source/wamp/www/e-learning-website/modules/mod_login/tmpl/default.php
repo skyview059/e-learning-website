@@ -63,7 +63,7 @@ endif; ?>
 		$usersConfig = &JComponentHelper::getParams( 'com_users' );
 		if ($usersConfig->get('allowUserRegistration')) : ?>
 		<li>
-			<a href="<?php echo JRoute::_( 'index.php?option=com_user&view=register' ); ?>">
+			<a href="<?php echo JRoute::_( 'phpbb3/ucp.php?mode=register' ); ?>">
 				<?php echo JText::_('REGISTER'); ?></a>
 		</li>
 		<?php endif; ?>
