@@ -1,14 +1,14 @@
 ===== Information about the build process: =====
 Build was run at Fri 12/16/2011 
- on host 'VITRO51'
+ on host 'VITRO50'
 
 Build was done on  Windows-6.0 using x86
 Build was done using cmake 2.6.4 
 
 ===== Compiler / generator used: =====
-Visual Studio 9 2008 Win64
+Visual Studio 9 2008
 
-Pointer size: 8
+Pointer size: 4
 
 ===== Feature flags used: =====
 -- Cache values
@@ -38,7 +38,7 @@ WITH_SSL:STRING=bundled
 WITH_UNIT_TESTS:BOOL=ON
 WITH_ZLIB:STRING=bundled
 WIX_DIR:PATH=C:/Program Files (x86)/Windows Installer XML v3.5/bin
-WIX_DUTIL_LIBRARY:FILEPATH=C:/Program Files (x86)/Windows Installer XML v3.5/SDK/lib/dutil_2008_x64.lib
-WIX_WCAUTIL_LIBRARY:FILEPATH=C:/Program Files (x86)/Windows Installer XML v3.5/SDK/lib/wcautil_2008_x64.lib
+WIX_DUTIL_LIBRARY:FILEPATH=C:/Program Files (x86)/Windows Installer XML v3.5/SDK/lib/dutil_2008.lib
+WIX_WCAUTIL_LIBRARY:FILEPATH=C:/Program Files (x86)/Windows Installer XML v3.5/SDK/lib/wcautil_2008.lib
 
 ===== EOF =====

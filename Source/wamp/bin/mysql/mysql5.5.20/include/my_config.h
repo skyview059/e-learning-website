@@ -330,9 +330,9 @@
 #else
 /* No indentation, to fetch the lines from verification scripts */
 #define SIZEOF_LONG   4
-#define SIZEOF_VOIDP  8
-#define SIZEOF_CHARP  8
-#define SIZEOF_SIZE_T 8
+#define SIZEOF_VOIDP  4
+#define SIZEOF_CHARP  4
+#define SIZEOF_SIZE_T 4
 #endif
 
 #define SIZEOF_CHAR 1
@@ -471,7 +471,7 @@
 
 #define STACK_DIRECTION -1
 
-#define SYSTEM_TYPE "Win64"
+#define SYSTEM_TYPE "Win32"
 #define MACHINE_TYPE "x86"
 /* #undef HAVE_DTRACE */
 
