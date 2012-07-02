@@ -89,6 +89,8 @@ class modRokBridgeMembersHelper
     	        $time_online = floor((time() - intval($row->user_lastvisit))/60)+1;
     	        $row->extra_info = ' : Online '.$time_online.' mins';
     	    }
+			require_once(JPATH_ADMINISTRATOR.DS.'components'.DS.'com_rokbridge'.DS.'helper.php' );
+            $rokbridge = new RokBridgeHelper();
     	    $row->avatar_img = $rokbridge->getAvatar($row,$params->get('avatar_size',32),$row->extra_info,$default_avatar);
 		    $latest_members[] = $row;
 		}
