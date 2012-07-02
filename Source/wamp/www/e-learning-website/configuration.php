@@ -12,7 +12,7 @@ class JConfig {
 	var $feed_limit = '10';
 	var $feed_email = 'author';
 	var $secret = 'zH2kdkNkOMy21GqF';
-	var $gzip = '0';
+	var $gzip = '1';
 	var $error_reporting = '-1';
 	var $xmlrpc_server = '0';
 	var $log_path = 'C:\\wamp\\www\\e-learning-website\\logs';
@@ -37,7 +37,7 @@ class JConfig {
 	var $dbprefix = 'jos_';
 	var $mailer = 'mail';
 	var $mailfrom = 'namnh00903@fpt.edu.vn';
-	var $fromname = 'E-learning';
+	var $fromname = 'Onthi.com';
 	var $sendmail = '/usr/sbin/sendmail';
 	var $smtpauth = '0';
 	var $smtpsecure = 'none';
@@ -51,8 +51,8 @@ class JConfig {
 	var $session_handler = 'database';
 	var $password = '';
 	var $sitename = 'onthi.com';
-	var $MetaDesc = 'onthi.com';
-	var $MetaKeys = 'onthi, hocthi, luyenthi';
+	var $MetaDesc = 'Onthi.com - Trang web học tập trực tuyến';
+	var $MetaKeys = 'onthi, hocthi, luyenthi, hoctap';
 	var $offline_message = 'Website đang trong quá trình bảo trì, các bạn quay lại sau nhé ^^';
 }
 ?>
