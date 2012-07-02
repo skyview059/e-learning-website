@@ -134,3 +134,411 @@ Failed loading C:/wamp/bin/php/php5.3.10/zend_ext/php_xdebug-2.1.2-5.3-vc9.dll
 [Fri Jun 22 18:37:40 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/favicon.ico
 [Fri Jun 22 18:38:02 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/favicon.ico
 [Fri Jun 22 18:38:14 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/favicon.ico
+[Mon Jun 25 12:03:42 2012] [warn] pid file C:/wamp/bin/apache/Apache2.2.21/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 25 12:03:42 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Mon Jun 25 12:03:42 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Mon Jun 25 12:03:42 2012] [notice] Parent: Created child process 7248
+[Mon Jun 25 12:03:42 2012] [notice] Child 7248: Child process is running
+[Mon Jun 25 12:03:42 2012] [notice] Child 7248: Acquired the start mutex.
+[Mon Jun 25 12:03:42 2012] [notice] Child 7248: Starting 64 worker threads.
+[Mon Jun 25 12:03:42 2012] [notice] Child 7248: Starting thread to listen on port 80.
+[Mon Jun 25 12:03:42 2012] [notice] Child 7248: Starting thread to listen on port 80.
+[Mon Jun 25 12:35:21 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 12:51:47 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/favicon.ico
+[Mon Jun 25 12:51:47 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/favicon.ico
+[Mon Jun 25 12:51:47 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/favicon.ico
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'JFile' not found in C:\\wamp\\www\\e-learning-website\\administrator\\components\\com_rokbridge\\helper.php on line 145, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\administrator\\index.php:0, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP   2. JAdministrator->dispatch() C:\\wamp\\www\\e-learning-website\\administrator\\index.php:67, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP   3. JComponentHelper->renderComponent() C:\\wamp\\www\\e-learning-website\\administrator\\includes\\application.php:136, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP   4. require_once() C:\\wamp\\www\\e-learning-website\\libraries\\joomla\\application\\component\\helper.php:162, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP   5. JController->execute() C:\\wamp\\www\\e-learning-website\\administrator\\components\\com_rokbridge\\rokbridge.php:23, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP   6. RokBridgeController->display() C:\\wamp\\www\\e-learning-website\\libraries\\joomla\\application\\component\\controller.php:236, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP   7. JController->display() C:\\wamp\\www\\e-learning-website\\administrator\\components\\com_rokbridge\\controller.php:35, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP   8. JController->getModel() C:\\wamp\\www\\e-learning-website\\libraries\\joomla\\application\\component\\controller.php:296, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP   9. JController->_createModel() C:\\wamp\\www\\e-learning-website\\libraries\\joomla\\application\\component\\controller.php:350, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP  10. JModel->getInstance() C:\\wamp\\www\\e-learning-website\\libraries\\joomla\\application\\component\\controller.php:592, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP  11. RokBridgeModelRokBridge->__construct() C:\\wamp\\www\\e-learning-website\\libraries\\joomla\\application\\component\\model.php:129, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP  12. RokBridgeModelRokBridge->_isForumInstalled() C:\\wamp\\www\\e-learning-website\\administrator\\components\\com_rokbridge\\models\\rokbridge.php:33, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP  13. RokBridgeModelRokBridge->getForumPath() C:\\wamp\\www\\e-learning-website\\administrator\\components\\com_rokbridge\\models\\rokbridge.php:529, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP  14. RokBridgeModelRokBridge->getParams() C:\\wamp\\www\\e-learning-website\\administrator\\components\\com_rokbridge\\models\\rokbridge.php:510, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP  15. RokBridgeModelRokBridge->_getHelper() C:\\wamp\\www\\e-learning-website\\administrator\\components\\com_rokbridge\\models\\rokbridge.php:524, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP  16. RokBridgeHelper->__construct() C:\\wamp\\www\\e-learning-website\\administrator\\components\\com_rokbridge\\models\\rokbridge.php:550, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 12:55:15 2012] [error] [client 127.0.0.1] PHP  17. RokBridgeHelper->getParams() C:\\wamp\\www\\e-learning-website\\administrator\\components\\com_rokbridge\\helper.php:29, referer: http://localhost/e-learning-website/administrator/index.php
+[Mon Jun 25 13:05:22 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 13:31:52 2012] [alert] [client 127.0.0.1] C:/wamp/www/e-learning-website/forum/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration, referer: http://localhost/e-learning-website/administrator/index.php?option=com_rokbridge
+[Mon Jun 25 13:32:29 2012] [alert] [client 127.0.0.1] C:/wamp/www/e-learning-website/forum/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Mon Jun 25 13:35:23 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 13:37:00 2012] [alert] [client 127.0.0.1] C:/wamp/www/e-learning-website/forum/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Mon Jun 25 13:41:28 2012] [alert] [client 127.0.0.1] C:/wamp/www/e-learning-website/forum/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Mon Jun 25 13:55:39 2012] [alert] [client 127.0.0.1] C:/wamp/www/e-learning-website/forum/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Mon Jun 25 15:24:06 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 15:54:07 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 16:24:08 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 16:54:09 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 17:24:10 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 17:54:11 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 18:24:13 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 18:54:13 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 19:24:15 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 19:54:15 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jun 25 19:58:04 2012] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Mon Jun 25 19:58:04 2012] [notice] Child 7248: Exit event signaled. Child process is ending.
+[Mon Jun 25 19:58:05 2012] [notice] Child 7248: Released the start mutex
+[Mon Jun 25 19:58:06 2012] [notice] Child 7248: All worker threads have exited.
+[Mon Jun 25 19:58:13 2012] [notice] Child 7248: Child process is exiting
+[Mon Jun 25 19:58:17 2012] [notice] Parent: Child process exited successfully.
+[Wed Jun 27 09:26:26 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Wed Jun 27 09:26:26 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Wed Jun 27 09:26:26 2012] [notice] Parent: Created child process 2400
+[Wed Jun 27 09:26:26 2012] [notice] Child 2400: Child process is running
+[Wed Jun 27 09:26:26 2012] [notice] Child 2400: Acquired the start mutex.
+[Wed Jun 27 09:26:26 2012] [notice] Child 2400: Starting 64 worker threads.
+[Wed Jun 27 09:26:26 2012] [notice] Child 2400: Starting thread to listen on port 80.
+[Wed Jun 27 09:26:26 2012] [notice] Child 2400: Starting thread to listen on port 80.
+[Wed Jun 27 09:38:49 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 10:08:50 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 10:38:51 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 10:45:27 2012] [alert] [client 127.0.0.1] C:/wamp/www/e-learning-website/forum/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Wed Jun 27 11:08:51 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 11:38:53 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 12:08:53 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 12:38:55 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 13:08:55 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 13:38:57 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 13:49:18 2012] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Wed Jun 27 13:49:18 2012] [notice] Child 2400: Exit event signaled. Child process is ending.
+[Wed Jun 27 13:49:19 2012] [notice] Child 2400: Released the start mutex
+[Wed Jun 27 13:49:20 2012] [notice] Child 2400: All worker threads have exited.
+[Wed Jun 27 13:49:22 2012] [notice] Child 2400: Child process is exiting
+[Wed Jun 27 13:49:23 2012] [notice] Parent: Child process exited successfully.
+[Wed Jun 27 13:49:29 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Wed Jun 27 13:49:29 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Wed Jun 27 13:49:29 2012] [notice] Parent: Created child process 7944
+[Wed Jun 27 13:49:30 2012] [notice] Child 7944: Child process is running
+[Wed Jun 27 13:49:30 2012] [notice] Child 7944: Acquired the start mutex.
+[Wed Jun 27 13:49:30 2012] [notice] Child 7944: Starting 64 worker threads.
+[Wed Jun 27 13:49:30 2012] [notice] Child 7944: Starting thread to listen on port 80.
+[Wed Jun 27 13:49:30 2012] [notice] Child 7944: Starting thread to listen on port 80.
+[Wed Jun 27 13:49:55 2012] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Wed Jun 27 13:49:55 2012] [notice] Child 7944: Exit event signaled. Child process is ending.
+[Wed Jun 27 13:49:56 2012] [notice] Child 7944: Released the start mutex
+[Wed Jun 27 13:49:57 2012] [notice] Child 7944: All worker threads have exited.
+[Wed Jun 27 13:49:57 2012] [notice] Child 7944: Child process is exiting
+[Wed Jun 27 13:49:57 2012] [notice] Parent: Child process exited successfully.
+[Wed Jun 27 13:49:58 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Wed Jun 27 13:49:58 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Wed Jun 27 13:49:58 2012] [notice] Parent: Created child process 948
+[Wed Jun 27 13:49:58 2012] [notice] Child 948: Child process is running
+[Wed Jun 27 13:49:58 2012] [notice] Child 948: Acquired the start mutex.
+[Wed Jun 27 13:49:58 2012] [notice] Child 948: Starting 64 worker threads.
+[Wed Jun 27 13:49:58 2012] [notice] Child 948: Starting thread to listen on port 80.
+[Wed Jun 27 13:49:58 2012] [notice] Child 948: Starting thread to listen on port 80.
+[Wed Jun 27 14:08:57 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 14:39:06 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 15:09:00 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 15:39:01 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 16:09:02 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 16:39:02 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 17:09:04 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 17:39:04 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 18:09:06 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 18:25:45 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/en.nbk, referer: http://www.nbk.edu.vn/en/
+[Wed Jun 27 18:25:47 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/en.nbk, referer: http://www.nbk.edu.vn/en/
+[Wed Jun 27 18:39:09 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 19:09:11 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 19:39:12 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 20:09:13 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 20:39:14 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 21:09:15 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 21:39:15 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 22:09:17 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 22:39:17 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 23:09:19 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Wed Jun 27 23:39:19 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 00:09:21 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 00:39:21 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 01:09:23 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 01:39:23 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 02:09:25 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 02:39:25 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 03:09:28 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 03:39:28 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 04:09:28 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 04:39:29 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 05:09:31 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 05:39:31 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 06:09:34 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 09:01:17 2012] [warn] pid file C:/wamp/bin/apache/Apache2.2.21/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Jun 28 09:01:18 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Thu Jun 28 09:01:18 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Thu Jun 28 09:01:18 2012] [notice] Parent: Created child process 1496
+[Thu Jun 28 09:01:18 2012] [notice] Child 1496: Child process is running
+[Thu Jun 28 09:01:18 2012] [notice] Child 1496: Acquired the start mutex.
+[Thu Jun 28 09:01:18 2012] [notice] Child 1496: Starting 64 worker threads.
+[Thu Jun 28 09:01:18 2012] [notice] Child 1496: Starting thread to listen on port 80.
+[Thu Jun 28 09:01:18 2012] [notice] Child 1496: Starting thread to listen on port 80.
+[Thu Jun 28 09:22:21 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 09:52:21 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 10:22:22 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 10:52:23 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 10:58:28 2012] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jun 28 10:58:28 2012] [notice] Child 1496: Exit event signaled. Child process is ending.
+[Thu Jun 28 10:58:29 2012] [notice] Child 1496: Released the start mutex
+[Thu Jun 28 10:58:30 2012] [notice] Child 1496: All worker threads have exited.
+[Thu Jun 28 10:58:30 2012] [notice] Child 1496: Child process is exiting
+[Thu Jun 28 10:58:31 2012] [notice] Parent: Child process exited successfully.
+[Thu Jun 28 11:00:59 2012] [warn] pid file C:/wamp/bin/apache/Apache2.2.21/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Jun 28 11:00:59 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Thu Jun 28 11:00:59 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Thu Jun 28 11:00:59 2012] [notice] Parent: Created child process 7152
+[Thu Jun 28 11:00:59 2012] [notice] Child 7152: Child process is running
+[Thu Jun 28 11:00:59 2012] [notice] Child 7152: Acquired the start mutex.
+[Thu Jun 28 11:00:59 2012] [notice] Child 7152: Starting 64 worker threads.
+[Thu Jun 28 11:00:59 2012] [notice] Child 7152: Starting thread to listen on port 80.
+[Thu Jun 28 11:00:59 2012] [notice] Child 7152: Starting thread to listen on port 80.
+[Thu Jun 28 11:02:23 2012] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jun 28 11:02:23 2012] [notice] Child 7152: Exit event signaled. Child process is ending.
+[Thu Jun 28 11:02:24 2012] [notice] Child 7152: Released the start mutex
+[Thu Jun 28 11:02:25 2012] [notice] Child 7152: All worker threads have exited.
+[Thu Jun 28 11:02:25 2012] [notice] Child 7152: Child process is exiting
+[Thu Jun 28 11:02:25 2012] [notice] Parent: Child process exited successfully.
+[Thu Jun 28 11:02:44 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Thu Jun 28 11:02:44 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Thu Jun 28 11:02:44 2012] [notice] Parent: Created child process 7008
+[Thu Jun 28 11:02:44 2012] [notice] Child 7008: Child process is running
+[Thu Jun 28 11:02:44 2012] [notice] Child 7008: Acquired the start mutex.
+[Thu Jun 28 11:02:44 2012] [notice] Child 7008: Starting 64 worker threads.
+[Thu Jun 28 11:02:44 2012] [notice] Child 7008: Starting thread to listen on port 80.
+[Thu Jun 28 11:02:44 2012] [notice] Child 7008: Starting thread to listen on port 80.
+[Thu Jun 28 11:07:55 2012] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jun 28 11:07:55 2012] [notice] Child 7008: Exit event signaled. Child process is ending.
+[Thu Jun 28 11:07:56 2012] [notice] Child 7008: Released the start mutex
+[Thu Jun 28 11:07:57 2012] [notice] Child 7008: All worker threads have exited.
+[Thu Jun 28 11:07:57 2012] [notice] Child 7008: Child process is exiting
+[Thu Jun 28 11:07:57 2012] [notice] Parent: Child process exited successfully.
+[Thu Jun 28 11:08:39 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Thu Jun 28 11:08:39 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Thu Jun 28 11:08:39 2012] [notice] Parent: Created child process 2132
+[Thu Jun 28 11:08:39 2012] [notice] Child 2132: Child process is running
+[Thu Jun 28 11:08:39 2012] [notice] Child 2132: Acquired the start mutex.
+[Thu Jun 28 11:08:39 2012] [notice] Child 2132: Starting 64 worker threads.
+[Thu Jun 28 11:08:39 2012] [notice] Child 2132: Starting thread to listen on port 80.
+[Thu Jun 28 11:08:39 2012] [notice] Child 2132: Starting thread to listen on port 80.
+[Thu Jun 28 11:16:08 2012] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jun 28 11:16:08 2012] [notice] Child 2132: Exit event signaled. Child process is ending.
+[Thu Jun 28 11:16:09 2012] [notice] Child 2132: Released the start mutex
+[Thu Jun 28 11:16:10 2012] [notice] Child 2132: All worker threads have exited.
+[Thu Jun 28 11:16:10 2012] [notice] Child 2132: Child process is exiting
+[Thu Jun 28 11:16:10 2012] [notice] Parent: Child process exited successfully.
+[Thu Jun 28 11:18:59 2012] [warn] pid file C:/wamp/bin/apache/Apache2.2.21/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Jun 28 11:18:59 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Thu Jun 28 11:18:59 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Thu Jun 28 11:18:59 2012] [notice] Parent: Created child process 4312
+[Thu Jun 28 11:19:00 2012] [notice] Child 4312: Child process is running
+[Thu Jun 28 11:19:00 2012] [notice] Child 4312: Acquired the start mutex.
+[Thu Jun 28 11:19:00 2012] [notice] Child 4312: Starting 64 worker threads.
+[Thu Jun 28 11:19:00 2012] [notice] Child 4312: Starting thread to listen on port 80.
+[Thu Jun 28 11:19:00 2012] [notice] Child 4312: Starting thread to listen on port 80.
+[Thu Jun 28 11:22:24 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 11:43:11 2012] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jun 28 11:43:11 2012] [notice] Child 4312: Exit event signaled. Child process is ending.
+[Thu Jun 28 11:43:12 2012] [notice] Child 4312: Released the start mutex
+[Thu Jun 28 11:43:13 2012] [notice] Child 4312: All worker threads have exited.
+[Thu Jun 28 11:43:13 2012] [notice] Child 4312: Child process is exiting
+[Thu Jun 28 11:43:13 2012] [notice] Parent: Child process exited successfully.
+[Thu Jun 28 11:56:58 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Thu Jun 28 11:56:58 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Thu Jun 28 11:56:58 2012] [notice] Parent: Created child process 5516
+[Thu Jun 28 11:56:58 2012] [notice] Child 5516: Child process is running
+[Thu Jun 28 11:56:58 2012] [notice] Child 5516: Acquired the start mutex.
+[Thu Jun 28 11:56:58 2012] [notice] Child 5516: Starting 64 worker threads.
+[Thu Jun 28 11:56:58 2012] [notice] Child 5516: Starting thread to listen on port 80.
+[Thu Jun 28 11:56:58 2012] [notice] Child 5516: Starting thread to listen on port 80.
+[Thu Jun 28 11:59:45 2012] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jun 28 11:59:45 2012] [notice] Child 5516: Exit event signaled. Child process is ending.
+[Thu Jun 28 11:59:46 2012] [notice] Child 5516: Released the start mutex
+[Thu Jun 28 11:59:47 2012] [notice] Child 5516: All worker threads have exited.
+[Thu Jun 28 11:59:47 2012] [notice] Child 5516: Child process is exiting
+[Thu Jun 28 11:59:47 2012] [notice] Parent: Child process exited successfully.
+[Thu Jun 28 12:00:14 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Thu Jun 28 12:00:14 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Thu Jun 28 12:00:14 2012] [notice] Parent: Created child process 7320
+[Thu Jun 28 12:00:15 2012] [notice] Child 7320: Child process is running
+[Thu Jun 28 12:00:15 2012] [notice] Child 7320: Acquired the start mutex.
+[Thu Jun 28 12:00:15 2012] [notice] Child 7320: Starting 64 worker threads.
+[Thu Jun 28 12:00:15 2012] [notice] Child 7320: Starting thread to listen on port 80.
+[Thu Jun 28 12:00:15 2012] [notice] Child 7320: Starting thread to listen on port 80.
+[Thu Jun 28 12:37:57 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 12:43:17 2012] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jun 28 12:43:17 2012] [notice] Child 7320: Exit event signaled. Child process is ending.
+[Thu Jun 28 12:43:18 2012] [notice] Child 7320: Released the start mutex
+[Thu Jun 28 12:43:19 2012] [notice] Child 7320: All worker threads have exited.
+[Thu Jun 28 12:43:19 2012] [notice] Child 7320: Child process is exiting
+[Thu Jun 28 12:43:19 2012] [notice] Parent: Child process exited successfully.
+[Thu Jun 28 21:39:40 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Thu Jun 28 21:39:40 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Thu Jun 28 21:39:40 2012] [notice] Parent: Created child process 10416
+[Thu Jun 28 21:39:40 2012] [notice] Child 10416: Child process is running
+[Thu Jun 28 21:39:40 2012] [notice] Child 10416: Acquired the start mutex.
+[Thu Jun 28 21:39:40 2012] [notice] Child 10416: Starting 64 worker threads.
+[Thu Jun 28 21:39:40 2012] [notice] Child 10416: Starting thread to listen on port 80.
+[Thu Jun 28 21:39:40 2012] [notice] Child 10416: Starting thread to listen on port 80.
+[Thu Jun 28 21:39:58 2012] [error] [client 127.0.0.1] client denied by server configuration: C:/Apache2, referer: http://localhost/SinhVienIT.Net-TracNghiem/
+[Thu Jun 28 21:39:58 2012] [error] [client 127.0.0.1] client denied by server configuration: C:/Apache2, referer: http://localhost/SinhVienIT.Net-TracNghiem/
+[Thu Jun 28 21:39:58 2012] [error] [client 127.0.0.1] client denied by server configuration: C:/Apache2, referer: http://localhost/SinhVienIT.Net-TracNghiem/
+[Thu Jun 28 21:39:58 2012] [error] [client 127.0.0.1] client denied by server configuration: C:/Apache2, referer: http://localhost/SinhVienIT.Net-TracNghiem/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function ereg() is deprecated in C:\\wamp\\www\\tracnghiem\\install.php on line 13, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\tracnghiem\\install.php:0, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function ereg() is deprecated in C:\\wamp\\www\\tracnghiem\\install.php on line 15, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\tracnghiem\\install.php:0, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function ereg() is deprecated in C:\\wamp\\www\\tracnghiem\\install.php on line 17, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\tracnghiem\\install.php:0, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function ereg() is deprecated in C:\\wamp\\www\\tracnghiem\\install.php on line 19, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\tracnghiem\\install.php:0, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function ereg() is deprecated in C:\\wamp\\www\\tracnghiem\\install.php on line 21, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\tracnghiem\\install.php:0, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function ereg() is deprecated in C:\\wamp\\www\\tracnghiem\\install.php on line 23, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\tracnghiem\\install.php:0, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function ereg() is deprecated in C:\\wamp\\www\\tracnghiem\\install.php on line 43, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/
+[Thu Jun 28 21:40:10 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\tracnghiem\\install.php:0, referer: http://localhost/
+[Thu Jun 28 21:40:11 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/tracnghiem/favicon.ico
+[Thu Jun 28 21:40:12 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/tracnghiem/favicon.ico
+[Thu Jun 28 21:40:12 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/tracnghiem/favicon.ico
+[Thu Jun 28 21:40:25 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 21:41:51 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/e-learning-website/tracnghiem/favicon.ico
+[Thu Jun 28 21:41:51 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/e-learning-website/tracnghiem/favicon.ico
+[Thu Jun 28 21:41:51 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/e-learning-website/tracnghiem/favicon.ico
+[Thu Jun 28 21:46:37 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/install.php
+[Thu Jun 28 21:46:37 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/install.php
+[Thu Jun 28 21:46:37 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\install-db.php:0, referer: http://localhost/e-learning-website/tracnghiem/install.php
+[Thu Jun 28 21:46:37 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\install-db.php:2, referer: http://localhost/e-learning-website/tracnghiem/install.php
+[Thu Jun 28 21:46:57 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:46:57 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:46:57 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:0, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:46:57 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:7, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:47:11 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:47:11 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:47:11 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:0, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:47:11 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:7, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:47:24 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:47:24 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:47:24 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:0, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:47:24 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:7, referer: http://localhost/e-learning-website/tracnghiem/install-db.php
+[Thu Jun 28 21:49:07 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:07 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:07 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:0, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:07 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:7, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:07 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:07 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:07 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:0, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:07 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:7, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:13 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:13 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:13 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\test-manager.php:0, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 21:49:13 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\test-manager.php:2, referer: http://localhost/e-learning-website/tracnghiem/index.php
+[Thu Jun 28 22:10:26 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 22:40:27 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 23:10:28 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Thu Jun 28 23:40:29 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 00:10:30 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 00:40:31 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 01:10:32 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 01:40:33 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 02:10:34 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 02:40:35 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 03:10:36 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 03:40:37 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 04:10:38 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 04:40:39 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 05:10:40 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 11:24:27 2012] [warn] pid file C:/wamp/bin/apache/Apache2.2.21/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 29 11:24:28 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Fri Jun 29 11:24:28 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Fri Jun 29 11:24:28 2012] [notice] Parent: Created child process 3220
+[Fri Jun 29 11:24:28 2012] [notice] Child 3220: Child process is running
+[Fri Jun 29 11:24:28 2012] [notice] Child 3220: Acquired the start mutex.
+[Fri Jun 29 11:24:28 2012] [notice] Child 3220: Starting 64 worker threads.
+[Fri Jun 29 11:24:28 2012] [notice] Child 3220: Starting thread to listen on port 80.
+[Fri Jun 29 11:24:28 2012] [notice] Child 3220: Starting thread to listen on port 80.
+[Fri Jun 29 11:26:59 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 11:56:59 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 12:27:00 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 14:20:08 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 14:50:03 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 15:20:04 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 15:50:06 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 16:22:44 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 20:01:20 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 22:26:34 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 22:56:34 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 23:26:36 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Fri Jun 29 23:56:36 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Sat Jun 30 00:26:37 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Sat Jun 30 00:56:38 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Sat Jun 30 01:26:39 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 10:38:27 2012] [warn] pid file C:/wamp/bin/apache/Apache2.2.21/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 02 10:38:27 2012] [notice] Apache/2.2.21 (Win32) PHP/5.3.10 configured -- resuming normal operations
+[Mon Jul 02 10:38:27 2012] [notice] Server built: Sep 10 2011 11:34:11
+[Mon Jul 02 10:38:27 2012] [notice] Parent: Created child process 4640
+[Mon Jul 02 10:38:28 2012] [notice] Child 4640: Child process is running
+[Mon Jul 02 10:38:28 2012] [notice] Child 4640: Acquired the start mutex.
+[Mon Jul 02 10:38:28 2012] [notice] Child 4640: Starting 64 worker threads.
+[Mon Jul 02 10:38:28 2012] [notice] Child 4640: Starting thread to listen on port 80.
+[Mon Jul 02 10:38:28 2012] [notice] Child 4640: Starting thread to listen on port 80.
+[Mon Jul 02 10:42:57 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8
+[Mon Jul 02 10:42:57 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Jul 02 10:42:57 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:0
+[Mon Jul 02 10:42:57 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:7
+[Mon Jul 02 10:45:06 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:45:06 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:45:06 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:0, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:45:06 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:7, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:45:06 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:45:06 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:45:06 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:0, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:45:06 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:7, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:45:24 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8
+[Mon Jul 02 10:45:24 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Jul 02 10:45:24 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:0
+[Mon Jul 02 10:45:24 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:7
+[Mon Jul 02 10:45:26 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 10:46:22 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:46:22 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:46:22 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\signout.php:0, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:46:22 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\signout.php:2, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:46:22 2012] [error] [client 127.0.0.1] PHP Deprecated:  Function session_register() is deprecated in C:\\wamp\\www\\e-learning-website\\tracnghiem\\inc\\init.inc.php on line 8, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:46:22 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:46:22 2012] [error] [client 127.0.0.1] PHP   1. {main}() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:0, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 10:46:22 2012] [error] [client 127.0.0.1] PHP   2. require_once() C:\\wamp\\www\\e-learning-website\\tracnghiem\\index.php:7, referer: http://localhost/e-learning-website/tracnghiem/
+[Mon Jul 02 11:15:27 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 11:45:28 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 12:15:29 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 12:45:30 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 13:15:31 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 13:45:39 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 14:15:40 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 14:45:42 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 15:15:42 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 15:45:43 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 16:15:44 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 16:45:45 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 17:15:46 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 17:45:47 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 18:15:48 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 18:45:49 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 19:15:50 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 19:45:51 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 20:15:52 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 20:45:53 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 21:15:54 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 21:45:56 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce
+[Mon Jul 02 22:15:56 2012] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/announce

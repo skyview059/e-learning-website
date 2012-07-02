@@ -138,3 +138,1575 @@ Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
 120622 17:58:01 [Note] Event Scheduler: Loaded 0 events
 120622 17:58:01 [Note] wampmysqld: ready for connections.
 Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120625 12:03:42 [Note] Plugin 'FEDERATED' is disabled.
+120625 12:03:42 InnoDB: The InnoDB memory heap is disabled
+120625 12:03:42 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120625 12:03:42 InnoDB: Compressed tables use zlib 1.2.3
+120625 12:03:42 InnoDB: Initializing buffer pool, size = 128.0M
+120625 12:03:42 InnoDB: Completed initialization of buffer pool
+120625 12:03:42 InnoDB: highest supported file format is Barracuda.
+120625 12:03:43  InnoDB: Waiting for the background threads to start
+120625 12:03:44 InnoDB: 1.1.8 started; log sequence number 1595675
+120625 12:03:44 [Note] Recovering after a crash using mysql-bin
+120625 12:03:44 [Note] Starting crash recovery...
+120625 12:03:44 [Note] Crash recovery finished.
+120625 12:03:44 [Note] Event Scheduler: Loaded 0 events
+120625 12:03:44 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120625 19:58:04 [Note] wampmysqld: Normal shutdown
+
+120625 19:58:05 [Note] Event Scheduler: Purging the queue. 0 events
+120625 19:58:10  InnoDB: Starting shutdown...
+120625 19:58:14  InnoDB: Shutdown completed; log sequence number 4245245
+120625 19:58:15 [Note] wampmysqld: Shutdown complete
+
+120627  9:26:26 [Note] Plugin 'FEDERATED' is disabled.
+120627  9:26:27 InnoDB: The InnoDB memory heap is disabled
+120627  9:26:27 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120627  9:26:27 InnoDB: Compressed tables use zlib 1.2.3
+120627  9:26:27 InnoDB: Initializing buffer pool, size = 128.0M
+120627  9:26:27 InnoDB: Completed initialization of buffer pool
+120627  9:26:27 InnoDB: highest supported file format is Barracuda.
+120627  9:26:28  InnoDB: Waiting for the background threads to start
+120627  9:26:29 InnoDB: 1.1.8 started; log sequence number 4245245
+120627  9:26:30 [Note] Event Scheduler: Loaded 0 events
+120627  9:26:30 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120627 13:49:21 [Note] wampmysqld: Normal shutdown
+
+120627 13:49:21 [Note] Event Scheduler: Purging the queue. 0 events
+120627 13:49:21  InnoDB: Starting shutdown...
+120627 13:49:24  InnoDB: Shutdown completed; log sequence number 4249952
+120627 13:49:24 [Note] wampmysqld: Shutdown complete
+
+120627 13:49:25 [Note] Plugin 'FEDERATED' is disabled.
+120627 13:49:25 InnoDB: The InnoDB memory heap is disabled
+120627 13:49:25 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120627 13:49:25 InnoDB: Compressed tables use zlib 1.2.3
+120627 13:49:25 InnoDB: Initializing buffer pool, size = 128.0M
+120627 13:49:25 InnoDB: Completed initialization of buffer pool
+120627 13:49:25 InnoDB: highest supported file format is Barracuda.
+120627 13:49:26  InnoDB: Waiting for the background threads to start
+120627 13:49:27 InnoDB: 1.1.8 started; log sequence number 4249952
+120627 13:49:28 [Note] Event Scheduler: Loaded 0 events
+120627 13:49:28 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120627 13:49:28 [Note] wampmysqld: Normal shutdown
+
+120627 13:49:28 [Note] Event Scheduler: Purging the queue. 0 events
+120627 13:49:28  InnoDB: Starting shutdown...
+120627 13:49:28  InnoDB: Shutdown completed; log sequence number 4249952
+120627 13:49:28 [Note] wampmysqld: Shutdown complete
+
+120627 13:49:30 [Note] Plugin 'FEDERATED' is disabled.
+120627 13:49:30 InnoDB: The InnoDB memory heap is disabled
+120627 13:49:30 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120627 13:49:30 InnoDB: Compressed tables use zlib 1.2.3
+120627 13:49:30 InnoDB: Initializing buffer pool, size = 128.0M
+120627 13:49:30 InnoDB: Completed initialization of buffer pool
+120627 13:49:30 InnoDB: highest supported file format is Barracuda.
+120627 13:49:30  InnoDB: Waiting for the background threads to start
+120627 13:49:31 InnoDB: 1.1.8 started; log sequence number 4249952
+120627 13:49:32 [Note] Event Scheduler: Loaded 0 events
+120627 13:49:32 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120627 13:49:57 [Note] wampmysqld: Normal shutdown
+
+120627 13:49:57 [Note] Event Scheduler: Purging the queue. 0 events
+120627 13:49:57  InnoDB: Starting shutdown...
+120627 13:49:57  InnoDB: Shutdown completed; log sequence number 4249952
+120627 13:49:57 [Note] wampmysqld: Shutdown complete
+
+120627 13:49:59 [Note] Plugin 'FEDERATED' is disabled.
+120627 13:49:59 InnoDB: The InnoDB memory heap is disabled
+120627 13:49:59 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120627 13:49:59 InnoDB: Compressed tables use zlib 1.2.3
+120627 13:49:59 InnoDB: Initializing buffer pool, size = 128.0M
+120627 13:49:59 InnoDB: Completed initialization of buffer pool
+120627 13:49:59 InnoDB: highest supported file format is Barracuda.
+120627 13:49:59  InnoDB: Waiting for the background threads to start
+120627 13:50:00 InnoDB: 1.1.8 started; log sequence number 4249952
+120627 13:50:01 [Note] Event Scheduler: Loaded 0 events
+120627 13:50:01 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120628  9:01:18 [Note] Plugin 'FEDERATED' is disabled.
+120628  9:01:18 InnoDB: The InnoDB memory heap is disabled
+120628  9:01:18 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120628  9:01:18 InnoDB: Compressed tables use zlib 1.2.3
+120628  9:01:18 InnoDB: Initializing buffer pool, size = 128.0M
+120628  9:01:18 InnoDB: Completed initialization of buffer pool
+120628  9:01:18 InnoDB: highest supported file format is Barracuda.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+120628  9:01:18  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+InnoDB: Last MySQL binlog file position 0 43543, file name .\mysql-bin.000012
+120628  9:01:19  InnoDB: Waiting for the background threads to start
+120628  9:01:20 InnoDB: 1.1.8 started; log sequence number 4272717
+120628  9:01:21 [Note] Recovering after a crash using mysql-bin
+120628  9:01:21 [Note] Starting crash recovery...
+120628  9:01:21 [Note] Crash recovery finished.
+120628  9:01:21 [Note] Event Scheduler: Loaded 0 events
+120628  9:01:21 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120628  9:52:52 [ERROR] Cannot find or open table elearningdb/phpbb_acl_groups from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:52 [ERROR] Cannot find or open table elearningdb/phpbb_acl_options from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:52 [ERROR] Cannot find or open table elearningdb/phpbb_acl_roles from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_acl_roles_data from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_acl_users from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_attachments from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_banlist from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_bbcodes from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_bookmarks from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_acl_groups from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_bots from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_acl_options from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_config from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_confirm from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_acl_roles from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_disallow from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_acl_roles_data from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_drafts from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_acl_users from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_extension_groups from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_attachments from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_extensions from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_banlist from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_forums from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_bbcodes from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_forums_access from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_bookmarks from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_forums_track from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_forums_watch from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_bots from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_groups from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_config from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_icons from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_confirm from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_lang from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_disallow from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_log from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_drafts from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_login_attempts from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_extension_groups from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_moderator_cache from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_extensions from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_modules from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_forums from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_poll_options from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_forums_access from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_poll_votes from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_forums_track from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_posts from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_forums_watch from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_privmsgs from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_groups from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_privmsgs_folder from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_icons from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_privmsgs_rules from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_lang from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_privmsgs_to from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_log from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_profile_fields from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_login_attempts from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_profile_fields_data from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_moderator_cache from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_profile_fields_lang from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_modules from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_profile_lang from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_poll_options from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_ranks from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_poll_votes from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_reports from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_posts from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:53 [ERROR] Cannot find or open table elearningdb/phpbb_reports_reasons from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_privmsgs from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_search_results from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_privmsgs_folder from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_search_wordlist from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_privmsgs_rules from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_search_wordmatch from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_privmsgs_to from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_sessions from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_profile_fields from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_sessions_keys from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_profile_fields_data from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_sitelist from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_profile_fields_lang from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_smilies from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_profile_lang from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_ranks from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles_imageset from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_reports from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles_imageset_data from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_reports_reasons from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles_template from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_search_results from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles_template_data from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_search_wordlist from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles_theme from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_search_wordmatch from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_topics from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_sessions from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_topics_posted from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_sessions_keys from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_topics_track from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_sitelist from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_topics_watch from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_smilies from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_user_group from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_users from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles_imageset from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_warnings from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles_imageset_data from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_words from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles_template from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_zebra from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles_template_data from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_styles_theme from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_topics from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_topics_posted from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_topics_track from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_topics_watch from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_user_group from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_users from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_warnings from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_words from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628  9:52:54 [ERROR] Cannot find or open table elearningdb/phpbb_zebra from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628 10:58:28 [Note] wampmysqld: Normal shutdown
+
+120628 10:58:28 [Note] Event Scheduler: Purging the queue. 0 events
+120628 10:58:28  InnoDB: Starting shutdown...
+120628 10:58:29  InnoDB: Shutdown completed; log sequence number 4277434
+120628 10:58:29 [Note] wampmysqld: Shutdown complete
+
+120628 11:00:59 [Note] Plugin 'FEDERATED' is disabled.
+120628 11:00:59 InnoDB: The InnoDB memory heap is disabled
+120628 11:00:59 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120628 11:00:59 InnoDB: Compressed tables use zlib 1.2.3
+120628 11:00:59 InnoDB: Initializing buffer pool, size = 128.0M
+120628 11:01:00 InnoDB: Completed initialization of buffer pool
+120628 11:01:00 InnoDB: highest supported file format is Barracuda.
+120628 11:01:01  InnoDB: Waiting for the background threads to start
+120628 11:01:02 InnoDB: 1.1.8 started; log sequence number 1595675
+120628 11:01:02 [Note] Recovering after a crash using mysql-bin
+120628 11:01:02 [Note] Starting crash recovery...
+120628 11:01:02 [Note] Crash recovery finished.
+120628 11:01:03 [Note] Event Scheduler: Loaded 0 events
+120628 11:01:03 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120628 11:01:22 [ERROR] Cannot find or open table db_e_learning/phpbb_config from
+the internal data dictionary of InnoDB though the .frm file for the
+table exists. Maybe you have deleted and recreated InnoDB data
+files but have forgotten to delete the corresponding .frm files
+of InnoDB tables, or you have moved .frm files to another database?
+or, the table contains indexes that this version of the engine
+doesn't support.
+See http://dev.mysql.com/doc/refman/5.5/en/innodb-troubleshooting.html
+how you can resolve the problem.
+
+120628 11:02:23 [Note] wampmysqld: Normal shutdown
+
+120628 11:02:23 [Note] Event Scheduler: Purging the queue. 0 events
+120628 11:02:23  InnoDB: Starting shutdown...
+120628 11:02:23  InnoDB: Shutdown completed; log sequence number 1595675
+120628 11:02:24 [Note] wampmysqld: Shutdown complete
+
+120628 11:02:44 [Note] Plugin 'FEDERATED' is disabled.
+120628 11:02:44 InnoDB: The InnoDB memory heap is disabled
+120628 11:02:44 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120628 11:02:44 InnoDB: Compressed tables use zlib 1.2.3
+120628 11:02:44 InnoDB: Initializing buffer pool, size = 128.0M
+120628 11:02:44 InnoDB: Completed initialization of buffer pool
+120628 11:02:44 InnoDB: highest supported file format is Barracuda.
+120628 11:02:45  InnoDB: Waiting for the background threads to start
+120628 11:02:46 InnoDB: 1.1.8 started; log sequence number 4277434
+120628 11:02:47 [Note] Event Scheduler: Loaded 0 events
+120628 11:02:47 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120628 11:07:55 [Note] wampmysqld: Normal shutdown
+
+120628 11:07:55 [Note] Event Scheduler: Purging the queue. 0 events
+120628 11:07:55  InnoDB: Starting shutdown...
+120628 11:07:56  InnoDB: Shutdown completed; log sequence number 4284882
+120628 11:07:56 [Note] wampmysqld: Shutdown complete
+
+120628 11:08:39 [Note] Plugin 'FEDERATED' is disabled.
+120628 11:08:40 InnoDB: The InnoDB memory heap is disabled
+120628 11:08:40 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120628 11:08:40 InnoDB: Compressed tables use zlib 1.2.3
+120628 11:08:40 InnoDB: Initializing buffer pool, size = 128.0M
+120628 11:08:40 InnoDB: Completed initialization of buffer pool
+120628 11:08:40 InnoDB: highest supported file format is Barracuda.
+120628 11:08:40  InnoDB: Waiting for the background threads to start
+120628 11:08:41 InnoDB: 1.1.8 started; log sequence number 4284882
+120628 11:08:42 [Note] Event Scheduler: Loaded 0 events
+120628 11:08:42 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120628 11:16:08 [Note] wampmysqld: Normal shutdown
+
+120628 11:16:08 [Note] Event Scheduler: Purging the queue. 0 events
+120628 11:16:08  InnoDB: Starting shutdown...
+120628 11:16:08  InnoDB: Shutdown completed; log sequence number 4288270
+120628 11:16:08 [Note] wampmysqld: Shutdown complete
+
+120628 11:19:00 [Note] Plugin 'FEDERATED' is disabled.
+120628 11:19:00 InnoDB: The InnoDB memory heap is disabled
+120628 11:19:00 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120628 11:19:00 InnoDB: Compressed tables use zlib 1.2.3
+120628 11:19:00 InnoDB: Initializing buffer pool, size = 128.0M
+120628 11:19:00 InnoDB: Completed initialization of buffer pool
+120628 11:19:00 InnoDB: highest supported file format is Barracuda.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+120628 11:19:00  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+InnoDB: Last MySQL binlog file position 0 6278, file name .\mysql-bin.000015
+120628 11:19:01  InnoDB: Waiting for the background threads to start
+120628 11:19:02 InnoDB: 1.1.8 started; log sequence number 4288270
+120628 11:19:02 [Note] Recovering after a crash using mysql-bin
+120628 11:19:02 [Note] Starting crash recovery...
+120628 11:19:02 [Note] Crash recovery finished.
+120628 11:19:02 [Note] Event Scheduler: Loaded 0 events
+120628 11:19:02 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120628 11:43:11 [Note] wampmysqld: Normal shutdown
+
+120628 11:43:11 [Note] Event Scheduler: Purging the queue. 0 events
+120628 11:43:11  InnoDB: Starting shutdown...
+120628 11:43:12  InnoDB: Shutdown completed; log sequence number 4291658
+120628 11:43:12 [Note] wampmysqld: Shutdown complete
+
+120628 11:56:58 [Note] Plugin 'FEDERATED' is disabled.
+120628 11:56:58 InnoDB: The InnoDB memory heap is disabled
+120628 11:56:58 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120628 11:56:58 InnoDB: Compressed tables use zlib 1.2.3
+120628 11:56:58 InnoDB: Initializing buffer pool, size = 128.0M
+120628 11:56:58 InnoDB: Completed initialization of buffer pool
+120628 11:56:58 InnoDB: highest supported file format is Barracuda.
+120628 11:56:59  InnoDB: Waiting for the background threads to start
+120628 11:57:00 InnoDB: 1.1.8 started; log sequence number 4291658
+120628 11:57:01 [Note] Event Scheduler: Loaded 0 events
+120628 11:57:01 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120628 11:59:45 [Note] wampmysqld: Normal shutdown
+
+120628 11:59:45 [Note] Event Scheduler: Purging the queue. 0 events
+120628 11:59:45  InnoDB: Starting shutdown...
+120628 11:59:46  InnoDB: Shutdown completed; log sequence number 4295992
+120628 11:59:46 [Note] wampmysqld: Shutdown complete
+
+120628 12:00:14 [Note] Plugin 'FEDERATED' is disabled.
+120628 12:00:14 InnoDB: The InnoDB memory heap is disabled
+120628 12:00:14 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120628 12:00:14 InnoDB: Compressed tables use zlib 1.2.3
+120628 12:00:14 InnoDB: Initializing buffer pool, size = 128.0M
+120628 12:00:14 InnoDB: Completed initialization of buffer pool
+120628 12:00:15 InnoDB: highest supported file format is Barracuda.
+120628 12:00:15  InnoDB: Waiting for the background threads to start
+120628 12:00:16 InnoDB: 1.1.8 started; log sequence number 4350500
+120628 12:00:17 [Note] Event Scheduler: Loaded 0 events
+120628 12:00:17 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120628 12:43:17 [Note] wampmysqld: Normal shutdown
+
+120628 12:43:17 [Note] Event Scheduler: Purging the queue. 0 events
+120628 12:43:17  InnoDB: Starting shutdown...
+120628 12:43:19  InnoDB: Shutdown completed; log sequence number 4355965
+120628 12:43:19 [Note] wampmysqld: Shutdown complete
+
+120628 21:39:40 [Note] Plugin 'FEDERATED' is disabled.
+120628 21:39:40 InnoDB: The InnoDB memory heap is disabled
+120628 21:39:40 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120628 21:39:40 InnoDB: Compressed tables use zlib 1.2.3
+120628 21:39:40 InnoDB: Initializing buffer pool, size = 128.0M
+120628 21:39:40 InnoDB: Completed initialization of buffer pool
+120628 21:39:40 InnoDB: highest supported file format is Barracuda.
+120628 21:39:41  InnoDB: Waiting for the background threads to start
+120628 21:39:42 InnoDB: 1.1.8 started; log sequence number 4355965
+120628 21:39:42 [Note] Event Scheduler: Loaded 0 events
+120628 21:39:42 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120629  5:19:14 [Note] wampmysqld: Normal shutdown
+
+120629  5:19:15 [Note] Event Scheduler: Purging the queue. 0 events
+120629  5:19:17  InnoDB: Starting shutdown...
+120629 11:24:28 [Note] Plugin 'FEDERATED' is disabled.
+120629 11:24:28 InnoDB: The InnoDB memory heap is disabled
+120629 11:24:28 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120629 11:24:28 InnoDB: Compressed tables use zlib 1.2.3
+120629 11:24:28 InnoDB: Initializing buffer pool, size = 128.0M
+120629 11:24:28 InnoDB: Completed initialization of buffer pool
+120629 11:24:28 InnoDB: highest supported file format is Barracuda.
+120629 11:24:29  InnoDB: Waiting for the background threads to start
+120629 11:24:30 InnoDB: 1.1.8 started; log sequence number 4468692
+120629 11:24:31 [Note] Event Scheduler: Loaded 0 events
+120629 11:24:31 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120630  1:34:48 [Note] wampmysqld: Normal shutdown
+
+120702 10:38:27 [Note] Plugin 'FEDERATED' is disabled.
+120702 10:38:28 InnoDB: The InnoDB memory heap is disabled
+120702 10:38:28 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120702 10:38:28 InnoDB: Compressed tables use zlib 1.2.3
+120702 10:38:28 InnoDB: Initializing buffer pool, size = 128.0M
+120702 10:38:28 InnoDB: Completed initialization of buffer pool
+120702 10:38:28 InnoDB: highest supported file format is Barracuda.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+120702 10:38:28  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+InnoDB: Last MySQL binlog file position 0 32937, file name .\mysql-bin.000020
+120702 10:38:30  InnoDB: Waiting for the background threads to start
+120702 10:38:31 InnoDB: 1.1.8 started; log sequence number 4477099
+120702 10:38:31 [Note] Recovering after a crash using mysql-bin
+120702 10:38:31 [Note] Starting crash recovery...
+120702 10:38:31 [Note] Crash recovery finished.
+120702 10:38:32 [Note] Event Scheduler: Loaded 0 events
+120702 10:38:32 [Note] wampmysqld: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
