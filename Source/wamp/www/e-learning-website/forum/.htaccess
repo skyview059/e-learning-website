@@ -1,8 +1,0 @@
-RewriteEngine on
-RewriteBase /e-learning-website/forum/
-
-# Standard phpBB3 files matching
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} \.php$
-RewriteRule (.+)\.php$ index.php?rb_v=$1&%{QUERY_STRING} [L]
