@@ -4,8 +4,8 @@ class JConfig {
 	var $editor = 'tinymce';
 	var $list_limit = '20';
 	var $helpurl = 'http://help.joomla.org';
-	var $debug = '1';
-	var $debug_lang = '1';
+	var $debug = '0';
+	var $debug_lang = '0';
 	var $sef = '0';
 	var $sef_rewrite = '0';
 	var $sef_suffix = '0';
@@ -51,8 +51,8 @@ class JConfig {
 	var $session_handler = 'database';
 	var $password = '';
 	var $sitename = 'onthi.com';
-	var $MetaDesc = 'Joomla! - the dynamic portal engine and content management system';
-	var $MetaKeys = 'joomla, Joomla';
+	var $MetaDesc = 'onthi.com';
+	var $MetaKeys = 'onthi, hocthi, luyenthi';
 	var $offline_message = 'Website đang trong quá trình bảo trì, các bạn quay lại sau nhé ^^';
 }
 ?>
