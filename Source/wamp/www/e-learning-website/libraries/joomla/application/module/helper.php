@@ -284,7 +284,10 @@ class JModuleHelper
 
 		if (null === ($modules = $db->loadObjectList())) {
 			JError::raiseWarning( 'SOME_ERROR_CODE', JText::_( 'Error Loading Modules' ) . $db->getErrorMsg());
-			return false;
+			// Add code - MinhNT - Start
+			$a = false;			
+			return $a;
+			// Add code - MinhNT - End
 		}
 
 		$total = count($modules);
