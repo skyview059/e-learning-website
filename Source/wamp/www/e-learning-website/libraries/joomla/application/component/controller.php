@@ -289,15 +289,14 @@ class JController extends JObject
 		$viewType	= $document->getType();
 		$viewName	= JRequest::getCmd( 'view', $this->getName() );
 		$viewLayout	= JRequest::getCmd( 'layout', 'default' );
-
+		
 		$view = & $this->getView( $viewName, $viewType, '', array( 'base_path'=>$this->_basePath));
 
 		// Get/Create the model
 		if ($model = & $this->getModel($viewName)) {
 			// Push the model into the view (as default)
-			$view->setModel($model, true);
+			$view->setModel($model, true);		
 		}
-
 		// Set the layout
 		$view->setLayout($viewLayout);
 
@@ -339,6 +338,7 @@ class JController extends JObject
 	 */
 	function &getModel( $name = '', $prefix = '', $config = array() )
 	{
+
 		if ( empty( $name ) ) {
 			$name = $this->getName();
 		}
@@ -351,7 +351,6 @@ class JController extends JObject
 		{
 			// task is a reserved state
 			$model->setState( 'task', $this->_task );
-
 			// Lets get the application object and set menu information if its available
 			$app	= &JFactory::getApplication();
 			$menu	= &$app->getMenu();
@@ -427,7 +426,6 @@ class JController extends JObject
 			}
 			$name = strtolower( $r[1] );
 		}
-
 		return $name;
 	}
 
