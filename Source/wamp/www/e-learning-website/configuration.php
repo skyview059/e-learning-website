@@ -12,7 +12,7 @@ class JConfig {
 	var $feed_limit = '10';
 	var $feed_email = 'author';
 	var $secret = 'zH2kdkNkOMy21GqF';
-	var $gzip = '1';
+	var $gzip = '0';
 	var $error_reporting = '-1';
 	var $xmlrpc_server = '0';
 	var $log_path = 'C:\\wamp\\www\\e-learning-website\\logs';
