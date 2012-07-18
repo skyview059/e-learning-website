@@ -7,7 +7,7 @@ if (!defined('_ARTX_FUNCTIONS')) {
 	define('_ARTX_FUNCTIONS', 1);
 
 	function artxHasMessages()
-{
+	{
 		global $mainframe;
 		$messages = $mainframe->getMessageQueue();
 
@@ -20,7 +20,7 @@ if (!defined('_ARTX_FUNCTIONS')) {
 	}
 
 	function artxUrlToHref($url)
-{
+	{
 		$result = '';
 		$p = parse_url($url);
 		if (isset($p['scheme']) && isset($p['host'])) {
