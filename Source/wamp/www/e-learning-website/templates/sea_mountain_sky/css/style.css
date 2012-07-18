@@ -1616,7 +1616,9 @@ input, select
   border: 0;
   float: left;
   overflow: hidden;
-  width: 497px;
+  /*MinhNT - Modify - Begin*/
+  width: 745px;
+  /*MinhNT - Modify - End*/
 }
 
 /* end LayoutCell */

@@ -67,10 +67,11 @@ require_once dirname(__FILE__) . DS . 'functions.php';
 <jdoc:include type="component" />
 
 </div>
-<div class="sidebar2">
+<!-- MinhNT - Remove - Begin-->
+<!--<div class="sidebar2">
 <jdoc:include type="modules" name="right" style="artblock" />
-
-</div>
+</div>-->
+<!-- MinhNT - Remove - End-->
 
 </div>
 <div class="cleared"></div>
