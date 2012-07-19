@@ -32,63 +32,51 @@ require_once dirname(__FILE__) . DS . 'functions.php';
     <div class="Sheet-cr"><div></div></div>
     <div class="Sheet-cc"></div>
     <div class="Sheet-body">
-	<div class="Header">
-		<div class="Header-jpeg"></div>
-	<div class="logo">
-	 <h1 id="name-text" class="logo-name"><a href="<?php echo $this->baseurl ?>/">Onthi.com</a></h1>
-	 <div id="slogan-text" class="logo-text">Let passion lead your success</div>
-	</div>
-
-
-	</div>
-	<jdoc:include type="modules" name="user3" />
-	<div class="contentLayout">
-	<div class="sidebar1">
-	<jdoc:include type="modules" name="left" style="artblock" />
-
-	</div>
-	<div class="content">
-	<?php if ($this->countModules('breadcrumb') || artxHasMessages()) : ?>
-	<div class="Post">
-		<div class="Post-body">
-			<div class="Post-inner">
-			<div class="PostContent">
-				<jdoc:include type="modules" name="breadcrumb" />
-				<jdoc:include type="message" />
-
+		<div class="Header">
+			<div class="Header-jpeg"></div>
+			<div class="logo">
+				<h1 id="name-text" class="logo-name"><a href="<?php echo $this->baseurl ?>/">Onthi.com</a></h1>
+				<div id="slogan-text" class="logo-text">Let passion lead your success</div>
+			</div>
+		</div>
+		<jdoc:include type="modules" name="user3" />
+		<div class="contentLayout">
+			<div class="sidebar1">
+				<jdoc:include type="modules" name="left" style="artblock" />
+			</div>
+			<div class="content">
+<!-- MinhNT - Add new - Begin -->			
+<?php 			if( JRequest::getVar('view') == 'frontpage') 
+				{        ?>
+				<!-- bạn đang ở trang chủ
+				 thực hiện bất cứ công việc gì mà bạn muốn -->
+<?php			
+				echo "clgt ?";
+?>		
+<?php 			} else { ?>
+				<!-- bạn không còn ở trang chủ
+				 hiển thị mainbody như bình thường -->
+				<jdoc:include type=”component” />
+<?php 			} 		 ?>
+<!-- MinhNT - Add new - End -->
 			</div>
 			<div class="cleared"></div>
+			<div class="Footer">
+				<div class="Footer-inner">
+					<!-- MinhNT - Replace - Begin -->
+					<div class="Footer-text"><p>Bản quyền &copy; 2012 <a href="#">Onthi.com</a></p>
+					<!-- MinhNT - Replace - Begin -->
+					</div>
+				</div>
+				<div class="Footer-background"></div>
 			</div>
-		</div>
-	</div>
-	<?php endif; ?>
-	<jdoc:include type="component" />
-
-	</div>
-	<!-- MinhNT - Remove - Begin-->
-	<!--<div class="sidebar2">
-	<jdoc:include type="modules" name="right" style="artblock" />
-	</div>-->
-	<!-- MinhNT - Remove - End-->
-
-	</div>
-	<div class="cleared"></div>
-	<div class="Footer">
-	<div class="Footer-inner">
-	<!-- MinhNT - Replace - Begin -->
-	<div class="Footer-text"><p>Bản quyền &copy; 2012 <a href="#">Onthi.com</a></p>
-	<!-- MinhNT - Replace - Begin -->
-	</div>
-	 </div>
-	 <div class="Footer-background"></div>
-	</div>
 
 		</div>
-</div>
+	</div>
 <!-- MinhNT - Remove - Begin -->
 <!--  <p class="page-footer">Trang web học tập trực tuyến</p> -->
 <!-- MinhNT - Remove - End -->
 </div>
-
+</div>
 </body> 
 </html>
