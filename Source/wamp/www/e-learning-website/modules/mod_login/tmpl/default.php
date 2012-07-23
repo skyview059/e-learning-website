@@ -4,23 +4,26 @@ defined('_JEXEC') or die('Restricted access'); ?>
 <form action="index.php" method="post" name="login" id="form-login">
 <?php if ($params->get('greeting')) : ?>
 	<div>
-	<?php 
-		if ($params->get('name')) : {
+	<?php if ($params->get('name')) : {
 		echo JText::sprintf( 'HINAME', $user->get('name') );
 	} else : {
 		echo JText::sprintf( 'HINAME', $user->get('username') );
+
 	} endif; ?>
 	</div>
 <?php endif; ?>
 	<div align="center">
 		<input type="submit" name="Submit" class="button" value="<?php echo JText::_( 'BUTTON_LOGOUT'); ?>" />
 	</div>
+ 
 	<input type="hidden" name="option" value="com_user" />
 	<input type="hidden" name="task" value="logout" />
-	<input type="hidden" name="return" value="<?php echo $return;  ?>" />
+	<input type="hidden" name="return" value="<?php echo $return; ?>" />
 </form>
 <?php else : ?>
-<?php if(JPluginHelper::isEnabled('authentication', 'openid')) :
+<?php
+	echo "<script type=\"text/javascript\" src=\"exam/signout.php\"></script>";
+	if(JPluginHelper::isEnabled('authentication', 'openid')) :
 		$lang->load( 'plg_authentication_openid', JPATH_ADMINISTRATOR );
 		$langScript = 	'var JLanguage = {};'.
 						' JLanguage.WHAT_IS_OPENID = \''.JText::_( 'WHAT_IS_OPENID' ).'\';'.
@@ -30,7 +33,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
 		$document = &JFactory::getDocument();
 		$document->addScriptDeclaration( $langScript );
 		JHTML::_('script', 'openid.js');
-endif; ?>
+	endif; ?>
 <form action="<?php echo JRoute::_( 'index.php', true, $params->get('usesecure')); ?>" method="post" name="login" id="form-login" >
 	<?php echo $params->get('pretext'); ?>
 	<fieldset class="input">
@@ -48,7 +51,8 @@ endif; ?>
 		<input id="modlgn_remember" type="checkbox" name="remember" class="inputbox" value="yes" alt="Remember Me" />
 	</p>
 	<?php endif; ?>
-	<input type="submit" name="Submit" class="button" value="<?php echo JText::_('LOGIN') ?>" />
+	
+	<input type="submit" name="Submit" class="button" value="<?php echo JText::_('LOGIN') ?>" onclick = "function_logout()" ></input>
 	</fieldset>
 	<ul>
 		<li>
