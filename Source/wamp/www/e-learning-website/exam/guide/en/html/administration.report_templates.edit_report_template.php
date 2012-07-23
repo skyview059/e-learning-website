@@ -9,19 +9,19 @@ require_once('header.inc.php');
 <table class="cmn">
     <tbody>
         <tr>
-            <td class="td-bg">Template ID:</td>
+            <td class="td-bg">ID mâ~u ba´o ca´o:</td>
             <td>[1]</td>
         </tr>
         <tr>
-            <td class="td-bg">Template name:</td>
+            <td class="td-bg">Tên ba´o ca´o:</td>
             <td>[2]</td>
         </tr>
         <tr>
-            <td class="td-bg">Template description:</td>
+            <td class="td-bg">Mô ta? mâ~u ba´o ca´o:</td>
             <td>[3]</td>
         </tr>
         <tr>
-            <td class="td-bg">Report body:</td>
+            <td class="td-bg">Nô?i dung ba´o ca´o:</td>
             <td>[4]</td>
         </tr>
     </tbody>
