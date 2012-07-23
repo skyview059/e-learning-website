@@ -1,8 +1,7 @@
-<HTML> 
-<HEAD> 
-<TITLE>::Welcome to PHP</TITLE> 
-
-</HEAD> 
+<HTML>  
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
 <BODY> 
 <h4>Function get Question</h4> 
 <?php 
@@ -16,13 +15,14 @@ function getQuestion($subject,  $num) //$subject : mon  hoc ,  $num  : so luong 
 	$connectserver = mysql_connect($host, $user, $pass);
 	if ( $connectserver ) 
     {
+		mysql_query('SET character_set_client=utf8');
+		mysql_query('SET collation_connection=utf8_general_ci'); 
 		mysql_select_db("db_e_learning",$connectserver);
 		$sql = "SELECT * FROM `jos_questions` WHERE subjectiD = '".$subject."'ORDER BY RAND( ) LIMIT ".$num;
 		$query = mysql_query($sql);
-		echo ($query);
 		if(mysql_num_rows($query) == 0)
 		{
-			echo "Chua co du lieu";
+			echo "<br>Khong tao duoc de";
 		}
 		else
 		{
@@ -78,13 +78,14 @@ function get_answer_correct($ID)
 	$connectserver = mysql_connect($host, $user, $pass);
 	if ( $connectserver ) 
     {
+		mysql_query('SET character_set_client=utf8');
+		mysql_query('SET collation_connection=utf8_general_ci'); 
 		mysql_select_db("db_e_learning",$connectserver);
 		$sql = "SELECT * FROM `jos_answers` WHERE `questionid` = '".$ID."' AND `answer_correct` = 1";
 		$query = mysql_query($sql);
-		echo ($query);
 		if(mysql_num_rows($query) == 0)
 		{
-			echo "Chua co du lieu";
+			echo "<br>Chua co cau hoi dung";
 		}
 		else
 		{
@@ -108,13 +109,13 @@ function get_answer($ID)
 	$connectserver = mysql_connect($host, $user, $pass);
 	if ( $connectserver ) 
     {
+		mysql_query("SET character_set_results=utf8", $connectserver);
 		mysql_select_db("db_e_learning",$connectserver);
 		$sql = "SELECT * FROM `jos_answers` WHERE `questionid` = '".$ID."'";
 		$query = mysql_query($sql);
-		echo ($query);
 		if(mysql_num_rows($query) == 0)
 		{
-			echo "Chua co du lieu";
+			echo "<br>Khong lay duoc cau hoi";
 		}
 		else
 		{

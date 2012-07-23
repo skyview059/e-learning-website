@@ -1,4 +1,7 @@
 <html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
 <body>
 
 <?php
@@ -50,10 +53,11 @@ include("getQuestion.php");
 	$connectserver = mysql_connect($host, $user, $pass);
 	if ( $connectserver ) 
     {
+		mysql_query('SET character_set_client=utf8');
+		mysql_query('SET collation_connection=utf8_general_ci'); 
 		mysql_select_db("db_e_learning",$connectserver);
 		$sql = "SELECT subject_name FROM `jos_subjects`";
 		$query = mysql_query($sql);
-		echo ($query);
 		if(mysql_num_rows($query) == 0)
 		{
 			echo "Khong lay duoc subject name";
@@ -80,13 +84,14 @@ function get_subject_ID($subject)
 	$connectserver = mysql_connect($host, $user, $pass);
 	if ( $connectserver ) 
     {
+		mysql_query('SET character_set_client=utf8');
+		mysql_query('SET collation_connection=utf8_general_ci'); 
 		mysql_select_db("db_e_learning",$connectserver);
-		$sql = "SELECT subjectid FROM `jos_subjects` where subject_name  = '".$subject."'";
+		$sql = "SELECT  subjectid FROM `jos_subjects` where subject_name = \"".$subject."\"";
 		$query = mysql_query($sql);
-		echo ($query);
 		if(mysql_num_rows($query) == 0)
 		{
-			echo "Khong lay duoc subject id";
+			echo "Khong lay duoc subject id '$sql'   ";
 		}
 		else
 		{
