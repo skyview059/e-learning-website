@@ -25,7 +25,6 @@ class theoryContentModeltheoryContent extends JModel
 	 * Gets the greeting
 	 * @return string The greeting to be displayed to the user
 	 */
-<<<<<<< .mine
 	function getChapterName()
 	{
 		$Itemid=$_GET['Itemid'];
@@ -68,8 +67,6 @@ class theoryContentModeltheoryContent extends JModel
 	
 	
 	 
-=======
->>>>>>> .r223
 	function getVideo()
 	{
 		$theory=$_GET['theory'];
@@ -90,12 +87,17 @@ class theoryContentModeltheoryContent extends JModel
 		$query = "SELECT theory_file_dat_path FROM #__theories WHERE theory_name =\"" . $theory . "\"";
 		$db->setQuery( $query );
 		$dat = $db->loadResult();
-		
-		
-		return $dat;
-		
-		
-		
+		$file = fopen($dat, "r") or exit("Unable to open file!");
+		//Output a line of the file until the end is reached
+		while(!feof($file)){
+			  $buf = fgets($file);
+			  $output[] = $buf;
+		}
+		fclose($file);
+		for($i=0; $i<sizeof($output); $i++)
+		{
+					echo $output[$i] . "<br/>";
+		}
 	}
 }
 

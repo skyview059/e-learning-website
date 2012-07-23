@@ -25,7 +25,6 @@ class theorycontentViewtheoryContent extends JView
 	function display($tpl = null)
 	{
 		$model =& $this->getModel();
-<<<<<<< .mine
 		
 		
 		if(isset($_GET['Itemid'])){
@@ -58,38 +57,10 @@ class theorycontentViewtheoryContent extends JView
 			<?php		
 		}
 		parent::display($tpl);	
-=======
->>>>>>> .r223
-		$file = fopen($dat, "r") or exit("Unable to open file!");
-		//Output a line of the file until the end is reached
-		while(!feof($file)){
-			  $buf = fgets($file);
-			  $output[] = $buf;
-		}
-		fclose($file);
-		for($i=0; $i<sizeof($output); $i++)
-		{
-				echo  $output[$i] . "<br/>";
-		}
-
-		parent::display($tpl);
 		
-<<<<<<< .mine
-=======
-		<link href="http://localhost/thu%20vien%20ly%20thuyet/video-js/video-js.css" rel="stylesheet">
-		<script src="http://localhost/thu%20vien%20ly%20thuyet/video-js/video.js"></script>
-		 <video id="my_video_1" class="video-js vjs-default-skin" controls
-		  preload="auto" width="480" height="300" poster="my_video_poster.png"
-		  data-setup="{}">
-			  <source src="<?php $content  ?>" type='video/flv'>
-			</video>
-			<?php
-			
->>>>>>> .r223
+		
 	}
 }
-
-
 ?>
 
   
