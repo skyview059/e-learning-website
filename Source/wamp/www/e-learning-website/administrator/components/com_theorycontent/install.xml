@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="component" version="1.5.0">
-	<name>theory Content</name>
+	<name>Theory Content</name>
 	<!-- The following elements are optional and free of formatting conttraints -->
 	<creationDate>2007-02-22</creationDate>
 	<author>Huy Nguyen Tien</author>
@@ -29,16 +29,7 @@
 		<filename>views/theoryContent/tmpl/index.html</filename>
 	</files>
 
-	<install>
-		<sql>
-			<file charset="utf8" driver="mysql">install.sql</file>
-		</sql>
-	</install>
-	<uninstall>
-		<sql>
-			<file charset="utf8" driver="mysql">uninstall.sql</file>
-		</sql>
-	</uninstall>
+	
 
 	<administration>
 		<!-- Administration Menu Section -->
@@ -48,8 +39,6 @@
 		<files folder="admin">
 			<filename>theoryContent.php</filename>
 			<filename>index.html</filename>
-			<filename>install.sql</filename>
-			<filename>uninstall.sql</filename>
 		</files>  
 	</administration>
 </install>
