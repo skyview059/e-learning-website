@@ -29,8 +29,11 @@ class theoryContentModeltheoryContent extends JModel
 	 */
 	function getTheoryName()
 	{
-		$id=$_GET['id'];
-		
+		$id=$_GET['Itemid'];
+		//$query = 'SELECT name FROM #__menu WHERE id = $id';
+//		$db->setQuery( $query );
+//		$theoryName = $db->loadResult();
+
 		return $id;
 	}
 	 
