@@ -41,7 +41,7 @@ class theorycontentViewtheoryContent extends JView
 		if(isset($_GET['theory'])){ 
 		
 			$theory=$_GET['theory'];
-			echo "<h4><a href=\"index.php?option=com_theorycontent&theory=$theory\"\">" . $theory . "</a></h4>";		
+			echo "<h4><a href=\"http://localhost/e-learning-website/index.php?option=com_theorycontent&theory=$theory\"\">" . $theory . "</a></h4>";		
 			$dat = $model->getDat();
 			$video = $model->getVideo();
 			
