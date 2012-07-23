@@ -1,11 +1,12 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);  
 require_once('const.inc.php');
 require_once('config.inc.php'); 
 ini_set('session.gc_maxlifetime', '36000');
 session_set_cookie_params(0);  
 session_name(SYSTEM_SESSION_ID);
 session_start();
-session_register('MAIN');
+//session_register('MAIN');
 if(!isset($_SESSION['MAIN']))
  $_SESSION['MAIN'] = array();
 $G_SESSION = &$_SESSION['MAIN'];
@@ -79,4 +80,5 @@ $g_vars['page']['errors'] = '';
 $g_vars['page']['errors_fatal'] = false;
 $g_vars['page']['notifications'] = '';
 $g_vars['page']['rowno'] = 0; 
+
 ?>

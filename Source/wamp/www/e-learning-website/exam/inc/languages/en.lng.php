@@ -100,7 +100,7 @@ $lngstr['label_atype_random'] = 'Câu hỏi ngẫu nhiên';
 $lngstr['page_all']['mnemonic_code'] = 'Mã gợi ý:';
 
 $lngstr['item_separator'] = ' - ';
-$lngstr['page_title_signin'] = ' Đăng nhập';
+$lngstr['page_title_signin'] = ' Xác thực tài khoản';
 $lngstr['page_title_register'] = 'Đăng ký';
 $lngstr['page_title_lostpassword'] = 'Quên mật khẩu';
 $lngstr['page_title_panel'] = 'Làm Bài';
@@ -620,7 +620,7 @@ $lngstr['page_signin_box_signin_intro'] = '<font color="red">Vui lòng đăng nh
 $lngstr['page_signin_box_signin'] = $lngstr['label_username'];
 $lngstr['page_signin_box_password'] = $lngstr['label_password'];
 $lngstr['page_signin_box_register_intro'] = '<b>Nếu bạn chưa có tài khoản?</b>Hãy đăng ký ngay bằng cách <a href="register.php">Kích Vào Đây</a>.';
-$lngstr['page_signin_box_lostpassword_intro'] = '<b>Bạn đã có tài khoản? </b> Nếu bạn <a href="lostpassword.php">quên mật khẩu</a>, Chúng tôi sẽ gửi lại qua mail của bạn.<br><br><b><H4><font color="red"> Hãy Đăng ký Thành viên để sử dụng hết chức năng nhé</font>';
+$lngstr['page_signin_box_lostpassword_intro'] = '<b>Bạn đã có tài khoản? </b> Nếu bạn <a href="lostpassword.php">quên mật khẩu</a>, Chúng tôi sẽ gửi lại qua mail của bạn.<br><br><b><H4><font color="red"> Hãy đăng nhập để làm bfi thi</font>';
 $lngstr['page_signin']['test_code'] = 'Mã bài kiểm tra:';
 
 // Forgot password page:
