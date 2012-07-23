@@ -4,7 +4,8 @@ defined('_JEXEC') or die('Restricted access'); ?>
 <form action="index.php" method="post" name="login" id="form-login">
 <?php if ($params->get('greeting')) : ?>
 	<div>
-	<?php if ($params->get('name')) : {
+	<?php 
+		if ($params->get('name')) : {
 		echo JText::sprintf( 'HINAME', $user->get('name') );
 	} else : {
 		echo JText::sprintf( 'HINAME', $user->get('username') );
@@ -14,10 +15,9 @@ defined('_JEXEC') or die('Restricted access'); ?>
 	<div align="center">
 		<input type="submit" name="Submit" class="button" value="<?php echo JText::_( 'BUTTON_LOGOUT'); ?>" />
 	</div>
-
 	<input type="hidden" name="option" value="com_user" />
 	<input type="hidden" name="task" value="logout" />
-	<input type="hidden" name="return" value="<?php echo $return; ?>" />
+	<input type="hidden" name="return" value="<?php echo $return;  ?>" />
 </form>
 <?php else : ?>
 <?php if(JPluginHelper::isEnabled('authentication', 'openid')) :

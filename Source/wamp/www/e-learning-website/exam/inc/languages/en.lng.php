@@ -4,15 +4,7 @@
 // ----------------------------------------------------------------------
 // Branding:
 $lngstr['branding']['top_logo'] = '<img src="images/logo.jpg" width=200 height=40>';
-$lngstr['branding']['btm_sign'] = '<a target="_blank" href="/">Trang chủ</a> 
-| <a target="_blank" href="/diendan/">Diễn đàn</a> 
-| <a target="_blank" href="/nhac/">Nghe nhạc</a> 
-| <a target="_blank" href="/soft/">Phần mềm</a> 
-| <a target="_blank" href="/luubut/">Lưu bút</a> 
-| <a target="_blank" href="/uocnguyen/">Ước nguyện</a> 
-| <a target="_blank" href="/tintuc/">Tin tức</a> 
-| <a target="_blank" href="/tudien/">Từ điển</a>
-<br>Copyright &copy; TânPhú.Net 2008. All Rights Reserved.';
+$lngstr['branding']['btm_sign'] = '';
 // Sign in page:
 $lngstr['page_signin_box_intro'] = '';
 
@@ -103,9 +95,9 @@ $lngstr['item_separator'] = ' - ';
 $lngstr['page_title_signin'] = ' Xác thực tài khoản';
 $lngstr['page_title_register'] = 'Đăng ký';
 $lngstr['page_title_lostpassword'] = 'Quên mật khẩu';
-$lngstr['page_title_panel'] = 'Làm Bài';
+$lngstr['page_title_panel'] = 'Làm bài thi';
 $lngstr['page_header_panel'] = $lngstr['page_title_panel'];
-$lngstr['page_title_test'] = 'Làm Bài';
+$lngstr['page_title_test'] = 'Làm bài thi';
 $lngstr['page_title_results'] = 'Quản lý Báo cáo';
 $lngstr['page_header_results'] = $lngstr['page_title_results'];
  $lngstr['page_title_results_questions'] = 'Chi tiết câu hỏi';
@@ -120,7 +112,7 @@ $lngstr['page_statistics']['title'] = 'Thống kê';
 $lngstr['page_statistics']['header'] = $lngstr['page_statistics']['title'];
  $lngstr['page_statistics_resultid']['title'] = 'Báo cáo chi tiết';
  $lngstr['page_statistics_resultid']['header'] = 'Báo cáo chi tiết bài kiểm: %s';
-$lngstr['page_title_edittests'] = 'QUản lý bài kiểm';
+$lngstr['page_title_edittests'] = 'Quản lý đề thi';
 $lngstr['page_header_edittests'] = $lngstr['page_title_edittests'];
  $lngstr['page_title_test_settings'] = 'Thiết lập bài kiểm';
  $lngstr['page_header_test_settings'] = $lngstr['page_title_test_settings'];
@@ -135,16 +127,16 @@ $lngstr['page_header_edittests'] = $lngstr['page_title_edittests'];
  $lngstr['page_header_import_questions'] = $lngstr['page_title_import_questions'];
  $lngstr['page_testmanager_stats']['title'] = 'Thống kê bài kiểm';
  $lngstr['page_testmanager_stats']['header'] = $lngstr['page_testmanager_stats']['title'];
-$lngstr['page_title_questionbank'] = 'Ngân hàng đề';
+$lngstr['page_title_questionbank'] = 'Ngân hàng câu hỏi';
 $lngstr['page_header_questionbank'] = $lngstr['page_title_questionbank'];
  $lngstr['page_title_question_stats'] = 'Thống kê Câu hỏi';
  $lngstr['page_header_question_stats'] = $lngstr['page_title_question_stats'];
  $lngstr['page_title_edit_question'] = 'Sửa câu hỏi';
  $lngstr['page_header_edit_question'] = $lngstr['page_title_edit_question'];
-$lngstr['page_title_manageusers'] = 'Những người dùng';
+$lngstr['page_title_manageusers'] = 'Quản lý tài khoản';
 $lngstr['page_header_manageusers'] = $lngstr['page_title_manageusers'];
  $lngstr['page_title_users_memberof'] = 'Thành viên của';
- $lngstr['page_title_users_memberof_users'] = 'Những người dùng';
+ $lngstr['page_title_users_memberof_users'] = 'Quản lý tài khoản';
  $lngstr['page_title_users_memberof_groups'] = 'Nhóm';
  $lngstr['page_title_users_settings'] = 'Thiết đặt người dùng';
  $lngstr['page_header_users_settings'] = $lngstr['page_title_users_settings'];
@@ -152,7 +144,7 @@ $lngstr['page_title_managegroups'] = 'Nhóm';
 $lngstr['page_header_managegroups'] = $lngstr['page_title_managegroups'];
  $lngstr['page_title_groups_settings'] = 'Thiết đặt nhóm';
  $lngstr['page_header_groups_settings'] = $lngstr['page_title_groups_settings'];
-$lngstr['page_title_subjects'] = 'Subjects';
+$lngstr['page_title_subjects'] = 'Môn học';
 $lngstr['page_header_subjects'] = $lngstr['page_title_subjects'];
  $lngstr['page_title_subjects_settings'] = 'Thiết đặt môn';
  $lngstr['page_header_subjects_settings'] = $lngstr['page_title_subjects_settings'];
@@ -160,11 +152,11 @@ $lngstr['page_title_emailtemplates'] = 'Mẫu Email ';
 $lngstr['page_header_emailtemplates'] = $lngstr['page_title_emailtemplates'];
  $lngstr['page_title_etemplates_edit'] = 'Sửa Mẫu Email';
  $lngstr['page_header_etemplates_edit'] = $lngstr['page_title_etemplates_edit'];
-$lngstr['page_title_rtemplates'] = 'Báo cáo mẫu';
+$lngstr['page_title_rtemplates'] = 'Mẫu báo cáo';
 $lngstr['page_header_rtemplates'] = $lngstr['page_title_rtemplates'];
- $lngstr['page_title_rtemplates_edit'] = 'Sửa Báo cáo mẫu';
+ $lngstr['page_title_rtemplates_edit'] = 'Sửa mẫu báo cáo';
  $lngstr['page_header_rtemplates_edit'] = $lngstr['page_title_rtemplates_edit'];
-$lngstr['page_title_grades'] = 'Những hệ thống đường dốc';
+$lngstr['page_title_grades'] = 'Những hình thức kiểm tra';
 $lngstr['page_header_grades'] = $lngstr['page_title_grades'];
  $lngstr['page_title_grades_edit'] = 'Sự thiết đặt Hệ thống Đường dốc';
  $lngstr['page_header_grades_edit'] = $lngstr['page_title_grades_edit'];
@@ -174,7 +166,7 @@ $lngstr['page_header_gradescales'] = $lngstr['page_title_gradescales'];
  $lngstr['page_header_grade_settings'] = $lngstr['page_title_grade_settings'];
 $lngstr['page_title_config'] = 'Cấu hình';
 $lngstr['page_header_config'] = $lngstr['page_title_config'];
-$lngstr['page_title_visitors'] = 'Thống kê Mạng';
+$lngstr['page_title_visitors'] = 'Thống kê mạng';
 $lngstr['page_header_visitors'] = $lngstr['page_title_visitors'];
  $lngstr['page_title_visitordetails'] = 'Chi tiết Người đến thăm';
  $lngstr['page_header_visitordetails'] = $lngstr['page_title_visitordetails'];
@@ -447,7 +439,7 @@ $lngstr['page-sections']['hdr_section_description_hint'] = 'Sự mô tả Mục(
 $lngstr['button_signin'] = 'Đăng nhập';
 $lngstr['button_signin_as_guest'] = 'Đăng nhập như là Khách';
 $lngstr['button_register'] = 'Đăng ký';
-$lngstr['button_starttest'] = 'Làm Bài';
+$lngstr['button_starttest'] = 'Làm bài thi';
 $lngstr['button_continue'] = 'Tiếp tục';
 $lngstr['button_showresults'] = 'Tiếp tục';
 $lngstr['button_answer'] = 'Trả lời';
@@ -608,7 +600,7 @@ $lngstr['err_signin_incorrect']  = 'Ko thể đăng nhập. Username hoặc pass
 
 // Register page:
 $lngstr['page-register']['intro'] = 'Bạn có thể sử dụng mẫu (dạng) này để thêm một tài khoản.';
-$lngstr['page-register']['successful'] = 'Chào "%s" ! Bạn đã đăng kí thành công. <br>Chúc tôi rất vui khi bạn tham gia học tập Online trên TânPhú.Net. <br>Chúc bạn học gỏi, Thành công trên con đường học vấn. <br>Nếu có gì thắc mắc hay góp ý bạn có thể liên lạc với :<br> <font color=blue>Admin: Vũ Thanh Lai, Email: VuThanhLai@Gmail.Com Hoặc Y!M: KiUcTinhYeu_1811 .</font>';
+$lngstr['page-register']['successful'] = 'Chào "%s" ! Bạn đã đăng kí thành công. <br>Chúc tôi rất vui khi bạn tham gia học tập Online trên Onthi.com. <br>Chúc bạn học gỏi, Thành công trên con đường học vấn. <br>Nếu có gì thắc mắc hay góp ý bạn có thể liên lạc với :<br>';
 $lngstr['page-register']['check_activation_email'] = 'Một email đã được gửi tới địa chỉ (của) các bạn. Nó chứa đựng những chỉ dẫn để hoàn thành sự đăng ký (của) các bạn.';
 $lngstr['page-register']['wait_for_approval'] = 'Tài khoản (của) Các bạn được tạo ra một cách thành công thì phải (thì)kích hoạt bởi một người quản trị, mời kiên nhẫn.';
 $lngstr['page-register']['account_activated'] = 'Tài khoản (của) Các bạn đã được kích hoạt một cách thành công.';
@@ -855,7 +847,7 @@ $lngstr['page_config']['section_site'] = 'Web site (Bấm để xem/Ẩn)';
 $lngstr['page_config']['text_editor'] = 'Khung soạn thảoWYSIWYG editor:';
 $lngstr['page_config']['text_editorlist'] = array(CONFIG_CONST_iseditor2 => 'Khung soạn thảo Mặc định', CONFIG_CONST_iseditor => 'Default editor (old)', CONFIG_CONST_htmlareaeditor => 'Vùng soạn thảo HTML');
 $lngstr['page_config']['list_length'] = 'Chiều dài Danh sách:';
-$lngstr['page_config']['store_logs'] = 'Thống kê Mạng:';
+$lngstr['page_config']['store_logs'] = 'Thống kê mạng:';
 $lngstr['page_config']['section_registration'] = 'Sự Đăng ký (Bấm để xem/Ẩn)';
 $lngstr['page_config']['can_register'] = 'Cho phép sự đăng ký người sử dụng:';
 $lngstr['page_config']['upon_registration'] = 'Sau khi đăng kí:';
@@ -950,7 +942,7 @@ $lngstr['page_groups_access_reporttemplates'] = 'Những khung mẫu Báo cáo:'
 $lngstr['page_groups_access_reporttemplates_select'] = $lngstr['page_groups_access_testmanager_select'];
 $lngstr['page_groups_access_reportsmanager'] = 'Quản lý báo cáo:';
 $lngstr['page_groups_access_reportsmanager_select'] = array(0 => 'Sự Truy nhập được từ chối', 1 => 'Đọc (sở hữu những kết quả)', 2 => 'Đọc (tất cả các kết quả)', 3 => 'Viết');
-$lngstr['page_groups_access_questionbank'] = 'Ngân hàng đề:';
+$lngstr['page_groups_access_questionbank'] = 'Ngân hàng câu hỏi:';
 $lngstr['page_groups_access_questionbank_select'] = $lngstr['page_groups_access_testmanager_select'];
 $lngstr['page_groups_access_subjects'] = 'Môn:';
 $lngstr['page_groups_access_subjects_select'] = $lngstr['page_groups_access_testmanager_select'];
@@ -958,7 +950,7 @@ $lngstr['page_groups_access_groups'] = 'Nhóm:';
 $lngstr['page_groups_access_groups_select'] = $lngstr['page_groups_access_testmanager_select'];
 $lngstr['page_groups_access_users'] = 'Users:';
 $lngstr['page_groups_access_users_select'] = array(0 => 'Sự Truy nhập được từ chối', 1 => 'Đọc (sở hữu tài khoản)', 2 => 'Đọc (tất cả các tài khoản)', 3 => 'Viết (Sở hữu tài khoản)', 4 => 'Viết (Tất cả các tài khoản)');
-$lngstr['page_groups_access_visitors'] = 'Thống kê Mạng:';
+$lngstr['page_groups_access_visitors'] = 'Thống kê mạng:';
 $lngstr['page_groups_access_visitors_select'] = $lngstr['page_groups_access_testmanager_select'];
 $lngstr['page_groups_access_config'] = 'Cấu hình:';
 $lngstr['page_groups_access_config_select'] = $lngstr['page_groups_access_testmanager_select'];
@@ -1104,26 +1096,26 @@ $lngstr['page-rtemplates']['qst_rtemplate_delete'] = 'Bạn chắc chắn muốn
 $lngstr['page-rtemplates']['qst_rtemplates_delete'] = 'Bạn chắc chắn muốn sẽ xóa những khung mẫu báo cáo được lựa chọn?';
 
 // Install:
-$lngstr['install_title'] = 'Cài đặt - TânPhú.Net Tested';
+$lngstr['install_title'] = 'Cài đặt - Onthi.com Tested';
 $lngstr['install_page1'] = 'Bước 1 - Thiết lập ngôn ngữ';
 $lngstr['install_page1_description'] = '<p><b>Ngôn ngữ:</b> Vui lòng chọn 1.';
 $lngstr['install_language'] = 'Ngôn ngữ:';
 $lngstr['install_page2'] = 'Buớc 2 - Thiết lập chung';
 $lngstr['install_page2_description'] = '<p><b>Tiêu đề web:</b> Xin chỉ rõ tiêu đề trang web..
 <p><b>Email Mặc định:</b> Điền email mặc đj\ịnh vào ô này, đây là email dùng để gửi mail cho người dùng.
-<p><b>Địa chỉ trang trắc nghiệm TânPhú.Net(VD:/tracnghiem/)</b> Xin chỉ rõ địa chỉ web ở đâu . Mạng(lưới) được kiểm tra sẽ được truy nhập.
-<p><b>Địa chỉ gốc TânPhú.Net Tested trên server:</b> Xin chỉ rõ đường dẫn thư mục đầy đủ tới sự cài đặt này.
-<p><b>TânPhú.Net Tested files URL:</b> Xin chỉ rõ địa chỉ mạng ở đâu được nạp dữ liệu những hồ sơ sẽ được truy nhập.
-<p><b>TânPhú.Net Tested files directory:</b> Xin chỉ rõ một đường dẫn thư mục đầy đủ ở đâu TânPhú. Mạng(lưới) được kiểm tra có thể cất giữ nạp dữ liệu những hồ sơ. Thư mục này cần phải (thì) đọc được và viết bởi người sử dụng người phục vụ mạng (usually "nobody" or "apache").';
+<p><b>Địa chỉ trang trắc nghiệm Onthi.com(VD:/tracnghiem/)</b> Xin chỉ rõ địa chỉ web ở đâu . Mạng(lưới) được kiểm tra sẽ được truy nhập.
+<p><b>Địa chỉ gốc Onthi.com Tested trên server:</b> Xin chỉ rõ đường dẫn thư mục đầy đủ tới sự cài đặt này.
+<p><b>Onthi.com Tested files URL:</b> Xin chỉ rõ địa chỉ mạng ở đâu được nạp dữ liệu những hồ sơ sẽ được truy nhập.
+<p><b>Onthi.com Tested files directory:</b> Xin chỉ rõ một đường dẫn thư mục đầy đủ ở đâu TânPhú. Mạng(lưới) được kiểm tra có thể cất giữ nạp dữ liệu những hồ sơ. Thư mục này cần phải (thì) đọc được và viết bởi người sử dụng người phục vụ mạng (usually "nobody" or "apache").';
 $lngstr['install_titlepostfix'] = 'Tiêu đề Web:';
 $lngstr['install_defaultemail'] = 'Email mặc định:';
-$lngstr['install_urlroot'] = 'Địa chỉ trang trắc nghiệm TânPhú.Net(VD:/tracnghiem/):';
-$lngstr['install_dirrootfull'] = 'Địa chỉ gốc trang trắc nghiệm TânPhú.Net Tested trên server:';
-$lngstr['install_dirrootfull_doesnotexists'] = 'The "TânPhú.Net Tested directory" setting seems to be incorrect. Giá trị ở dưới đã được đặt lại.<br>';
-$lngstr['install_urlfiles'] = 'Thư mục chứa file tải lên TânPhú.Net (VD:/tracnghiem/files/):';
-$lngstr['install_dirfilesfull'] = 'Thư mục chứa file tải lên TânPhú.Net trên server:';
+$lngstr['install_urlroot'] = 'Địa chỉ trang trắc nghiệm Onthi.com(VD:/tracnghiem/):';
+$lngstr['install_dirrootfull'] = 'Địa chỉ gốc trang trắc nghiệm Onthi.com Tested trên server:';
+$lngstr['install_dirrootfull_doesnotexists'] = 'The "Onthi.com Tested directory" setting seems to be incorrect. Giá trị ở dưới đã được đặt lại.<br>';
+$lngstr['install_urlfiles'] = 'Thư mục chứa file tải lên Onthi.com (VD:/tracnghiem/files/):';
+$lngstr['install_dirfilesfull'] = 'Thư mục chứa file tải lên Onthi.com trên server:';
 $lngstr['install_page3'] = 'Bước 3 - Thiết lập CSDL';
-$lngstr['install_page3_description'] = '<p>Xin cấu hình hình cơ sở dữ liệu ở đâu TânPhú.Net. Mạng(lưới) được kiểm tra dữ liệu sẽ được cất giữ. Cơ sở dữ liệu này được phải đã có được tạo ra và một username và mật khẩu được tạo ra để truy nhập nó.';
+$lngstr['install_page3_description'] = '<p>Xin cấu hình hình cơ sở dữ liệu ở đâu Onthi.com. Mạng(lưới) được kiểm tra dữ liệu sẽ được cất giữ. Cơ sở dữ liệu này được phải đã có được tạo ra và một username và mật khẩu được tạo ra để truy nhập nó.';
 $lngstr['install_dbdriver'] = 'Kiểu data:';
 $lngstr['install_dbhost'] = 'Database host:';
 $lngstr['install_dbdb'] = 'Tên CSDL:';
@@ -1136,8 +1128,8 @@ $lngstr['install_downloadconfig'] = '<p>Vui lòng lưu <b><a href="install.php?d
 $lngstr['install_canwritetoconfig'] = '<p>File config.inc.php đã đựoc cấu hình và tạo thành công.';
 $lngstr['install_page4'] = 'Quá trình cái đặt sắp hoàn tất';
 $lngstr['install_page4_description'] = '<p>Vui lòng bấm "Tiếp" để bắt đầu cài đặt CSDL.';
-$lngstr['install_db_title'] = 'Khởi tạo CSDL - TânPhú.Net Tested';
-$lngstr['install_db_page1'] = 'Khởi tạo CSDL TânPhú.Net Tested';
+$lngstr['install_db_title'] = 'Khởi tạo CSDL - Onthi.com Tested';
+$lngstr['install_db_page1'] = 'Khởi tạo CSDL Onthi.com Tested';
 $lngstr['install_db_createtablex'] = 'Tạo bảng "%s" :';
 $lngstr['install_db']['create_or_modify_tablex'] = 'Tạo ra hay điều chỉnh  bảng "%s" :';
 $lngstr['install_db']['no_init_needed'] = 'Không có sự khởi tạo cần.';
@@ -1159,9 +1151,9 @@ $m_db_drivers = array(
 	DB_DRIVER_ORACLE => 'Oracle',
 	);
 
-$lngstr['initdb_etemplates_1_name'] = 'Kế quả Kiểm tra  (Mặc định)';
+$lngstr['initdb_etemplates_1_name'] = 'Kết quả Kiểm tra (Mặc định)';
 $lngstr['initdb_etemplates_1_description'] = 'Khung mẫu Email kết quả kiểm tra(Mặc định)';
-$lngstr['initdb_etemplates_1_subject'] = 'TânPhú.Net Tested - Báo cáo Mẫu';
+$lngstr['initdb_etemplates_1_subject'] = 'Onthi.com Tested - Báo cáo Mẫu';
 $lngstr['initdb_etemplates_1_body'] = 'Chào [USER_FIRST_NAME],
 
 ở đây những kết quả từ bài kiểm (của) các bạn:
@@ -1184,14 +1176,14 @@ $lngstr['initdb_etemplates_2_description'] = 'khung mẫu email Tài khoản đ�
 $lngstr['initdb_etemplates_2_subject'] = 'Những chi tiết Đăng ký';
 $lngstr['initdb_etemplates_2_body'] = 'Chào [USER_FIRST_NAME],
 
-Cảm ơn bạn đăng ký Với TânPhú.Net (http://tracnghiem.tanphu.net).
+Cảm ơn bạn đăng ký với Onthi.com.
 
 Username: [USERNAME]
 Password: [USER_PASSWORD]
 
 Bạn có thể đăng nhập tới tài khoản (của) các bạn bất kỳ thời gian nào đến thăm:
 
-[TânPhú.Net Tested_URL]
+[Onthi.com Tested_URL]
 
 Thân chào,chúc bạn học tốt và thành công trong tương lai !
 Admin: Vũ Thanh Lai | Email: VuThanhLai@Gmail.Com | Y!M: KiUcTinhYeu_1811 | Site: http://tanphu.net ';
@@ -1201,7 +1193,7 @@ $lngstr['initdb_etemplates_3_description'] = 'Tài khoản đăng ký khung mẫ
 $lngstr['initdb_etemplates_3_subject'] = 'Sự Kích hoạt Tài khoản';
 $lngstr['initdb_etemplates_3_body'] = 'Chào [USER_FIRST_NAME],
 
-Cảm ơn bạn đăng ký Với TânPhú.Net (http://tracnghiem.tanphu.net).
+Cảm ơn bạn đăng ký Với Onthi.com (http://tracnghiem.tanphu.net).
 
 Username: [USERNAME]
 Password: [USER_PASSWORD]
@@ -1210,7 +1202,7 @@ Tiếp theo bạn hãy làm như sau :
 
 Để hoàn thành việc kích hoạt tài khoản (của) các bạn, xin kích vào mối liên kết sau đây
 
-[TânPhú.Net Tested_URL]/account.php?action=activate&id=[USER_ID]&checkword=[USER_CHECKWORD]
+[Onthi.com Tested_URL]/account.php?action=activate&id=[USER_ID]&checkword=[USER_CHECKWORD]
 
 Thân chào,chúc bạn học tốt và thành công trong tương lai !
 Admin: Vũ Thanh Lai | Email: VuThanhLai@Gmail.Com | Y!M: KiUcTinhYeu_1811 | Site: http://tanphu.net ';
@@ -1224,7 +1216,7 @@ Tài khoản (của) Các bạn đã được kích hoạt một cách thành c�
 
 Bạn có thể đăng nhập tới tài khoản (của) các bạn bất kỳ thời gian nào đến thăm:
 
-[TânPhú.Net Tested_URL]
+[Onthi.com Tested_URL]
 
 Thân chào,chúc bạn học tốt và thành công trong tương lai !
 Admin: Vũ Thanh Lai | Email: VuThanhLai@Gmail.Com | Y!M: KiUcTinhYeu_1811 | Site: http://tanphu.net ';

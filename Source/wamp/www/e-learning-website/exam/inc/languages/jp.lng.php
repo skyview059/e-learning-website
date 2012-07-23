@@ -4,15 +4,7 @@
 // ----------------------------------------------------------------------
 // Branding:
 $lngstr['branding']['top_logo'] = '<img src="images/logo.jpg" width=200 height=40>';
-$lngstr['branding']['btm_sign'] = '<a target="_blank" href="/">Trang chủ</a> 
-| <a target="_blank" href="/diendan/">Diễn đàn</a> 
-| <a target="_blank" href="/nhac/">Nghe nhạc</a> 
-| <a target="_blank" href="/soft/">Phần mềm</a> 
-| <a target="_blank" href="/luubut/">Lưu bút</a> 
-| <a target="_blank" href="/uocnguyen/">Ước nguyện</a> 
-| <a target="_blank" href="/tintuc/">Tin tức</a> 
-| <a target="_blank" href="/tudien/">Từ điển</a>
-<br>Copyright &copy; TânPhú.Net 2008. All Rights Reserved.';
+$lngstr['branding']['btm_sign'] = '';
 // Sign in page:
 $lngstr['page_signin_box_intro'] = '';
 

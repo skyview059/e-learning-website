@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS `jos_theories`;
+DROP TABLE IF EXISTS `#__theories`;
  
-CREATE TABLE `jos_theories` (
+CREATE TABLE `#__theories` (
   `theory_id` int(11) NOT NULL auto_increment,
   `theory_objective` varchar(255),
   `theory_name` varchar(255),
@@ -12,7 +12,7 @@ CREATE TABLE `jos_theories` (
   PRIMARY KEY (`theory_id`)
 );
  
-INSERT INTO  `jos_theories` (
+INSERT INTO  `db_e_learning`.`jos_theories` (
 `theory_id` ,
 `theory_objective` ,
 `theory_name` ,
@@ -21,5 +21,5 @@ INSERT INTO  `jos_theories` (
 `theory_description`
 )
 VALUES (
-NULL ,  'Mục tiêu của bài lý thuyết',  'Tên bài lý thuyết',  'http://localhost/e-learning-website/data/TheoryContent/lythuyet.dat', 'http://localhost/e-learning-website/data/TheoryVideo/boy.flv',  'Giới thiệu chung về bài lý thuyết'
+NULL ,  'M?c ti�u c?a b�i l? thuy?t',  'T�n b�i l? thuy?t',  'http://localhost/e-learning-website/data/TheoryContent/lythuyet.dat', 'http://localhost/e-learning-website/data/TheoryVideo/boy.flv',  'Gi?i thi?u chung v? b�i l? thuy?t '
 );

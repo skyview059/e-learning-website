@@ -32,7 +32,6 @@ class modLoginHelper
 			$uri = JFactory::getURI();
 			$url = $uri->toString(array('path', 'query', 'fragment'));
 			}
-				
 		}
 		else
 		{

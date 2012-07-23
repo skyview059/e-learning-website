@@ -129,7 +129,7 @@ FROM `nuke_stories` `t1`, `nuke_authors` `t2`, `nuke_stories_cat` `t3`, `nuke_to
 	
 	flush();
 
-	if (function_exists('date_default_timezone_set')) date_default_timezone_set('Asia/Kuala_Lumpur');
+	if (function_exists('date_default_timezone_set')) date_default_timezone_set('Asia/Bangkok');
 	
 	$arr = $db->ServerInfo();
 	print_r($arr);
