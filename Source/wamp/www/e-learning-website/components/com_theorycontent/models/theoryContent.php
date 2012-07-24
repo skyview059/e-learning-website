@@ -100,25 +100,12 @@ class theoryContentModeltheoryContent extends JModel
 		}
 	}
 	
-	function getQuestion($subjectid,$num)
-	{
-		$db =& JFactory::getDBO();
-		$query = "SELECT * FROM `jos_questions` WHERE subjectiD = '".$subjectid."'ORDER BY RAND( ) LIMIT ".$num;
-		echo $query;
-		$db->setQuery( $query );
-		$row = $db->loadRowList();
-		$i  = 1  ;
-		
-	}
-	
-	
 	function get_answer_correct($ID) 
 	{
 		$db =& JFactory::getDBO();
 		$question = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."' AND `answer_correct` = 1";
 		$db->setQuery( $query );
 		$result = $db->loadResult();
-	
 		return $result;
 	} 
 	
@@ -126,9 +113,58 @@ class theoryContentModeltheoryContent extends JModel
 	{
 		$db =& JFactory::getDBO();
 		$query = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."'";
-		$columns= $db->loadResultArray();
-		return $columns;
-	}  
+		$result= $db->loadResultArray();
+		return $result;
+	} 
+	
+	function getQuestion($subjectid,$num)
+	{
+		$db =& JFactory::getDBO();
+		$query = "SELECT * FROM `jos_questions` WHERE subjectiD = '".$subjectid."' ORDER BY RAND( ) LIMIT ".$num;
+		$db->setQuery( $query );
+		$row = $db->loadRowList();
+		$i  = 1  ;
+		while($i <= sizeof($row)){
+				?>
+				<?php /*?><script type="text/javascript">
+					function ans_<?php echo($row['1'][$i]);?>()
+					{
+					alert("Ans for question \"<?php echo($row['6']);?>\" is : \"<?php echo(get_answer_correct($row['1'][$i])) ;?>\"");				
+					}
+				</script><?php */?>
+				<?php
+				//echo $row['1'][$i];
+//				$all_ans =  get_answer($row['1'][$i]);
+//				
+//				
+				$tmp = "<br>".$i++.".";
+//				$tmp .=$row['6'][$i]." <a onclick=\"ans_".$row['1'][$i]."()\" ><u>Hint</u></a>";
+//				
+//				$tmp .= "<br><label>";
+//				$tmp .= "<input type=\"radio\" name=\"question_".$row['1'][$i]."\" value=\"A\" id=\"question_".$row['1'][$i]."_A\" />";
+//				$tmp .="A. ".$all_ans[1];
+//				$tmp .= "</label><br><label>";
+//				$tmp .= "<input type=\"radio\" name=\"question_".$row['1'][$i]."\" value=\"B\" id=\"question_".$row['1'][$i]."_B\" />";
+//				$tmp .="B. ".$all_ans[2];
+//				$tmp .= "</label><br><label>";
+//				$tmp .= "<input type=\"radio\" name=\"question_".$row['1'][$i]."\" value=\"C\" id=\"question_".$row['1'][$i]."_C\" />";
+//				$tmp .="C. ".$all_ans[3];
+//				$tmp .= "</label><br><label>";
+//				$tmp .= "<input type=\"radio\" name=\"question_".$row['1'][$i]."\" value=\"D\" id=\"question_".$row['1'][$i]."_D\" />";
+//				$tmp .="D. ".$all_ans[4];
+//				$tmp .= "</label>";
+//				
+//				$tmp .="<br><input name=\"question_".$row['1']."\" type=\"hidden\" value=\"".get_answer_correct($row['1'])."\" />";			
+//				
+//				$result = $result."<br>".$tmp;		
+		}
+		//$i  =  1;
+//		return $result;
+		
+	}
+	
+	
+	 
 }
 
 

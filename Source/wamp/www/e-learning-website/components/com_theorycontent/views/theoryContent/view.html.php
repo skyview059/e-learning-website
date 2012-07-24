@@ -47,8 +47,8 @@ class theorycontentViewtheoryContent extends JView
 			
 			
 			?>	
-			<link href="http://localhost/thu%20vien%20ly%20thuyet/video-js/video-js.css" rel="stylesheet">
-			<script src="http://localhost/thu%20vien%20ly%20thuyet/video-js/video.js"></script>
+			<link href="http://localhost/e-learning-website/data//video-js/video-js.css" rel="stylesheet">
+			<script src="http://localhost//e-learning-website/data/video-js/video.js"></script>
 			
 			<video id="my_video_1" class="video-js vjs-default-skin" controls
 			preload="auto" width="480" height="300" poster="my_video_poster.png"
