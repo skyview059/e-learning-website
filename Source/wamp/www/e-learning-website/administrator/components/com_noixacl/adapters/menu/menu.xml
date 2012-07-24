@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="adapter" version="1.5.0">
+	<name>menu</name>
+    <component>com_menus</component>
+	<author>Joomila</author>
+  	<version>1.5.1</version>
+	<creationDate>November 2008</creationDate>
+	<author>joomila - NOIX</author>
+	<authorEmail>joomla@noix.com.br</authorEmail>
+	<authorUrl>http://www.noix.com.br</authorUrl>
+	<copyright>(C) 2008 All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<description>Adapter Menu site</description>
+	<files>
+		<filename adapter="menu">menu.xml</filename>
+		<filename type="controller">menu.php</filename>
+        <filename type="plugin" name="PluginMenu">plugin.php</filename>
+		<filename>views/admin/tmpl/default.php</filename>
+		<filename>views/admin/view.html.php</filename>
+		<filename>views/site/tmpl/default.php</filename>
+		<filename>views/site/view.html.php</filename>
+	</files>
+	<views>
+		<admin application="administrator" viewname="MenuViewAdmin" title="Backend">
+			<tasks>
+                <task name="Access">view</task>
+                <task name="Set Default">default</task>
+                <task name="New Item">newItem</task>
+                <task name="Change Items">type</task>
+				<task name="Edit Item">edit</task>
+				<task name="Save">save</task>
+				<task name="Publish">publish</task>
+                <task name="Unpublish">unpublish</task>
+                <task name="Move Item">move</task>
+                <task name="Copy">copy</task>
+                <task name="Move to trash">trash</task>
+                <task name="Cancel">cancel</task>
+			</tasks>
+            <save>
+                <aco_section type="text">com_menus</aco_section>
+                <aco_value type="text">edit</aco_value>
+                <axo_section type="var">menutype</axo_section>
+                <axo_value type="var">tasks</axo_value>
+            </save>
+            <load>
+                <field>axo_value</field>
+                <aco_section type="text">com_menus</aco_section>
+                <aco_value type="text">edit</aco_value>
+                <axo_section type="var">menutype</axo_section>
+                <axo_value></axo_value>
+            </load>
+		</admin>
+		<site application="site" viewname="MenuViewSite" title="Frontend">
+			<tasks>
+                <task name="Access">access</task>
+             </tasks>
+            <save>
+                <aco_section type="text">com_menus</aco_section>
+                <aco_value type="text">access</aco_value>
+                <axo_section type="var">menutype</axo_section>
+                <axo_value type="var">menu_id</axo_value>
+            </save>
+            <load>
+                <field type="text">access</field>
+                <aco_section type="text">com_menus</aco_section>
+                <aco_value type="text">access</aco_value>
+                <axo_section type="var">menutype</axo_section>
+                <axo_value type="var">menu_id</axo_value>
+            </load>
+        </site>
+	</views>
+</install>
