@@ -45,6 +45,7 @@ class theorycontentViewtheoryContent extends JView
 			$dat = $model->getDat();
 			$video = $model->getVideo();
 			
+			
 			?>	
 			<link href="http://localhost/thu%20vien%20ly%20thuyet/video-js/video-js.css" rel="stylesheet">
 			<script src="http://localhost/thu%20vien%20ly%20thuyet/video-js/video.js"></script>
@@ -54,7 +55,8 @@ class theorycontentViewtheoryContent extends JView
 			data-setup="{}">
 			  <source src="<?php echo $video ?>" type='video/flv'>
 			</video>
-			<?php		
+			<?php	
+			$question = $model->getQuestion(1,2);	
 		}
 		parent::display($tpl);	
 		

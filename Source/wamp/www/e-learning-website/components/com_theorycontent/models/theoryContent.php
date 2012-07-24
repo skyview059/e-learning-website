@@ -99,6 +99,36 @@ class theoryContentModeltheoryContent extends JModel
 					echo $output[$i] . "<br/>";
 		}
 	}
+	
+	function getQuestion($subjectid,$num)
+	{
+		$db =& JFactory::getDBO();
+		$query = "SELECT * FROM `jos_questions` WHERE subjectiD = '".$subjectid."'ORDER BY RAND( ) LIMIT ".$num;
+		echo $query;
+		$db->setQuery( $query );
+		$row = $db->loadRowList();
+		$i  = 1  ;
+		
+	}
+	
+	
+	function get_answer_correct($ID) 
+	{
+		$db =& JFactory::getDBO();
+		$question = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."' AND `answer_correct` = 1";
+		$db->setQuery( $query );
+		$result = $db->loadResult();
+	
+		return $result;
+	} 
+	
+	function get_answer($ID) 
+	{
+		$db =& JFactory::getDBO();
+		$query = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."'";
+		$columns= $db->loadResultArray();
+		return $columns;
+	}  
 }
 
 
