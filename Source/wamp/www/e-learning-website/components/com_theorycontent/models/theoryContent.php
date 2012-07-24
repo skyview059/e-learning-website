@@ -103,7 +103,7 @@ class theoryContentModeltheoryContent extends JModel
 	function get_answer_correct($ID) 
 	{
 		$db =& JFactory::getDBO();
-		$question = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."' AND `answer_correct` = 1";
+		$query = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."' AND `answer_correct` = 1";
 		$db->setQuery( $query );
 		$result = $db->loadResult();
 		return $result;
@@ -113,6 +113,7 @@ class theoryContentModeltheoryContent extends JModel
 	{
 		$db =& JFactory::getDBO();
 		$query = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."'";
+		$db->setQuery( $query );
 		$result= $db->loadResultArray();
 		return $result;
 	} 
@@ -123,43 +124,45 @@ class theoryContentModeltheoryContent extends JModel
 		$query = "SELECT * FROM `jos_questions` WHERE subjectiD = '".$subjectid."' ORDER BY RAND( ) LIMIT ".$num;
 		$db->setQuery( $query );
 		$row = $db->loadRowList();
-		$i  = 1  ;
-		while($i <= sizeof($row)){
+		$i  = 0  ;
+		$result = "CÁC CÂU HỎI LIÊN QUAN ĐẾN BÀI LÝ THUYẾT </br>";
+		while($i < sizeof($row)){
 				?>
-				<?php /*?><script type="text/javascript">
-					function ans_<?php echo($row['1'][$i]);?>()
+				<script type="text/javascript">
+					function ans_<?php echo($row[$i]['0']);?>()
 					{
-					alert("Ans for question \"<?php echo($row['6']);?>\" is : \"<?php echo(get_answer_correct($row['1'][$i])) ;?>\"");				
+						alert("Ans for question \"<?php echo($row[$i]['5']);?>\" is : \"<?php echo($this->get_answer_correct($row[$i]['0'])) ;?>\"");				
 					}
-				</script><?php */?>
+				</script>
 				<?php
-				//echo $row['1'][$i];
-//				$all_ans =  get_answer($row['1'][$i]);
-//				
-//				
-				$tmp = "<br>".$i++.".";
-//				$tmp .=$row['6'][$i]." <a onclick=\"ans_".$row['1'][$i]."()\" ><u>Hint</u></a>";
-//				
-//				$tmp .= "<br><label>";
-//				$tmp .= "<input type=\"radio\" name=\"question_".$row['1'][$i]."\" value=\"A\" id=\"question_".$row['1'][$i]."_A\" />";
-//				$tmp .="A. ".$all_ans[1];
-//				$tmp .= "</label><br><label>";
-//				$tmp .= "<input type=\"radio\" name=\"question_".$row['1'][$i]."\" value=\"B\" id=\"question_".$row['1'][$i]."_B\" />";
-//				$tmp .="B. ".$all_ans[2];
-//				$tmp .= "</label><br><label>";
-//				$tmp .= "<input type=\"radio\" name=\"question_".$row['1'][$i]."\" value=\"C\" id=\"question_".$row['1'][$i]."_C\" />";
-//				$tmp .="C. ".$all_ans[3];
-//				$tmp .= "</label><br><label>";
-//				$tmp .= "<input type=\"radio\" name=\"question_".$row['1'][$i]."\" value=\"D\" id=\"question_".$row['1'][$i]."_D\" />";
-//				$tmp .="D. ".$all_ans[4];
-//				$tmp .= "</label>";
-//				
-//				$tmp .="<br><input name=\"question_".$row['1']."\" type=\"hidden\" value=\"".get_answer_correct($row['1'])."\" />";			
-//				
-//				$result = $result."<br>".$tmp;		
+				$tmp = "";
+				$all_ans =   $this->get_answer($row[$i]['0']);
+				
+				$tmp = "<br>".($i+1).".";
+				
+				$tmp .=$row[$i]['5']." <a onclick=\"ans_".$row[$i]['0']."()\" ><u>Hint</u></a>";
+				
+				$tmp .= "<br><label>";
+				$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_A\" />";
+				$tmp .="A. ".$all_ans['0'];
+				$tmp .= "</label><br><label>";
+				$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"B\" id=\"question_".$row[$i]['0']."_B\" />";
+				$tmp .="B. ".$all_ans['1'];
+				$tmp .= "</label><br><label>";
+				$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"C\" id=\"question_".$row[$i]['0']."_C\" />";
+				$tmp .="C. ".$all_ans['2'];
+				$tmp .= "</label><br><label>";
+				$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"D\" id=\"question_".$row[$i]['0']."_D\" />";
+				$tmp .="D. ".$all_ans['3'];
+				$tmp .= "</label>";
+				
+				$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->get_answer_correct($row[$i]['0'])."\" />";			
+				
+				$result = $result ."<br>".$tmp;	
+				$i++;
 		}
-		//$i  =  1;
-//		return $result;
+		$i  =  0;
+		echo $result;
 		
 	}
 	
