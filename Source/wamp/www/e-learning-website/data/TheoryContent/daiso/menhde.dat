@@ -1,0 +1,113 @@
+I. MỆNH ĐỀ. MỆNH ĐỀ CHỨA BIẾN
+
+1. Mệnh đề
+
+
+Các câu ở bên trái là những câu khẳng định có tính đúng hay sai, còn các câu ở bên phải không thể nói đúng hay sai được. Các câu ở bên trái là những mệnh đề, còn các câu bên phải không là những mệnh đề.
+
+                    Mỗi mệnh đề phải hoặc đúng hoặc sai. Một mệnh đề không thể vừa đúng, vừa sai.
+
+2. Mệnh đề chứa biến
+
+Xét câu " chia hết cho 3".
+
+Ta chưa khẳng định được tính đúng sai của câu này. Tuy nhiên, với mỗi giá trị của n thuộc tập số nguyên, câu này cho ta một mệnh đề.
+
+Chẳng hạn:
+Với  ta được mệnh đề " 4 chia hết cho 3 " (sai).
+Với  ta được mệnh đề "15 chia hết cho 3 " (đúng).    
+
+Xét câu "  ".
+Cũng như trên, ta thấy với mỗi giá trị của n thuộc tập số nguyên ta được một mệnh đề . Chẳng hạn :
+Với  ta được mệnh đề " 2 + 1 = 5 " (sai).
+Với  ta được mệnh đề " 2 + 3 = 5 " (đúng).
+
+Hai câu tên là những ví dụ về mệnh đề chứa biến.
+
+II. PHỦ ĐỊNH CỦA MỘT MỆNH ĐỀ
+
+Ví dụ 1. Nam và Minh tranh luận về loài Dơi.
+Nam nói "Dơi là một loài chim".
+Minh phủ định "Dơi không phải là một loài chim".
+
+Để phủ định một mệnh đề, ta thêm (hoặc bớt) từ "không " hoặc ("không phải") vào trước vị ngữ của mệnh đề đó.
+
+Ký hiệu mệnh đề phủ định của mệnh đề  là , ta có:  đúng khi  sai và   sai khi  đúng.
+
+Ví dụ 2.: "3 là một số nguyên tố";
+: "3 không phải là số nguyên tố".
+ "7 không chia hết cho 5"; 
+: "7 chia hết cho 5".
+
+III. MỆNH ĐỀ KÉO THEO
+
+Ví dụ 3
+
+Ai cũng biết "Nếu trái đất không có nước thì không có sự sống".
+
+Câu nói trên là một mệnh đề dạng "nếu  thì  ", ở đây  là mệnh đề "Trái Đất không có nước",  là mệnh đề "(Trái Đất) không có sự sống".
+
+                    Mệnh đề "Nếu  thì " được gọi là mệnh đề kéo theo và ký hiệu là .
+
+                    Mệnh đề  còn được phát biểu là "  kéo theo  " hoặc "Từ  suy ra ".
+
+Ví dụ 4
+
+Mệnh đề "  " sai.
+Mệnh đề "  " đúng.
+Các định lý toán học là những mệnh đề đúng và thường có dạng 
+Khi đó ta nói:                      là giả thiết ,  là kết luận của định lý, hoặc  là điều kiện đủ để có , hoặc  là điều kiện cần để có .
+
+IV. MỆNH ĐỀ ĐẢO - HAI MỆNH ĐỀ TƯƠNG ĐƯƠNG
+
+Cho tam giác . Xét các mệnh đề dạng   sau:
+
+a) Nếu  là tam giác đều thì  là một tam giác cân.
+
+b) Nếu  là một tam giác đều thì  là một tam giác cân và có một góc bằng .
+
+
+Hãy phát biểu các mệnh đề  tương ứng và xét tính đúng sai của chúng.
+
+                    Mệnh đề Q =>  được gọi là mệnh đề đảo của mệnh đề 
+
+Mệnh đề đảo của một mệnh đề không nhất thiết là đúng.
+
+Nếu cả hai mệnh đề  và  đều đúng thì ta nói  và Q là hai mệnh đề tương đương.
+
+Khi đó ta ký hiệu  và đọc là  tương đương , hoặc  là điều kiện cần và đủ để có , hoặc  khi và chỉ khi .
+
+Ví dụ 5.
+
+a) Tam giác  cân có một góc  là điều kiện cần và đủ để tam giác  đều.
+
+b) Một tam giác là tam giác vuông khi và chỉ khi nó có một góc bằng tổng hai góc còn lại.
+
+V. KÍ HIỆU  VÀ 
+
+Ví dụ 6. Câu "Bình phương của mọi số thực đều lớn hơn hoặc bằng không" là một mệnh đề . Có thể viết mệnh đề này như sau :
+
+                     hay 
+Kí hiệu  đọc là "với mọi".
+
+Ví dụ 7. Câu "Có một số nguyên nhỏ hơn 0" là một mệnh đề .Có thể viết mệnh đề này như sau :
+
+                     .
+Kí hiệu tồn tại  đọc là "có một" (tồn tại một) hay "có ít nhất một" (tồn tại ít nhất một).
+Ví dụ 8. Nam nói " mọi số thực đều có bình phương khác 1".
+
+Minh phủ định "Không đúng. Có một số thực mà bình phương của nó bằng 1, chẳng hạn số 1".
+
+Như vậy, phủ định của mệnh đề
+
+                    .
+là mệnh đề
+
+                    .
+Ví dụ 9. Nam nói "Có một số tự nhiên ".
+Minh phản bác "Không đúng. Với mọi số tự nhiên , đều có ". Như vậy, phủ định của mệnh đề
+
+                    .
+là mệnh đề
+
+                    .
