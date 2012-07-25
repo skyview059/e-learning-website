@@ -1,113 +1,393 @@
-I. MỆNH ĐỀ. MỆNH ĐỀ CHỨA BIẾN
+﻿Trong lôgic toán, một phân ngành lôgic học, cơ sở của mọi ngành toán học, mệnh đề, hay gọi đầy đủ là mệnh đề lôgic là một khái niệm nguyên thủy, không định nghĩa.
+Thuộc tính cơ bản của một mệnh đề là giá trị chân lí của nó, được quy định như sau:
+Mỗi mệnh đề có đúng một trong hai giá trị chân lí 0 hoặc 1. Mệnh đề có giá trị chân lí 1 là mệnh đề đúng, mệnh đề có giá trị chân lí 0 là mệnh đề sai.
+Kí hiệu:
+Người ta thường dùng các chữ cái a, b, c,... để kí hiệu cho các mệnh đề.
+Nếu mệnh đề a có giá trị chân lí là 1 thì ta kí hiệu G(a) = 1; nếu mệnh đề a có giá trị chân lí là 0 thì ta kí hiệu là G(a) = 0.
+Chẳng hạn, để kí hiệu a là mệnh đề "Paris là thủ đô của nước Pháp" ta sẽ viết:
+a = "Paris là thủ đô của nước Pháp" hoặc
+a : "Paris là thủ đô của nước Pháp".
+Ở đây, a là mệnh đề đúng nên G(a) = 1.
+Chú ý:
+1. Trong thực tế có những mệnh đề mà tính đúng sai của nó luôn gắn với một thời gian và địa điểm cụ thể: đúng ở thời gian hoặc địa điểm này nhưng sai ở thời gian hoặc địa điểm khác. Nhưng ở bất kì thời điểm nào, địa điểm nào cũng luôn có giá trị chân lí đúng hoặc sai. Chẳng hạn:
+Sáng nay bạn An đi học.
+Trời mưa.
+Học sinh tiểu học đang đi nghỉ hè.
+2. Ta thừa nhận các luật sau đây của lôgic mệnh đề:
+Luật bài trùng: Mỗi mệnh đề phải hoặc đúng, hoặc sai; không có mệnh đề nào không đúng cũng không sai.
+Luật mâu thuẫn: Không có mệnh đề nào vừa đúng lại vừa sai.
+3. Có những mệnh đề mà ta không biết (hoặc chưa biết) đúng hoặc sai nhưng biết "chắc chắc" nó nhận một giá trị. Chẳng hạn:
+Trên sao Hỏa có sự sống.
+[sửa]Mệnh đề và câu
 
-1. Mệnh đề
+Mệnh đề có thể là một câu nhưng không phải mọi câu đều là mệnh đề. Có thể chia các câu trong khoa học cũng như trong cuộc sống ra làm hai loại: loại thứ nhất gồm những câu phản ánh tính đúng hoặc sai một thực tế khách quan và loại thứ hai gồm những câu không phản ánh tính đúng hoặc sai một thực tế khách quan nào. Những câu thuộc loại thứ nhất là chính những mệnh đề. Vì vậy có thể nói: "Mệnh đề là một câu khẳng định có tính chất hoặc đúng hoặc sai".
+Ví dụ:
+1. "Paris là thủ đô của nước Pháp"  	← là mệnh đề đúng.
+2. "Nước Việt Nam nằm ở châu Âu"  	← là mệnh đề sai.
+3. "Tháng 12 có 28 ngày"  	← là mệnh đề sai.
+4. "Một năm có 12 tháng và mỗi tuần có 7 ngày"  	← là mệnh đề đúng.
+5. "20 là số chẵn"  	← là mệnh đề đúng.
+6. "Số 123 chia hết cho 3"  	← là mệnh đề đúng.
+7. "2 cộng với 3 bằng 7"  	← là mệnh đề sai.
+8. "15 lớn hơn 30"  	← là mệnh đề sai.
+9. Các câu sau:
+"Cuốn sách này giá bao nhiêu tiền?"
+"Bao giờ lớp mình đi tham quan Đền Hùng?"
+"Ôi! ngôi nhà mới đẹp làm sao!"
+"Tất cả hãy anh dũng tiến lên!"
+đều không phải là mệnh đề.
+Nhận xét: nói chung những câu nghi vấn, câu cảm thán, câu mệnh lệnh đều không phải là mệnh đề.
+[sửa]Mệnh đề lôgic và mệnh đề mờ
 
+Nếu như trong Lôgic toán, một mệnh đề chỉ có thể nhận một trong hai giá trị chân lí 0 hoặc 1 thì trong Trí tuệ nhân tạo người ta dùng lôgic mờ, mà ở đó giá trị chân lí của một mệnh đề là một số nằm giữa 0 và 1. Mệnh đề có giá trị chân lí 0 là sai, có giá trị chân lí 1 là đúng. Còn giá trị chân lí nằm giữa 0 và 1 chỉ ra mức độ thay đổi của chân lí.
+[sửa]Các phép toán lôgic cơ bản
 
-Các câu ở bên trái là những câu khẳng định có tính đúng hay sai, còn các câu ở bên phải không thể nói đúng hay sai được. Các câu ở bên trái là những mệnh đề, còn các câu bên phải không là những mệnh đề.
-
-                    Mỗi mệnh đề phải hoặc đúng hoặc sai. Một mệnh đề không thể vừa đúng, vừa sai.
-
-2. Mệnh đề chứa biến
-
-Xét câu " chia hết cho 3".
-
-Ta chưa khẳng định được tính đúng sai của câu này. Tuy nhiên, với mỗi giá trị của n thuộc tập số nguyên, câu này cho ta một mệnh đề.
-
+Trong toán học, khi có hai số, người ta dùng các phép toán số học (cộng, trừ, nhân, chia,...) tác động vào chúng để nhận được những số mới. Tương tự, khi có mệnh đề, người ta dùng các phép lôgic tác động vào chúng để nhận được những mệnh đề mới. Dưới đây ta trình bày định nghĩa và các tính chất cơ bản của các phép toán này.
+[sửa]Phép phủ định
+Phủ định của mệnh đề a là một mệnh đề, kí hiệu là , đúng khi a sai và sai khi a đúng.
+Bảng giá trị chân lí của phép phủ định
+a	
+1	0
+0	1
+Ví dụ 1:
+Nếu a = "Paris là thủ đô của nước Pháp" thì mệnh đề phủ định  có thể diễn đạt như sau:
+ = "Không phải Paris là thủ đô của nước Pháp"
+hoặc  = "Paris không phải là thủ đô của nước Pháp".
+Ở đây G(a) = 1 còn G() = 0.
+Ví dụ 2:
+Nếu b = "15 lớn hơn 30" thì mệnh đề phủ định  có thể diễn đạt như sau:
+ = "Không phải 15 lớn hơn 30"
+hoặc  = "15 không lớn hơn 30"
+hoặc  = "15 nhỏ hơn 30"
+Ở đây G(b) = 0 còn G() = 1.
+Ví dụ 3:
+Nếu c = "Chuyến tàu TN1 hôm nay bãi bỏ" thì mệnh đề phủ định  có thể diễn đạt như sau:
+ = "Chuyến tàu TN1 hôm nay không bãi bỏ".
+Nếu qua xác minh mệnh đề c đúng (hoặc sai) thì mệnh đề phủ định  sẽ sai (hoặc đúng).
+Chú ý: Mệnh đề phủ định a thường được diễn đạt là "không phải a".
+[sửa]Phép hội
+Hội của hai mệnh đề a, b là một mệnh đề, đọc là a và b, kí hiệu a Λ b (hoặc a.b), đúng khi cả hai mệnh đề a, b cùng đúng và sai trong các trường hợp còn lại.
+Bảng giá trị chân lí của phép hội
+a	b	a Λ b
+1	1	1
+1	0	0
+0	1	0
+0	0	0
+Chú ý: Để thiết lập mệnh đề hội của hai mệnh đề a, b ta ghép hai mệnh đề đó bởi liên từ "và" hay một liên từ khác cùng loại. Những liên từ đó là: mà, nhưng, song, đồng thời, vẫn, cùng,... hoặc dùng dấu phảy hoặc không dùng liên từ gì.
+Ví dụ 1:
+"Lúc 8 giờ sáng nay Hà có mặt ở Hà Nội và thành phố Hồ Chí Minh" là hội của hai mệnh đề a = "Lúc 8 giờ sáng nay Hà có mặt ở Hà Nội" và b = "Lúc 8 giờ sáng nay Hà có mặt ở thành phố Hồ Chí Minh". Vì hai mệnh đề này không thể cùng đúng, nên G(a Λ b) = 0.
+Ví dụ 2:
+"Thành phố Hồ Chí Minh là thành phố lớn nhất trong cả nước nhưng không phải là thủ đô" là hội của hai mệnh đề a = "Thành phố Hồ Chí Minh là thành phố lớn nhất trong cả nước" và b = "Thành phố Hồ Chí Minh không phải là thủ đô". Rõ ràng là G(a) = 1 và G(b) = 1 nên G(a Λ b) = 1.
+Ví dụ 3:
+"Số π lớn hơn 2 song nhỏ hơn 3".
+"Chị Nga nói thạo tiếng Pháp mà không biết tiếng Anh".
+"ABC là tam giác vuông cân" là hội của của hai mệnh đề a = "ABC là tam giác vuông" và b = "ABC là tam giác cân".
+"Không những trời nắng to mà còn gió tây".
+"Chồng cày, vợ cấy, con trâu đi bừa".
+Chú ý: Đôi khi trong mệnh đề có liên từ "và" nhưng không có nghĩa của mệnh đề hội. Chẳng hạn:
+"Số lẻ và số chẵn là hai tập con rời nhau của tập số tự nhiên".
+"Hùng đạt được tất cả 20 điểm 9 và 10".
+[sửa]Phép tuyển
+Tuyển của hai mệnh đề a, b là một mệnh đề đọc là a hoặc b, kí hiệu là a ν b (hoặc a+b), sai khi cả hai mệnh đề cùng sai và đúng trong trường hợp còn lại.
+Bảng giá trị chân lí của phép tuyển
+a	b	a ν b
+1	1	1
+1	0	1
+0	1	1
+0	0	0
+Phép tuyển trên còn được gọi là phép tuyển không loại trừ.
+Phép tuyển loại trừ của hai mệnh đề a và b, chỉ đúng khi hoặc a, hoặc b đúng.
+Chú ý: Để thiết lập mệnh đề tuyển của hai mệnh đề a, b ta ghép hai mệnh đề đó bởi liên từ "hoặc" (hay liên từ khác cùng loại).
+Ví dụ 1:
+"Tháng 12 có 31 ngày hoặc 2 + 2 = 4" là tuyển của hai mệnh đề a = "Tháng 12 có 31 ngày" và b = "2 + 2 = 4".
+Ở đây G(a ν b) = 1.
+Ví dụ 2:
+"3 nhỏ hơn hoặc bằng 4"   ← là mệnh đề đúng
+"Số lẻ là số có chữ số tận cùng bằng 1, 3, 5, 7 hoặc 9"   ← là mệnh đề đúng
+"20 là số lẻ hoặc chia hết cho 3"   ← là mệnh đề sai
+Chú ý: Trong thực tế, liên từ "hoặc" thường được dùng với hai nghĩa "loại trừ" và "không loại trừ".
+Phép tuyển "hoặc a hoặc b" là phép tuyển loại trừ để chỉ a hoặc b nhưng không thể cả a lẫn b.
+Phép tuyển "a hoặc b" là phép tuyển không loại trừ để chỉ a hoặc b và có thể cả a lẫn b.
 Chẳng hạn:
-Với  ta được mệnh đề " 4 chia hết cho 3 " (sai).
-Với  ta được mệnh đề "15 chia hết cho 3 " (đúng).    
+"Hôm nay là ngày Chủ nhật hoặc ngày lễ"   ← là phép tuyển không loại trừ.
+"20 là số lẻ hoặc nó chia hết cho 2"   ← là phép tuyển loại trừ.
+[sửa]Phép kéo theo
+a kéo theo b là một mệnh đề, kí hiệu là a  b, chỉ sai khi a đúng và b sai và đúng trong các trường hợp còn lại.
+Bảng giá trị chân lí của phép kéo theo
+a	b	a  b
+1	1	1
+1	0	0
+0	1	1
+0	0	1
+Chú ý: Mệnh đề a kéo theo b thường được diễn đạt dưới nhiều hình thức khác nhau, chẳng hạn:
+"Nếu a thì b"
+"Có b khi có a"
+"Từ a suy ra b"
+"a là điều kiện đủ để có b"
+"b là điều kiện cần (ắt có) để có a"
+..............
+Ví dụ:
+"15 có chữ số tận cùng bằng 5 suy ra 15 chia hết cho 5"   ← mệnh đề đúng.
+"Nếu dây tóc bóng đèn có dòng điện chạy qua thì bóng đèn sáng"   ← mệnh đề đúng.
+Chú ý:
+1. Trong lôgic, khi xét giá trị chân lí của mệnh đề a  b người ta không quan tâm đến mối quan hệ về nội dung của hai mệnh đề a, b. Không phân biệt trường hợp a có phải là nguyên nhân để có b hay không, mà chỉ quan tâm đến tính đúng, sai của chúng.
+Ví dụ:
+"Nếu mặt trời quay quanh trái đất thì Việt Nam nằm ở Châu Âu"   ← mệnh đề đúng. Vì ở đây hai mệnh đề a = "mặt trời quay quanh trái đất" và b = "Việt Nam nằm ở Châu Âu" đều sai.
+"Nếu tháng 12 có 31 ngày thì mỗi năm có 13 tháng"   ← mệnh đề sai.
+2. Theo bảng chân lí trên, ta thấy:
+Nếu a sai thì a  b luôn đúng.
+Nếu a đúng thì a  b đúng khi b đúng.
+Vì vậy để chứng minh mệnh đề a  b đúng ta chỉ cần xét trường hợp a và b cùng đúng và phép chứng minh mệnh đề a  b được tiến hành theo ba bước:
+Bước 1. Giả sử a đúng.
+Bước 2. Từ giả thiết a đúng, dùng lập luận và các mệnh đề toán học đã biết, suy ra b đúng.
+Bước 3. Kết luận a  b luôn đúng.
+Trong mệnh đề a  b ta gọi a là giả thiết, b là kết luận.
+3. Nếu ta coi a  b là mệnh đề thuận thì b  a là mệnh đề đảo,    là mệnh đề phản và    là mệnh đề phản đảo.
+4. Trong văn học, mệnh đề kéo theo còn được diễn đạt bằng nhiều hình thức phong phú. Chẳng hạn:
+"Bao giờ bánh đúc có xương,
+Bấy giờ dì ghẻ mới thương con chồng"
+hoặc
+"Chuồn chuồn bay thấp thì mưa,
+Bay cao thì nắng bay vừa thì râm".
+[sửa]Phép tương đương
+Bài chi tiết: Tương đương logic
+a tương đương b là một mệnh đề, kí hiệu là a  b, nếu cả hai mệnh đề a và b cùng đúng hoặc cùng sai.
+Bảng giá trị chân lí của mệnh đề tương đương
+a	b	a  b
+1	1	1
+1	0	0
+0	1	0
+0	0	1
+Chú ý:
+1. Trong thực tế, mệnh đề "a tương đương b" thường được diễn đạt dưới nhiều hình thức khác nhau. Chẳng hạn:
+"a khi và chỉ khi b"
+"a nếu và chỉ nếu b"
+"a và b là hai mệnh đề tương đương"
+"a là điều kiều kiện cần và đủ để có b"
+2. Hai mệnh đề a, b tương đương với nhau hoàn toàn không có nghĩa là nội dung của chúng như nhau, mà nó chỉ nói lên rằng chúng có cùng giá trị chân lí (cùng đúng hoặc cùng sai).
+Ví dụ:
+"Tháng 12 có 31 ngày khi và chỉ khi trái đất quay quanh mặt trời" là mệnh đề đúng.
+"12 giờ trưa hôm nay Tuấn có mặt ở Hà Nội nếu và chỉ nếu vào giờ đó anh đang ở thành phố Hồ Chí Minh" là mệnh đề sai.
+"Hình vuông có một góc tù khi và chỉ khi 100 là số nguyên tố" là mệnh đề đúng.
+3. Một cách khác, người ta cũng nói rằng a tương đương b khi và chỉ khi cả hai mệnh đề a  b và b  a cùng đúng. Vì vậy để chứng minh mệnh đề a  b ta chứng minh hai mệnh đề a  b và b  a.
+4. Các cặp mệnh đề thuận và phản đảo, đảo và phản là những cặp mệnh đề tương đương. Đây chính là cơ sở của phương pháp chứng minh gián tiếp trong toán học.
+[sửa]Sự tương đương lôgic và luật
 
-Xét câu "  ".
-Cũng như trên, ta thấy với mỗi giá trị của n thuộc tập số nguyên ta được một mệnh đề . Chẳng hạn :
-Với  ta được mệnh đề " 2 + 1 = 5 " (sai).
-Với  ta được mệnh đề " 2 + 3 = 5 " (đúng).
+[sửa]Công thức
+Trong phần trên ta đã xét năm phép toán trên các mệnh đề. Như vậy, nếu có các mệnh đề a, b, c,... khi dùng các phép toán lôgic tác động vào, chúng ta sẽ nhận được những mệnh đề ngày càng phức tạp hơn. Mỗi mệnh đề như thế và cả những mệnh đề xuất phát ta gọi là công thức. Hay nói cách khác:
+a) Mỗi mệnh đề gọi là một công thức.
+b) Nếu P, Q là những công thức thì , P Λ Q, P ν Q, P  Q, P  Q cũng đều là công thức.
+c) Mọi dãy kí hiệu khác không xác định theo quy tắc a), b) đều không phải là công thức.
+Mỗi công thức được tạo thành từ những mệnh đề dưới tác dụng của các phép toán lôgic. Như vậy ta gán cho mỗi mệnh đề có mặt trong công thức P một giá trị chân lí, dùng bảng chân lí của các phép lôgic ta khẳng định được công thức P là mệnh đề đúng hoặc sai. Nếu P là mệnh đề đúng (hoặc sai) thì ta nói công thức P có giá trị chân lí bằng 1 (hoặc 0).
+Ví dụ:
+   (1) là công thức có giá trị chân lí bằng 1 (với mọi mệnh đề a).
+Bảng giá trị chân lí của công thức (1)
+a		a Λ 	
+0	1	0	1
+1	0	0	1
+   (2) là một công thức có giá trị chân lí bằng 0 (với mọi mệnh đề a, b).
+Bảng giá trị chân lí của công thức (2)
+a	b						
+1	1	0	0	1	1	1	0
+1	0	0	1	0	0	1	0
+0	1	1	0	1	1	1	0
+0	0	1	1	1	1	1	0
+[sửa]Sự tương đương lôgic
+Cho P và Q là hai công thức. Ta nói rằng hai công thức P, Q tương đương lôgic với nhau, kí hiệu là P ≡ Q, nếu với mọi hệ chân lí gán cho các mệnh đề có mặt trong hai công thức đó thì chúng luôn nhận giá trị chân lí như nhau.
+Đặc biệt, hai mệnh đề a, b gọi là tương đương lôgic, kí hiệu là a ≡ b, nếu chúng cùng đúng hoặc cùng sai.
+Chú ý:
+1. Kí hiệu a ≡ b là để chỉ hai mệnh đề tương đương lôgic chứ không phải là hai mệnh đề bằng nhau.
+2. Hai mệnh đề tương đương lôgic có thể về nội dung chúng hoàn toàn không có liên quan.
+Chẳng hạn: "Tháng 2 có 31 ngày ≡ 2 + 2 = 11".
+3. Quan hệ P ≡ Q còn được gọi là một đẳng thức.
+[sửa]Đẳng thức
+Dưới đây là một số đẳng thức thường gặp trong lôgic mệnh đề:
+[sửa]Phủ định của phủ định
+(1)    ≡ a.
+[sửa]Luật Đờ Moócgăng
+(2)    ≡ 
+(3)    ≡ 
+[sửa]Tính chất kết hợp của các phép lôgic
+(4)   (a Λ b) Λ c ≡ a Λ (b Λ c)
+(5)   (a ν b) ν c ≡ a ν (b ν c)
+[sửa]Tính chất giao hoán của các phép lôgic
+(6)   a Λ b ≡ b Λ a
+(7)   a ν b ≡ b ν a
+(8)   a  b ≡ b  a
+[sửa]Tính chất phân phối
+(9)   a Λ (b ν c) ≡ (a Λ b) ν (a Λ c)
+(10)   a ν (b Λ c) ≡ (a ν b) Λ (a ν c)
+[sửa]Tính lũy đẳng
+(11)   a Λ a ≡ a
+(12)   a ν a ≡ a
+[sửa]Biểu diễn phép kéo theo qua các phép lôgic khác
+(13)    ≡ 
+(14)    ≡ 
+(15)    ≡    (luật phản đảo)
+[sửa]Biểu diễn tương đương qua các phép lôgic khác
+(16)    ≡ 
+(17)    ≡ 
+[sửa]Các đẳng thức về 0 và 1
+Người ta còn dùng kí hiệu 1 (hoặc 0) để chỉ một mệnh đề luôn luôn đúng (hoặc luôn luôn sai). Ta có các đẳng thức sau về 0 và 1:
+(18)   a Λ 0 ≡ 0
+(19)   a ν 0 ≡ a
+(20)   a Λ 1 ≡ a
+(21)   a ν 1 ≡ 1
+(22)   a ν  ≡ 1 (luật bài trung)
+(23)   a Λ  ≡ 0 (luật mâu thuẫn)
+[sửa]Chứng minh đẳng thức
+Để chứng minh một đẳng thức trong lôgic mệnh đề ta thường dùng phương pháp lập bảng giá trị chân lí.
+Ví dụ 1: Chứng minh:    ≡   
+Bảng giá trị chân lí
+a	b		
+1	1	0	0
+1	0	1	1
+0	1	1	1
+0	0	1	1
+Nhìn cột 3 và 4 trong bảng trên ta thấy hai công thức      và      luôn nhận giá trị chân lí như nhau. Vậy ta có điều phải chứng minh.
+Ví dụ 2: Chứng minh:    ≡   
+Bảng giá trị chân lí
+a	b		
+1	1	1	1
+1	0	0	0
+0	1	1	1
+0	0	1	1
+Nhìn cột 3 và 4 trong bảng trên ta thấy hai công thức      và      luôn nhận giá trị chân lí như nhau. Vậy ta có điều phải chứng minh.
+[sửa]Hàm mệnh đề. Các lượng từ tồn tại và tổng quát
 
-Hai câu tên là những ví dụ về mệnh đề chứa biến.
+[sửa]Khái niệm về hàm mệnh đề
+Ta xét các ví dụ sau:
+Ví dụ 1: "Số tự nhiên n chia hết cho 5".
+Về phương diện ngôn ngữ thì đây là một câu. Nhưng câu này chưa phản ánh tính đúng hoặc sai một thực tế khách quan nào, cho nên nó chưa phải là mệnh đề. Song nếu ta thay n bằng số tự nhiên cụ thể, chẳng hạn:
+Thay n = 100 ta được mệnh đề đúng: "Số 100 chia hết cho 5".
+Thay n = 101 ta được mệnh đề sai: "Số 101 chia hết cho 5".
+Ví dụ 2: "x + 3 > 7".
+Tương tự như trong ví dụ 1, x + 3 > 7 chưa phải là mệnh đề, song nếu ta thay x bởi một số thực cụ thể, chẳng hạn:
+Thay x = 0 ta được mệnh đề sai: "0 + 3 > 7".
+Thay x = 5 ta được mệnh đề đúng: "5 + 3 > 7".
+Ví dụ 3: "Ông A là nhà toán học vĩ đại".
+Câu trên chưa phải là mệnh đề. Nhưng nếu ta chọn "ông A" là "Gausơ" sẽ được mệnh đề đúng: "Gausơ là nhà toán học vĩ đại", nếu ta chọn "ông A" là "Đinh Bộ Lĩnh" thì sẽ được mệnh đề sai: "Đinh Bộ Lĩnh là nhà toán học vĩ đại".
+Từ các ví dụ trên ta đi đến định nghĩa sau:
+Những câu có chứa các biến mà bản thân nó chưa phải là mệnh đề nhưng khi ta thay các biến đó bởi các phần tử thuộc tập xác định X thì nó trở thành mệnh đề (đúng hoặc sai) ta sẽ gọi là hàm mệnh đề (hoặc vị từ, hàm phán đoán, mệnh đề không xác định, mệnh đề chứa biến). Tập X gọi là miền xác định của hàm mệnh đề đó.
+Ta dùng kí hiệu: T(n), F(x),... để chỉ các hàm mệnh đề.
+Chẳng hạn:
+Hàm mệnh đề T(n) : "Số tự nhiên n chia hết cho 5" có miền xác định là tập các số tự nhiên N. Tập các số tự nhiên có tận cùng bằng 0 hoặc 5 là miền đúng của T(n).
+Hàm mệnh đề F(x) = "x + 3 > 7" có miền xác định là các số thực. Tập các số thực lớn hơn 4 ta gọi là miền đúng của hàm mệnh đề F(x).
+[sửa]Mệnh đề tồn tại
+Cho T(x) là hàm mệnh đề xác định trên miền X. Nếu ta đặt thêm cụm từ "Tồn tại  sao cho ..." vào trước hàm mệnh đề T(x) ta được mệnh đề:
+"Tồn tại  sao cho T(x)"
+Ta gọi mệnh đề có cấu trúc như trên là mệnh đề tồn tại. Kí hiệu là:
 
-II. PHỦ ĐỊNH CỦA MỘT MỆNH ĐỀ
-
-Ví dụ 1. Nam và Minh tranh luận về loài Dơi.
-Nam nói "Dơi là một loài chim".
-Minh phủ định "Dơi không phải là một loài chim".
-
-Để phủ định một mệnh đề, ta thêm (hoặc bớt) từ "không " hoặc ("không phải") vào trước vị ngữ của mệnh đề đó.
-
-Ký hiệu mệnh đề phủ định của mệnh đề  là , ta có:  đúng khi  sai và   sai khi  đúng.
-
-Ví dụ 2.: "3 là một số nguyên tố";
-: "3 không phải là số nguyên tố".
- "7 không chia hết cho 5"; 
-: "7 chia hết cho 5".
-
-III. MỆNH ĐỀ KÉO THEO
-
-Ví dụ 3
-
-Ai cũng biết "Nếu trái đất không có nước thì không có sự sống".
-
-Câu nói trên là một mệnh đề dạng "nếu  thì  ", ở đây  là mệnh đề "Trái Đất không có nước",  là mệnh đề "(Trái Đất) không có sự sống".
-
-                    Mệnh đề "Nếu  thì " được gọi là mệnh đề kéo theo và ký hiệu là .
-
-                    Mệnh đề  còn được phát biểu là "  kéo theo  " hoặc "Từ  suy ra ".
-
-Ví dụ 4
-
-Mệnh đề "  " sai.
-Mệnh đề "  " đúng.
-Các định lý toán học là những mệnh đề đúng và thường có dạng 
-Khi đó ta nói:                      là giả thiết ,  là kết luận của định lý, hoặc  là điều kiện đủ để có , hoặc  là điều kiện cần để có .
-
-IV. MỆNH ĐỀ ĐẢO - HAI MỆNH ĐỀ TƯƠNG ĐƯƠNG
-
-Cho tam giác . Xét các mệnh đề dạng   sau:
-
-a) Nếu  là tam giác đều thì  là một tam giác cân.
-
-b) Nếu  là một tam giác đều thì  là một tam giác cân và có một góc bằng .
+hoặc
 
 
-Hãy phát biểu các mệnh đề  tương ứng và xét tính đúng sai của chúng.
+Kí hiệu  gọi là lượng từ tồn tại.
+Ví dụ:
+"Tồn tại số thực x sao cho x + 4 > 7" là mệnh đề đúng.
+Kí hiệu là: 
+"Tồn tại số tự nhiên n sao cho n chia hết cho 5" là mệnh đề đúng.
+Kí hiệu là: 
+"Tồn tại số thực x sao cho x2 + 1 = 0" là mệnh đề sai.
+Kí hiệu là: 
+Chú ý:
+1. Trong thực tế, mệnh đề tồn tại còn được diễn đạt dưới những dạng khác nhau, chẳng hạn:
+"Tồn tại ít nhất một  sao cho T(x)".
+"Có một  sao cho T(x)".
+"Có ít nhất một  sao cho T(x)".
+"Ít ra cũng có một người là nhà toán học".
+"Một số người là nhà toán học".
+"Có nhiều người là nhà toán học"
+..................
+2. Ta dùng kí hiệu  với nghĩa "Tồn tại duy nhất một  sao cho T(x)".
+[sửa]Mệnh đề tổng quát
+Cho T(x) là hàm mệnh đề xác định trên miền X. Nếu ta đặt thêm cụm từ "Với mọi  ta có ..." vào trước hàm mệnh đề T(x) ta được mệnh đề:
+"Với mọi  ta có T(x)"
+Ta gọi mệnh đề có cấu trúc như trên là mệnh đề tổng quát (hoặc toàn thể, phổ biến, phổ cập,...). Kí hiệu là:
 
-                    Mệnh đề Q =>  được gọi là mệnh đề đảo của mệnh đề 
+hoặc
 
-Mệnh đề đảo của một mệnh đề không nhất thiết là đúng.
+hoặc
 
-Nếu cả hai mệnh đề  và  đều đúng thì ta nói  và Q là hai mệnh đề tương đương.
 
-Khi đó ta ký hiệu  và đọc là  tương đương , hoặc  là điều kiện cần và đủ để có , hoặc  khi và chỉ khi .
+Kí hiệu  gọi là lượng từ tổng quát (hay toàn thể, phổ biến, phổ cập,...)
 
-Ví dụ 5.
+[sửa]Phủ định của mệnh đề tồn tại và tổng quát
+Phủ định các mệnh đề tồn tại và tổng quát được thiết lập theo hai quy tắc dưới đây:
 
-a) Tam giác  cân có một góc  là điều kiện cần và đủ để tam giác  đều.
+Như vậy, hai mệnh đề:
+ và   là phủ định của nhau.
+ và   là phủ định của nhau.
+Ví dụ:
 
-b) Một tam giác là tam giác vuông khi và chỉ khi nó có một góc bằng tổng hai góc còn lại.
 
-V. KÍ HIỆU  VÀ 
+Kí hiệu là: 
 
-Ví dụ 6. Câu "Bình phương của mọi số thực đều lớn hơn hoặc bằng không" là một mệnh đề . Có thể viết mệnh đề này như sau :
 
-                     hay 
-Kí hiệu  đọc là "với mọi".
 
-Ví dụ 7. Câu "Có một số nguyên nhỏ hơn 0" là một mệnh đề .Có thể viết mệnh đề này như sau :
 
-                     .
-Kí hiệu tồn tại  đọc là "có một" (tồn tại một) hay "có ít nhất một" (tồn tại ít nhất một).
-Ví dụ 8. Nam nói " mọi số thực đều có bình phương khác 1".
 
-Minh phủ định "Không đúng. Có một số thực mà bình phương của nó bằng 1, chẳng hạn số 1".
 
-Như vậy, phủ định của mệnh đề
+Kí hiệu là: 
+[sửa]Ứng dụng
 
-                    .
-là mệnh đề
-
-                    .
-Ví dụ 9. Nam nói "Có một số tự nhiên ".
-Minh phản bác "Không đúng. Với mọi số tự nhiên , đều có ". Như vậy, phủ định của mệnh đề
-
-                    .
-là mệnh đề
-
-                    .
+[sửa]Viết cấu trúc định nghĩa, định lí toán học
+[sửa]Giải bài toán bằng suy luận lôgic
+Thông thường khi giải một bài toán dùng công cụ của lôgic mệnh đề ta tiến hành theo các bước sau:
+Bước 1: Phiên dịch đề bài từ ngôn ngữ đời thường sang ngôn ngữ của lôgic mệnh đề:
+Tìm xem bài toán được tạo thành từ những mệnh đề nào.
+Diễn đạt các điều kiện (đã cho và phải tìm) trong bài toán bằng ngôn ngữ của lôgic mệnh đề.
+Bước 2: Phân tích mối liên hệ giữa điều kiện đã cho với kết luận của bài toán bằng ngôn ngữ của lôgic mệnh đề.
+Bước 3: Dùng các phương pháp suy luận lôgic dẫn dắt từ các điều kiện đã cho tới kết luận của bài toán.
+Ví dụ:
+Tại Tiger Cup 98 có bốn đội lọt vào vòng bán kết: Việt Nam, Singapor, Thái Lan và Inđônêxia. Trước khi thi đấu vòng bán kết, ba bạn Dụng, Quang, Trung dự đoán như sau:
+Dụng: Singapor nhì, còn Thái Lan ba.
+Quang: Việt Nam nhì, còn Thái Lan tư.
+Trung: Singapor nhất và Inđônêxia nhì.
+Kết quả, mỗi bạn dự đoán đúng một đội và sai một đội. Hỏi mỗi đội đã đạt giải mấy?
+Giải:
+Kí hiệu các mệnh đề:
+d1, d2 là hai dự đoán của Dụng.
+q1, q2 là hai dự đoán của Quang.
+t1, t2 là hai dự đoán của Trung.
+Vì Dụng có một dự đoán đúng và một dự đoán sai, nên có hai khả năng:
+Nếu G(d1) = 1 thì G(t1) = 0. Suy ra G(t2) = 1. Điều này vô lí vì cả hai đội Singapor và Inđônêxia đều đạt giải nhì.
+Nếu G(d1) = 0 thì G(d2) = 1. Suy ra G(q2) = 0 và G(q1) = 1. Suy ra G(t2) = 0 và G(t1) = 1.
+Vậy Singapor nhất, Việt Nam nhì, Thái Lan ba còn Inđônêxia đạt giải tư.
+[sửa]Giải bài toán trong kĩ thuật
+Lôgic mệnh đề còn được ứng dụng trong kĩ thuật lắp ráp các mạch điện và thiết bị trong nhà máy. Dưới đây là một ví dụ minh họa.
+Ví dụ:
+Giữa công tắc và dây may so của một chiếc Bàn là có rơle tự ngắt (để khi dây may so nóng đến nhiệt độ quy định cho phép thì rơle tự ngắt mạch điện cho Bàn là được an toàn). Hãy thiết lập nguyên tắc lôgic của quá trình hoạt động của chiếc Bàn là đó (thiết lập mối liên hệ giữa việc đóng, ngắt mạch của công tắc, rơle với nhiệt độ cho phép của dây may so).
+Giải:
+Kí hiệu các mệnh đề:
+c = "Công tắc Bàn là đóng mạch".
+r = "Rơ le Bàn là đóng mạch".
+t = "Dây may so trong Bàn là nóng tới nhiệt độ cho phép".
+Mối liên hệ giữa trạng thái an toàn của Bàn là và giá trị chân lí của các mệnh đề c, r, t có thể biểu diễn bởi bảng sau:
+Trạng thái	c	r	t	Trạng thái an toàn
+1	1	1	1	không
+2	1	1	0	có
+3	1	0	1	có
+4	1	0	0	không
+5	0	1	1	không
+6	0	1	0	có
+7	0	0	1	có
+8	0	0	0	không
+Nhìn vào bảng trên ta thấy:
+Trạng thái 1 và 5 không đảm bảo an toàn, vì khi dây may so đã nóng tới nhiệt độ quy định cho phép mà rơle vẫn đóng mạch thì dẫn đến hỏng Bàn là hoặc đồ là.
+Trạng thái 4 và 8 không đảm bảo an toàn vì dây may so chưa nóng tới nhiệt độ quy định cho phép mà rơle đã ngắt mạch thì Bàn là không sử dụng được.
+Các trạng thái còn lại: 2, 3, 6 và 7 đều đảm bảo an toàn. Các trạng thái đó được mô tả bằng các công thức lôgic sau:
+Trạng thái	Công thức
+2	
+3	
+6	
+7	
+Vậy Bàn là hoạt động an toàn khi và chỉ khi:
+   (1)
+Áp dụng các đẳng thức về luật phân phối, các đẳng thức về 0 và 1 cho trạng thái 2 với 6 và 3 với 7, ta có:
+   (2)
+   (3)
+Dùng bảng chân lí ta nhận được:
+             (4)
+Từ (1), (2), (3) và (4) ta suy ra:
+Bàn là hoạt động an toàn khi và chỉ khi 
+Quy trình trên ta có thể phát biểu thành lời như sau: để Bàn là hoạt động an toàn phải đảm bảo nguyên tắc: "Công tắc rơle đóng mạch khi và chỉ khi nhiệt độ dây may so chưa tới hạn cho phép" hay "nhiệt độ dây may so tới hạn cho phép khi và chỉ khi công tắc rơle ngắt mạch điện".
