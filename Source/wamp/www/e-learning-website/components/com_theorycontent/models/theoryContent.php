@@ -44,7 +44,7 @@ class theoryContentModeltheoryContent extends JModel
 		$db->setQuery( $query );
 		$columns= $db->loadResultArray();
 		foreach($columns as $column){
-			echo "<h4><a href=\"http://localhost/e-learning-website/index.php?option=com_theorycontent&name=$column\"\">" . $column . "</a></h4>";		
+			echo "<h4><a href=\"/e-learning-website/index.php?option=com_theorycontent&name=$column\"\">" . $column . "</a></h4>";		
 		}
 				
 		return $subjectid;
@@ -55,13 +55,24 @@ class theoryContentModeltheoryContent extends JModel
 		$name=$_GET['name'];
 		
 		$db =& JFactory::getDBO();
-		$query = "SELECT theory_name FROM #__theories WHERE chapter_name = \"" . $name . "\"";
+		$query = "SELECT theory_id,theory_name FROM #__theories WHERE chapter_name = \"" . $name . "\"";
 		$db->setQuery( $query );
-		$columns= $db->loadResultArray();
+		$columns= $db->loadRowList();
 		foreach($columns as $column){
-			echo "<h4><a href=\"http://localhost/e-learning-website/index.php?option=com_theorycontent&theory=$column\"\">" . $column . "</a></h4>";	
+			echo "<h4><a href=\"/e-learning-website/index.php?option=com_theorycontent&theory=".$column['0']."\"\">" . $column['1'] . "</a></h4>";	
 		}
 		return $name;
+	
+	}
+	
+	function getTheoryid($theoryid)
+	{
+		
+		$db =& JFactory::getDBO();
+		$query = "SELECT theory_name FROM #__theories WHERE theory_id = \"" . $theoryid . "\"";
+		$db->setQuery( $query );
+		$result= $db->loadResult();
+		return $result;
 	
 	}
 	
@@ -72,7 +83,7 @@ class theoryContentModeltheoryContent extends JModel
 		$theory=$_GET['theory'];
 		$db =& JFactory::getDBO();
 
-		$query = "SELECT theory_file_video_path FROM #__theories WHERE theory_name =\"" . $theory . "\"";
+		$query = "SELECT theory_file_video_path FROM #__theories WHERE theory_id =\"" . $theory . "\"";
 		$db->setQuery( $query );
 		$video = $db->loadResult();
 
@@ -84,19 +95,22 @@ class theoryContentModeltheoryContent extends JModel
 		$theory=$_GET['theory'];
 		$db =& JFactory::getDBO();
 
-		$query = "SELECT theory_file_dat_path FROM #__theories WHERE theory_name =\"" . $theory . "\"";
+		$query = "SELECT theory_file_dat_path FROM #__theories WHERE theory_id =\"" . $theory . "\"";
 		$db->setQuery( $query );
 		$dat = $db->loadResult();
-		$file = fopen($dat, "r") or exit("Unable to open file!");
-		//Output a line of the file until the end is reached
-		while(!feof($file)){
-			  $buf = fgets($file);
-			  $output[] = $buf;
-		}
-		fclose($file);
-		for($i=0; $i<sizeof($output); $i++)
+		if (isset($dat))
 		{
-					echo $output[$i] . "<br/>";
+			$file = fopen($dat, "r");
+			//Output a line of the file until the end is reached
+			while(!feof($file)){
+				  $buf = fgets($file);
+				  $output[] = $buf;
+			}
+			fclose($file);
+			for($i=0; $i<sizeof($output); $i++)
+			{
+						echo $output[$i] . "<br/>";
+			}
 		}
 	}
 	
@@ -126,6 +140,7 @@ class theoryContentModeltheoryContent extends JModel
 		$row = $db->loadRowList();
 		$i  = 0  ;
 		$result = "CÁC CÂU HỎI LIÊN QUAN ĐẾN BÀI LÝ THUYẾT </br>";
+		
 		while($i < sizeof($row)){
 				?>
 				<script type="text/javascript">
@@ -137,28 +152,30 @@ class theoryContentModeltheoryContent extends JModel
 				<?php
 				$tmp = "";
 				$all_ans =   $this->get_answer($row[$i]['0']);
-				
-				$tmp = "<br>".($i+1).".";
-				
-				$tmp .=$row[$i]['5']." <a onclick=\"ans_".$row[$i]['0']."()\" ><u>Hint</u></a>";
-				
-				$tmp .= "<br><label>";
-				$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_A\" />";
-				$tmp .="A. ".$all_ans['0'];
-				$tmp .= "</label><br><label>";
-				$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"B\" id=\"question_".$row[$i]['0']."_B\" />";
-				$tmp .="B. ".$all_ans['1'];
-				$tmp .= "</label><br><label>";
-				$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"C\" id=\"question_".$row[$i]['0']."_C\" />";
-				$tmp .="C. ".$all_ans['2'];
-				$tmp .= "</label><br><label>";
-				$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"D\" id=\"question_".$row[$i]['0']."_D\" />";
-				$tmp .="D. ".$all_ans['3'];
-				$tmp .= "</label>";
-				
-				$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->get_answer_correct($row[$i]['0'])."\" />";			
-				
-				$result = $result ."<br>".$tmp;	
+				if(isset($all_ans))
+				{
+					$tmp = "<br>".($i+1).".";
+					
+					$tmp .=$row[$i]['5']." <a onclick=\"ans_".$row[$i]['0']."()\" ><u>Hint</u></a>";
+					
+					$tmp .= "<br><label>";
+					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_A\" />";
+					$tmp .="A. ".$all_ans['0'];
+					$tmp .= "</label><br><label>";
+					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"B\" id=\"question_".$row[$i]['0']."_B\" />";
+					$tmp .="B. ".$all_ans['1'];
+					$tmp .= "</label><br><label>";
+					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"C\" id=\"question_".$row[$i]['0']."_C\" />";
+					$tmp .="C. ".$all_ans['2'];
+					$tmp .= "</label><br><label>";
+					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"D\" id=\"question_".$row[$i]['0']."_D\" />";
+					$tmp .="D. ".$all_ans['3'];
+					$tmp .= "</label>";
+					
+					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->get_answer_correct($row[$i]['0'])."\" />";			
+					
+					$result = $result ."<br>".$tmp;	
+				}
 				$i++;
 		}
 		$i  =  0;

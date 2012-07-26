@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="component" version="1.5.0">
-	<name>Theory Content</name>
+	<name>Excercise Content</name>
 	<!-- The following elements are optional and free of formatting conttraints -->
-	<creationDate>2010-07-26</creationDate>
+	<creationDate>2012-07-26</creationDate>
 	<author>Huy Nguyen Tien</author>
 	<authorEmail>huynt01016@fpt.edu.vn</authorEmail>
 	<copyright>Copyright Info</copyright>
@@ -18,26 +18,26 @@
     	 in this section are copied from /site/ in the package -->
 	<files folder="site">
 		<filename>controller.php</filename>
-		<filename>theoryContent.php</filename>
+		<filename>excerciseContent.php</filename>
 		<filename>index.html</filename>
-		<filename>models/theoryContent.php</filename>
+		<filename>models/excerciseContent.php</filename>
 		<filename>models/index.html</filename>
 		<filename>views/index.html</filename>
-		<filename>views/theoryContent/index.html</filename>
-		<filename>views/theoryContent/view.html.php</filename>
-		<filename>views/theoryContent/tmpl/default.php</filename>
-		<filename>views/theoryContent/tmpl/index.html</filename>
+		<filename>views/excerciseContent/index.html</filename>
+		<filename>views/excerciseContent/view.html.php</filename>
+		<filename>views/excerciseContent/tmpl/default.php</filename>
+		<filename>views/excerciseContent/tmpl/index.html</filename>
 	</files>
 
 	
 
 	<administration>
 		<!-- Administration Menu Section -->
-		<menu>Theory Content</menu>
+		<menu>Excersice Content</menu>
 
 		<!-- Administration Main File Copy Section -->
 		<files folder="admin">
-			<filename>theoryContent.php</filename>
+			<filename>excerciseContent.php</filename>
 			<filename>index.html</filename>
 		</files>  
 	</administration>

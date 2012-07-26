@@ -40,12 +40,16 @@ class theorycontentViewtheoryContent extends JView
 			
 		if(isset($_GET['theory'])){ 
 		
-			$theory=$_GET['theory'];
-			echo "<h4><a href=\"http://localhost/e-learning-website/index.php?option=com_theorycontent&theory=$theory\"\">" . $theory . "</a></h4>";		
+			$theory = $_GET['theory'];
+			$name = $model->getTheoryid($theory);
+			
+			echo "<h4><a href=\"/e-learning-website/index.php?option=com_theorycontent&theory=$theory\"\">" . $name . "</a></h4>";	
+			echo $name;	
 			$dat = $model->getDat();
 			$video = $model->getVideo();
 			
-			
+			if (isset($video) )
+			{
 			?>	
 			<link href="/e-learning-website/data//video-js/video-js.css" rel="stylesheet">
 			<script src="/e-learning-website/data/video-js/video.js"></script>
@@ -56,7 +60,8 @@ class theorycontentViewtheoryContent extends JView
 			  <source src="<?php echo $video ?>" type='video/flv'>
 			</video>
 			<?php	
-			$question = $model->getQuestion(1,2);	
+			}
+			$question = $model->getQuestion(1,1);	
 		}
 		parent::display($tpl);	
 		
