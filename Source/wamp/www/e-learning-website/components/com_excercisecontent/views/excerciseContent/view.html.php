@@ -27,10 +27,6 @@ class excercisecontentViewexcerciseContent extends JView
 		echo ("</br>");
 		$model =& $this->getModel();
 		
-		$subjectName = $model->get_subject_name();
-		
-		$subjectid = $model->get_subject_ID($subjectName['1']);
-		
 		$subject ="";
 		$num = "";
 		if(isset($_POST["subject"]) and isset($_POST["num"]))
@@ -62,7 +58,7 @@ class excercisecontentViewexcerciseContent extends JView
 			echo "Mã môn học :<select name=\"subject\">";
 			echo "<option></option>";
 			$all_subject =  $model->get_subject_name() ;
-			$i = 1;
+			$i = 0;
 			while($all_subject[$i]!= ""){
 				echo "<option>".$all_subject[$i]."</option>";
 				$i++;
