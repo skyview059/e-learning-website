@@ -41,8 +41,7 @@ class excerciseContentModelexcerciseContent extends JModel
 		$row = $db->loadRowList();
 		$i  = 0  ;
 		$result = "";
-		
-		while($i < sizeof($row)){
+				while($i < sizeof($row)){
 				?>
 				<script type="text/javascript">
 					function ans_<?php echo($row[$i]['0']);?>()
@@ -60,18 +59,45 @@ class excerciseContentModelexcerciseContent extends JModel
 					$tmp .=$row[$i]['5']." <a onclick=\"ans_".$row[$i]['0']."()\" ><u>Hint</u></a>";
 					
 					$tmp .= "<br><label>";
-					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_A\" />";
-					$tmp .="A. ".$all_ans['0'];
-					$tmp .= "</label><br><label>";
-					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"B\" id=\"question_".$row[$i]['0']."_B\" />";
-					$tmp .="B. ".$all_ans['1'];
-					$tmp .= "</label><br><label>";
-					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"C\" id=\"question_".$row[$i]['0']."_C\" />";
-					$tmp .="C. ".$all_ans['2'];
-					$tmp .= "</label><br><label>";
-					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"D\" id=\"question_".$row[$i]['0']."_D\" />";
-					$tmp .="D. ".$all_ans['3'];
-					$tmp .= "</label>";
+					
+					if(isset($all_ans['0']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_A\" />";
+						$tmp .="A. ".$all_ans['0'];
+						$tmp .= "</label><br><label>";
+					}
+					if(isset($all_ans['1']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"B\" id=\"question_".$row[$i]['0']."_B\" />";
+						$tmp .="B. ".$all_ans['1'];
+						$tmp .= "</label><br><label>";
+					}
+					if(isset($all_ans['2']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"C\" id=\"question_".$row[$i]['0']."_C\" />";
+						$tmp .="C. ".$all_ans['2'];
+						$tmp .= "</label><br><label>";
+					}
+					if(isset($all_ans['3']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"D\" id=\"question_".$row[$i]['0']."_D\" />";
+						$tmp .="D. ".$all_ans['3'];
+						$tmp .= "</label><br><label>";
+					}
+					if(isset($all_ans['4']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_E\" />";
+						$tmp .="E. ".$all_ans['4'];
+						$tmp .= "</label><br><label>";
+					}
+					if(isset($all_ans['5']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_F\" />";
+						$tmp .="F. ".$all_ans['5'];
+						$tmp .= "</label><br><label>";
+					}
+					
+				
 					
 					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->get_answer_correct($row[$i]['0'])."\" />";			
 					
@@ -79,6 +105,8 @@ class excerciseContentModelexcerciseContent extends JModel
 				}
 				$i++;
 		}
+		if ($i ==0)
+			echo "Môn này chưa có câu hỏi nào";
 		$i  =  0;
 		echo $result;
 		

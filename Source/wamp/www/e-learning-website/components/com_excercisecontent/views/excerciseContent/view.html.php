@@ -41,15 +41,10 @@ class excercisecontentViewexcerciseContent extends JView
 			if (isset($subject_id))
 			{
 				$question = $model->getQuestion($subject_id,$num);
-				if (isset($question) && $question != "")
+				if (isset($question))
 				{
 					echo( $question );
 				} 
-				else
-				{
-					echo( "Môn này chưa có bài tập nào" );
-				}
-				
 			}
 			
 			
