@@ -28,6 +28,7 @@ switch ( JRequest::getCmd('task'))
 	default :
 		LoginController::display();
 		break;
+		
 }
 
 

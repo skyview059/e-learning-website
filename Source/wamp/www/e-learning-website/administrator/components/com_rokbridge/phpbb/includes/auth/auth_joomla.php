@@ -185,6 +185,7 @@ function logout_joomla(&$data)
 	
 		$session =& JFactory::getSession();
 		$session->close();
+		echo "<script language=\"javascript\" type=\"text/javascript\"> alert('This is what an alert message looks like.'); </script>";
 	}
 }
 
