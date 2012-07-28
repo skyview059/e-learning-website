@@ -205,7 +205,7 @@ class plgUserJoomla extends JPlugin
 		$instance->set( 'id'			, 0 );
 		$instance->set( 'name'			, $user['fullname'] );
 		$instance->set( 'username'		, $user['username'] );
-		$instance->set( 'password_clear'	, $user['password_clear'] );
+	//	$instance->set( 'password_clear'	, $user['password_clear'] );
 		$instance->set( 'email'			, $user['email'] );	// Result should contain an email (check)
 		$instance->set( 'gid'			, $acl->get_group_id( '', $usertype));
 		$instance->set( 'usertype'		, $usertype );
