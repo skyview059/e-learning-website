@@ -33,10 +33,10 @@ class excerciseContentModelexcerciseContent extends JModel
 		return $result;
 	} 
 	
-	function getQuestion($subjectid,$num)
+	function getQuestion($theoryid,$num)
 	{
 		$db =& JFactory::getDBO();
-		$query = "SELECT * FROM `jos_questions` WHERE subjectiD = '".$subjectid."' ORDER BY RAND( ) LIMIT ".$num;
+		$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theoryid."' ORDER BY RAND( ) LIMIT ".$num;
 		$db->setQuery( $query );
 		$row = $db->loadRowList();
 		$i  = 0  ;
@@ -106,9 +106,9 @@ class excerciseContentModelexcerciseContent extends JModel
 				$i++;
 		}
 		if ($i ==0)
-			echo "Môn này chưa có câu hỏi nào";
+			echo "Bài lý thuyết này chưa có câu hỏi nào";
 		$i  =  0;
-		echo $result;
+		return $result;
 		
 	}
 	
@@ -131,6 +131,39 @@ class excerciseContentModelexcerciseContent extends JModel
 		return $result;
 		
 	} 
+	
+	function get_chapter_name($subject_id)
+	{
+		
+		$db =& JFactory::getDBO();
+		$query = "SELECT DISTINCT chapter_name FROM #__theories WHERE subjectid = " . $subject_id;
+		$db->setQuery( $query );
+		$chapter_name= $db->loadResultArray();
+		return $chapter_name;
+	}
+	
+	function get_theory_name($chapter_name)
+	{
+		
+		$db =& JFactory::getDBO();
+		$query = "SELECT theory_name FROM #__theories WHERE chapter_name = \"" . $chapter_name . "\"";
+		$db->setQuery( $query );
+		$theory_name= $db->loadResultArray();
+		return $theory_name;
+	
+	}
+	
+	function get_theory_id($theory_name)
+	{
+		
+		$db =& JFactory::getDBO();
+		$query = "SELECT theory_id FROM #__theories WHERE theory_name = \"" . $theory_name . "\"";
+		$db->setQuery( $query );
+		$theory_id= $db->loadResult();
+		return $theory_id;
+	
+	}
+	
 	
 }
 

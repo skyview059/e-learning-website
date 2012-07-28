@@ -200,62 +200,9 @@ Chú ý:
 2. Hai mệnh đề tương đương lôgic có thể về nội dung chúng hoàn toàn không có liên quan.
 Chẳng hạn: "Tháng 2 có 31 ngày ≡ 2 + 2 = 11".
 3. Quan hệ P ≡ Q còn được gọi là một đẳng thức.
-[sửa]Đẳng thức
-Dưới đây là một số đẳng thức thường gặp trong lôgic mệnh đề:
-[sửa]Phủ định của phủ định
-(1)    ≡ a.
-[sửa]Luật Đờ Moócgăng
-(2)    ≡ 
-(3)    ≡ 
-[sửa]Tính chất kết hợp của các phép lôgic
-(4)   (a Λ b) Λ c ≡ a Λ (b Λ c)
-(5)   (a ν b) ν c ≡ a ν (b ν c)
-[sửa]Tính chất giao hoán của các phép lôgic
-(6)   a Λ b ≡ b Λ a
-(7)   a ν b ≡ b ν a
-(8)   a  b ≡ b  a
-[sửa]Tính chất phân phối
-(9)   a Λ (b ν c) ≡ (a Λ b) ν (a Λ c)
-(10)   a ν (b Λ c) ≡ (a ν b) Λ (a ν c)
-[sửa]Tính lũy đẳng
-(11)   a Λ a ≡ a
-(12)   a ν a ≡ a
-[sửa]Biểu diễn phép kéo theo qua các phép lôgic khác
-(13)    ≡ 
-(14)    ≡ 
-(15)    ≡    (luật phản đảo)
-[sửa]Biểu diễn tương đương qua các phép lôgic khác
-(16)    ≡ 
-(17)    ≡ 
-[sửa]Các đẳng thức về 0 và 1
-Người ta còn dùng kí hiệu 1 (hoặc 0) để chỉ một mệnh đề luôn luôn đúng (hoặc luôn luôn sai). Ta có các đẳng thức sau về 0 và 1:
-(18)   a Λ 0 ≡ 0
-(19)   a ν 0 ≡ a
-(20)   a Λ 1 ≡ a
-(21)   a ν 1 ≡ 1
-(22)   a ν  ≡ 1 (luật bài trung)
-(23)   a Λ  ≡ 0 (luật mâu thuẫn)
-[sửa]Chứng minh đẳng thức
-Để chứng minh một đẳng thức trong lôgic mệnh đề ta thường dùng phương pháp lập bảng giá trị chân lí.
-Ví dụ 1: Chứng minh:    ≡   
-Bảng giá trị chân lí
-a	b		
-1	1	0	0
-1	0	1	1
-0	1	1	1
-0	0	1	1
-Nhìn cột 3 và 4 trong bảng trên ta thấy hai công thức      và      luôn nhận giá trị chân lí như nhau. Vậy ta có điều phải chứng minh.
-Ví dụ 2: Chứng minh:    ≡   
-Bảng giá trị chân lí
-a	b		
-1	1	1	1
-1	0	0	0
-0	1	1	1
-0	0	1	1
-Nhìn cột 3 và 4 trong bảng trên ta thấy hai công thức      và      luôn nhận giá trị chân lí như nhau. Vậy ta có điều phải chứng minh.
-[sửa]Hàm mệnh đề. Các lượng từ tồn tại và tổng quát
 
-[sửa]Khái niệm về hàm mệnh đề
+
+Khái niệm về hàm mệnh đề
 Ta xét các ví dụ sau:
 Ví dụ 1: "Số tự nhiên n chia hết cho 5".
 Về phương diện ngôn ngữ thì đây là một câu. Nhưng câu này chưa phản ánh tính đúng hoặc sai một thực tế khách quan nào, cho nên nó chưa phải là mệnh đề. Song nếu ta thay n bằng số tự nhiên cụ thể, chẳng hạn:
@@ -302,12 +249,7 @@ Chú ý:
 [sửa]Mệnh đề tổng quát
 Cho T(x) là hàm mệnh đề xác định trên miền X. Nếu ta đặt thêm cụm từ "Với mọi  ta có ..." vào trước hàm mệnh đề T(x) ta được mệnh đề:
 "Với mọi  ta có T(x)"
-Ta gọi mệnh đề có cấu trúc như trên là mệnh đề tổng quát (hoặc toàn thể, phổ biến, phổ cập,...). Kí hiệu là:
-
-hoặc
-
-hoặc
-
+Ta gọi mệnh đề có cấu trúc như trên là mệnh đề tổng quát (hoặc toàn thể, phổ biến, phổ cập,...). 
 
 Kí hiệu  gọi là lượng từ tổng quát (hay toàn thể, phổ biến, phổ cập,...)
 
@@ -317,21 +259,8 @@ Phủ định các mệnh đề tồn tại và tổng quát được thiết l�
 Như vậy, hai mệnh đề:
  và   là phủ định của nhau.
  và   là phủ định của nhau.
-Ví dụ:
-
-
-Kí hiệu là: 
-
-
-
-
-
-
-Kí hiệu là: 
-[sửa]Ứng dụng
-
-[sửa]Viết cấu trúc định nghĩa, định lí toán học
-[sửa]Giải bài toán bằng suy luận lôgic
+ 
+Giải bài toán bằng suy luận lôgic
 Thông thường khi giải một bài toán dùng công cụ của lôgic mệnh đề ta tiến hành theo các bước sau:
 Bước 1: Phiên dịch đề bài từ ngôn ngữ đời thường sang ngôn ngữ của lôgic mệnh đề:
 Tìm xem bài toán được tạo thành từ những mệnh đề nào.
@@ -353,41 +282,3 @@ Vì Dụng có một dự đoán đúng và một dự đoán sai, nên có hai 
 Nếu G(d1) = 1 thì G(t1) = 0. Suy ra G(t2) = 1. Điều này vô lí vì cả hai đội Singapor và Inđônêxia đều đạt giải nhì.
 Nếu G(d1) = 0 thì G(d2) = 1. Suy ra G(q2) = 0 và G(q1) = 1. Suy ra G(t2) = 0 và G(t1) = 1.
 Vậy Singapor nhất, Việt Nam nhì, Thái Lan ba còn Inđônêxia đạt giải tư.
-[sửa]Giải bài toán trong kĩ thuật
-Lôgic mệnh đề còn được ứng dụng trong kĩ thuật lắp ráp các mạch điện và thiết bị trong nhà máy. Dưới đây là một ví dụ minh họa.
-Ví dụ:
-Giữa công tắc và dây may so của một chiếc Bàn là có rơle tự ngắt (để khi dây may so nóng đến nhiệt độ quy định cho phép thì rơle tự ngắt mạch điện cho Bàn là được an toàn). Hãy thiết lập nguyên tắc lôgic của quá trình hoạt động của chiếc Bàn là đó (thiết lập mối liên hệ giữa việc đóng, ngắt mạch của công tắc, rơle với nhiệt độ cho phép của dây may so).
-Giải:
-Kí hiệu các mệnh đề:
-c = "Công tắc Bàn là đóng mạch".
-r = "Rơ le Bàn là đóng mạch".
-t = "Dây may so trong Bàn là nóng tới nhiệt độ cho phép".
-Mối liên hệ giữa trạng thái an toàn của Bàn là và giá trị chân lí của các mệnh đề c, r, t có thể biểu diễn bởi bảng sau:
-Trạng thái	c	r	t	Trạng thái an toàn
-1	1	1	1	không
-2	1	1	0	có
-3	1	0	1	có
-4	1	0	0	không
-5	0	1	1	không
-6	0	1	0	có
-7	0	0	1	có
-8	0	0	0	không
-Nhìn vào bảng trên ta thấy:
-Trạng thái 1 và 5 không đảm bảo an toàn, vì khi dây may so đã nóng tới nhiệt độ quy định cho phép mà rơle vẫn đóng mạch thì dẫn đến hỏng Bàn là hoặc đồ là.
-Trạng thái 4 và 8 không đảm bảo an toàn vì dây may so chưa nóng tới nhiệt độ quy định cho phép mà rơle đã ngắt mạch thì Bàn là không sử dụng được.
-Các trạng thái còn lại: 2, 3, 6 và 7 đều đảm bảo an toàn. Các trạng thái đó được mô tả bằng các công thức lôgic sau:
-Trạng thái	Công thức
-2	
-3	
-6	
-7	
-Vậy Bàn là hoạt động an toàn khi và chỉ khi:
-   (1)
-Áp dụng các đẳng thức về luật phân phối, các đẳng thức về 0 và 1 cho trạng thái 2 với 6 và 3 với 7, ta có:
-   (2)
-   (3)
-Dùng bảng chân lí ta nhận được:
-             (4)
-Từ (1), (2), (3) và (4) ta suy ra:
-Bàn là hoạt động an toàn khi và chỉ khi 
-Quy trình trên ta có thể phát biểu thành lời như sau: để Bàn là hoạt động an toàn phải đảm bảo nguyên tắc: "Công tắc rơle đóng mạch khi và chỉ khi nhiệt độ dây may so chưa tới hạn cho phép" hay "nhiệt độ dây may so tới hạn cho phép khi và chỉ khi công tắc rơle ngắt mạch điện".

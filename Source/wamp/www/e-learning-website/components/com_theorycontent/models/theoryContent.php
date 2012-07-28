@@ -47,7 +47,6 @@ class theoryContentModeltheoryContent extends JModel
 			echo "<h4><a href=\"/e-learning-website/index.php?option=com_theorycontent&name=$column\"\">" . $column . "</a></h4>";		
 		}
 				
-		return $subjectid;
 	}
 	
 	function getTheoryName()
@@ -132,14 +131,14 @@ class theoryContentModeltheoryContent extends JModel
 		return $result;
 	} 
 	
-	function getQuestion($subjectid,$num)
+	function getQuestion($theory_id,$num)
 	{
 		$db =& JFactory::getDBO();
-		$query = "SELECT * FROM `jos_questions` WHERE subjectiD = '".$subjectid."' ORDER BY RAND( ) LIMIT ".$num;
+		$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theory_id	."' ORDER BY RAND( ) LIMIT ".$num;
 		$db->setQuery( $query );
 		$row = $db->loadRowList();
 		$i  = 0  ;
-		$result = "CÁC CÂU HỎI LIÊN QUAN ĐẾN BÀI LÝ THUYẾT </br>";
+		$result = "<h4> Các câu hỏi liên quan </h4>";
 		
 		while($i < sizeof($row)){
 				?>
@@ -154,23 +153,47 @@ class theoryContentModeltheoryContent extends JModel
 				$all_ans =   $this->get_answer($row[$i]['0']);
 				if(isset($all_ans))
 				{
-					$tmp = "<br>".($i+1).".";
+					$tmp = "</br>".($i+1).".";
 					
 					$tmp .=$row[$i]['5']." <a onclick=\"ans_".$row[$i]['0']."()\" ><u>Hint</u></a>";
 					
 					$tmp .= "<br><label>";
-					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_A\" />";
-					$tmp .="A. ".$all_ans['0'];
-					$tmp .= "</label><br><label>";
-					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"B\" id=\"question_".$row[$i]['0']."_B\" />";
-					$tmp .="B. ".$all_ans['1'];
-					$tmp .= "</label><br><label>";
-					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"C\" id=\"question_".$row[$i]['0']."_C\" />";
-					$tmp .="C. ".$all_ans['2'];
-					$tmp .= "</label><br><label>";
-					$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"D\" id=\"question_".$row[$i]['0']."_D\" />";
-					$tmp .="D. ".$all_ans['3'];
-					$tmp .= "</label>";
+					if(isset($all_ans['0']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_A\" />";
+						$tmp .="A. ".$all_ans['0'];
+						$tmp .= "</label><br><label>";
+					}
+					if(isset($all_ans['1']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"B\" id=\"question_".$row[$i]['0']."_B\" />";
+						$tmp .="B. ".$all_ans['1'];
+						$tmp .= "</label><br><label>";
+					}
+					if(isset($all_ans['2']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"C\" id=\"question_".$row[$i]['0']."_C\" />";
+						$tmp .="C. ".$all_ans['2'];
+						$tmp .= "</label><br><label>";
+					}
+					if(isset($all_ans['3']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"D\" id=\"question_".$row[$i]['0']."_D\" />";
+						$tmp .="D. ".$all_ans['3'];
+						$tmp .= "</label><br><label>";
+					}
+					if(isset($all_ans['4']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_E\" />";
+						$tmp .="E. ".$all_ans['4'];
+						$tmp .= "</label><br><label>";
+					}
+					if(isset($all_ans['5']))
+					{
+						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_F\" />";
+						$tmp .="F. ".$all_ans['5'];
+						$tmp .= "</label><br><label>";
+					}
 					
 					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->get_answer_correct($row[$i]['0'])."\" />";			
 					
