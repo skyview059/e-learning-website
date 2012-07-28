@@ -1,23 +1,11 @@
 /*MinhNT - Add - Begin*/
-.Layer1 {
+.Layer{
 	position:relative;
 	width:300px;
-	height: 250px;
-	left: 30px;
+	height: auto;
+	left: 25px;
 	top: 15px;
-	margin: 10px;
-	float: left;
-	border-radius:10px;
-	background-color: rgb(180,227,243);
-	padding-bottom:20px;
-}
-.Layer2{
-	position:relative;
-	width:300px;
-	height: 250px;
-	left: 60px;
-	top: 15px;
-	margin: 10px;
+	margin: 10px 23px;
 	float: left;
 	border-radius:10px;
 	background-color: rgb(180,227,243);

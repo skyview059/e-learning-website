@@ -2,14 +2,8 @@
 <?php
 	for($i = 0; $i<$this->numOfSubject; $i++)
 	{  
-		if($i%2==1)
-		{
-			$strLayer = "Layer2";
-		}else{
-			$strLayer = "Layer1";
-		}
 ?>	
-		<div class="<?php echo $strLayer; ?>">
+		<div class="Layer">
 			<div class="subjectImage">
 				<img src="<?php echo JPATH_URL.$this->baseurl.$this->subjectImage[$i]; ?>" alt="<?php echo $this->subjects[$i]; ?>">
 			</div>
@@ -26,7 +20,11 @@
 					foreach($chapter as $chapterName)
 					{
 ?>
-						<div class="chapterName"><a href="<?php echo $this->baseurl; ?>/index.php?option=com_theorycontent&name=<?php echo $chapterName; ?>"><?php echo $chapterName; ?></a></div>
+						<div class="chapterName">
+							<div>
+								<a href="<?php echo $this->baseurl; ?>/index.php?option=com_theorycontent&name=<?php echo $chapterName; ?>"><?php echo $chapterName; ?></a>
+							</div>
+						</div>
 <?php
 					}
 				}
