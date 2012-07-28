@@ -22,14 +22,14 @@ if($controller = JRequest::getWord('controller')) {
         $controller = '';
     }
 }
+$duongDan = JPATH_BASE;
 
-/*
 ?>		
 <script language="javascript">
-confirm('<?php echo get_class($this); ?>');
+confirm('<?php echo $duongDan; ?>');
 </script>
 <?php
-*/
+
 
 // Create the controller
 $classname    = 'DientichController'.$controller;

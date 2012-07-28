@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>theoryLibrary</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2012-07-27</creationDate>
+	<author>MinhNT</author>
+	<authorEmail>minhnt01135@fpt.edu.vn</authorEmail>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Description of the component ...</description>
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>theoryLibrary.php</filename>
+		<filename>index.html</filename>
+		<filename>models/theoryLibrary.php</filename>
+		<filename>models/index.html</filename>
+		<filename>views/index.html</filename>
+		<filename>views/theoryLibrary/index.html</filename>
+		<filename>views/theoryLibrary/view.html.php</filename>
+		<filename>views/theoryLibrary/tmpl/default.php</filename>
+		<filename>views/theoryLibrary/tmpl/index.html</filename>
+	</files>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>Theory Library</menu>
+
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>theoryLibrary.php</filename>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+		</files>  
+	</administration>
+</install>
