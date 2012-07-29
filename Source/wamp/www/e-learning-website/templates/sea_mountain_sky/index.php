@@ -47,6 +47,9 @@ require_once dirname(__FILE__) . DS . 'functions.php';
 
 				</div>
 				<div class="content">
+					<div style="margin:30px 130px;">
+						<img src="<?php echo JPATH_URL.$this->baseurl;?>/images/M_images/hung.jpg" alt="Hung">
+					</div>
 					<?php if ($this->countModules('breadcrumb') || artxHasMessages()) : ?>
 					<div class="Post">
 						<div class="Post-body">
