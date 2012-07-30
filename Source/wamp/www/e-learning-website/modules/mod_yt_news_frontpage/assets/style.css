@@ -1,0 +1,288 @@
+/*Style for theme 1*/
+.yt_frontpage h3{
+    line-height: 20px;
+    /*border-bottom: 1px #f1eff0 solid;*/
+}
+.yt_frontpage h3 a strong{
+    font-size: 12px;
+    color: #010000;
+}
+
+.yt_frontpage{
+    /*height: auto;*/
+    background-color:#FFFFFF; 
+    position: relative; 
+    overflow: hidden;
+    /*border: 1px #f1eff0 solid;*/
+   /* background: #f1eff0;*/
+}
+.yt_frontpage a :hover{
+   text-decoration: underline;
+}
+.yt_frontpage .main_frontpage{
+    float: left; 
+    /*background: #f1eff0;*/
+    padding: 10px 5px 10px 10px;
+    width: auto;
+    /*height: auto!important;*/
+    position: relative;  
+}
+.yt_frontpage .main_frontpage a:hover{
+    color: #FF8000;
+}
+.yt_frontpage .main_frontpage a:visited{
+    text-decoration: none;
+}
+.yt_frontpage .main_frontpage div.main_content{
+    float: left; 
+    /*background: #f1eff0;*/
+   /* width: 290px;*/
+    color: #1f1f1f; 
+    line-height: 20px;
+    padding-right: 10px;  
+}
+.yt_frontpage .main_frontpage div.main_content h3{
+    color: #1f1f1f;
+    padding-top: 10px;   
+}
+.yt_frontpage .main_frontpage div.main_content h3:visited{
+    
+}
+.yt_frontpage .main_frontpage div.main_content p{
+    text-align: right;
+    color: blue;
+    bottom: 0px;
+    padding-right: 15px;  
+}
+.yt_frontpage .nomal_frontpage{
+    float: left; 
+    background: white;
+    padding:0px 10px;
+    width:auto;
+    height: auto!important;
+    position: relative;
+    
+}
+.yt_date{
+   color:#B7B7B7 !important; 
+   font-size:11px;
+   text-align: left !important; 
+
+}
+.yt_frontpage .nomal_frontpage div.nomal_items{ 
+
+    padding: 8px 0px 8px 0px;
+}
+.yt_frontpage .nomal_frontpage div.nomal_items div.nomal_images{ 
+    overflow: hidden;
+    position: relative;
+}
+
+.yt_frontpage .nomal_frontpage div.nomal_items div.nomal_content{
+    position: relative;
+}
+.yt_frontpage .nomal_frontpage div.nomal_items div.nomal_content strong{
+    margin-top: -2px;
+    color: #1f1f1f;
+}
+
+.yt_frontpage .nomal_frontpage div.nomal_items div.nomal_content span{
+    color: #b7b7b7;
+    margin-top: -5px;
+    font-size: 11px; 
+}
+.yt_frontpage .nomal_frontpage div.nomal_items div.nomal_content p{
+    color: #010000;
+    line-height: 17px; 
+	padding-right:5px;
+}
+
+ /*Style for theme 2*/
+.yt_frontpage div.normal_frontpage_theme2{
+    /*background: #f1eff0;*/
+     position: relative; 
+     /*overflow: hidden;*/
+}
+.yt_frontpage .normal_yt{
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.yt_frontpage div.normal_frontpage_theme2 ul {
+    /*font-weight: bold;*/
+    list-style-type: none; 
+    overflow: hidden;
+    position: relative;
+    padding-left: 5px;   
+}
+.yt_frontpage .normal_frontpage_theme2 .normal_items_theme2{
+    position: relative; 
+    overflow: hidden; 
+    margin-top: 0px;
+}
+.yt_frontpage div.normal_frontpage_theme2 ul li{
+    /*padding-top: 7px;*/
+    border-bottom: 1px #f1eff0 solid;
+	padding: 7px 7px 7px 15px;	
+	background:url("list-style.png") no-repeat left 10px;
+	
+}
+.yt_frontpage div.normal_frontpage_theme2 ul.normal_items_theme2 li div.normal_title_theme2 a{
+    color: #1f1f1f;
+    font-weight: bold;
+}
+.yt_frontpage .main_content_theme2{
+    border: 0px #FF8000 solid;
+    position: relative;
+    /*padding-top: 10px;*/
+    padding-left: 5px;
+}
+.yt_frontpage .main_content_theme2 h3{
+    color: #1f1f1f;
+}
+.yt_frontpage .main_content_theme2 p{
+    text-align: right;
+    padding-right: 5px;
+
+}
+.yt_frontpage .main_content_theme2 p a{
+    text-align: right;
+    padding-right: 15px;
+    color: #135CAE;
+}
+.yt_frontpage .main_content_theme2 p a:hover{
+    color: #FF8000;
+}
+.yt_frontpage .main_content_theme2 p a:visited{
+    text-decoration: none;
+}
+.yt_frontpage .main_content_theme2 span{
+    color: #010000;
+    padding-right: 5px;
+    line-height: 20px;
+
+}
+/*Style for theme 3*/
+.yt_frontpage_theme3{
+    /*border: 1px #f1eff0 solid;*/
+    background: #FFFFFF;
+}
+.yt_frontpage_theme3 div.main_frontpage_theme3{
+    border: 0px red solid; 
+    height: 210px;
+}
+
+.yt_frontpage_theme3 div.main_frontpage_theme3 div.main_img_theme3{
+    border: 0px red solid; 
+    
+}
+.yt_frontpage_theme3 div.main_frontpage_theme3 div.main_content_theme3{
+    border: 0px red solid;
+    line-height: 22px; 
+    
+}
+.yt_frontpage_theme3 div.main_frontpage_theme3 div.main_content_theme3 h3{
+    color: #1f1f1f;  
+}
+.yt_frontpage_theme3 div.main_frontpage_theme3 div.main_content_theme3 a h3:hover{
+    color: #1f1f1f;
+    text-decoration: underline;  
+}
+.yt_frontpage_theme3 div.main_frontpage_theme3 div.main_content_theme3 span a{
+    color: #135CAE;
+    float: right;
+    padding-right: 15px;
+      
+}
+.yt_frontpage_theme3 div.main_frontpage_theme3 div.main_content_theme3 span a:hover{
+    color: #FF8000;           
+}
+.yt_frontpage_theme3 div.main_frontpage_theme3 div.main_content_theme3 span a:visited{
+    text-decoration: none;
+       
+}
+.yt_frontpage_theme3 div.nomal_frontpage_theme3{
+    width: auto; 
+    height: auto; 
+    border: 0px red solid; 
+    overflow: hidden; 
+    position: relative;
+    padding-top: 15px;
+}
+.yt_frontpage_theme3 div.nomal_frontpage_theme3 div.nomal_content_theme3{
+    float: left; 
+    
+    overflow: hidden;
+   /* font-weight:bold;*/
+}
+
+.yt_frontpage_theme3 div.nomal_frontpage_theme3 div.nomal_content_theme3 div.normal_des{
+    position: relative; 
+    overflow: hidden;
+    padding: 0px 10px;
+    line-height: 20px;
+}
+.yt_frontpage_theme3 div.nomal_frontpage_theme3 div.nomal_content_theme3 div.normal_des a{
+    font-weight: bold;
+    color:#010000;
+}
+/*Style for Theme 4*/
+.yt_frontpage .normal_frontpage_theme4{
+    background-color:#FFFFFF;
+    float: left; 
+    position: relative;  
+}
+.yt_frontpage .normal_items_theme4{ 
+    border-bottom: 1px solid #F1EFF0; 
+    padding: 7px 7px 7px 15px;	
+	background:url("list-style.png") no-repeat left 10px;
+	list-style: none;
+}
+
+.yt_frontpage ul.normal_content_theme4{
+    padding-left: 5px;
+    background-color:#FFFFFF; 
+	margin: 0;
+}
+.yt_frontpage .nomal_frontpage_theme4 div.normal_items_theme4 div.normal_content_theme4 strong{
+    margin-top: -2px;
+    color: #1f1f1f;
+}
+
+.yt_frontpage .nomal_frontpage_theme4 div.normal_items_theme4 div.normal_content_theme4 span{
+    color: #b7b7b7;
+    margin-top: -5px;
+    font-size: 11px; 
+}
+.yt_frontpage .nomal_frontpage_theme4 div.normal_items_theme4 div.normal_content_theme4 p{
+    color: #010000;
+    margin-top: 0px;
+ 
+}
+.yt_frontpage .nomal_frontpage_theme4 div.normal_items_theme4 div.normal_content_theme4 div.normal_des{
+    margin-top: 8px;
+    overflow: hidden;
+ 
+}
+.yt_frontpage .normal_frontpage_theme4 ul.normal_content_theme4 li ul.normal_content_accor{
+    list-style: none !important; 
+    padding: 5px 5px 2px 5px; 
+    overflow: hidden;
+}
+.yt_frontpage .normal_frontpage_theme4 ul.normal_content_theme4 li ul.normal_content_accor li.normal_desc_theme4{
+     position: relative; 
+     /*overflow: hidden;*/
+     padding-right: 5px; 
+     list-style: none !important;
+     line-height: 20px;
+     float:left;
+}
+.yt_frontpage .normal_frontpage_theme4 ul.normal_content_theme4 li ul.normal_content_accor li.normal_desc_theme4 span{
+     color: #B7B7B7; 
+     font-size: 11px;
+}
+
+.yt_frontpage img {
+	border: solid 1px #CCCCCC;
+}
+

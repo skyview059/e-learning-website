@@ -1,0 +1,24 @@
+.yt_frontpage ul.normal_content_theme4{
+    margin-left:0px;
+    background-color:#FFFFFF; 
+}
+.yt_frontpage .normal_items_theme4{ 
+    border-bottom: 1px solid #F1EFF0; 
+    line-height: 25px; 
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.yt_frontpage .normal_frontpage_theme4 ul.normal_content_theme4 li ul.normal_content_accor{
+    list-style: none !important; 
+    padding: 5px 5px 2px 0px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+.yt_frontpage .normal_frontpage_theme4 ul.normal_content_theme4 li ul.normal_content_accor li.normal_desc_theme4{
+     position: relative; 
+     overflow: hidden;
+     padding-left: 10px; 
+     padding-right: 10px; 
+     list-style: none !important;
+}

@@ -60,7 +60,6 @@ require_once dirname(__FILE__) . DS . 'functions.php';
 						</div>
 					</div>
 					<?php endif; ?>
-					<jdoc:include type="component" />
 				</div>
 			<!--
 			<div class="sidebar2">
