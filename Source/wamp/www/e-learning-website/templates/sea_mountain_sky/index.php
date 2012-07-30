@@ -8,7 +8,7 @@ require_once dirname(__FILE__) . DS . 'functions.php';
  <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 	<jdoc:include type="head" />
-	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/components/com_theorylibrary/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/style/style.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/system/css/system.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/system/css/general.css" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/style.css" />
