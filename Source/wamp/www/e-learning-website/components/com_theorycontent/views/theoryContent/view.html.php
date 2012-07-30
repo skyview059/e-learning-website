@@ -28,22 +28,26 @@ class theorycontentViewtheoryContent extends JView
 		
 		
 		if(isset($_GET['Itemid'])){
-			$chapterName = $model->getChapterName();
-		
+			$chapterNames = $model->getChapterName();
+			foreach($chapterNames as $chapterName){
+			echo "<h4><a href=\"/e-learning-website/index.php?option=com_theorycontent&name=$chapterName\"\">" . $chapterName . "</a></h4>";		
+			}
 		}
 		
-		if(isset($_GET['name'])){ 
-		
-			$theoryName = $model->getTheoryName();
+		if(isset($_GET['name'])){ 		
+			$theorynames = $model->getTheoryName();
+			foreach($theorynames as $theoryname){
+				echo "<h4><a href=\"/e-learning-website/index.php?option=com_theorycontent&theory=".$theoryname['0']."\"\">" . $theoryname['1'] . "</a></h4>";	
+			}
 		}
 		
 			
 		if(isset($_GET['theory'])){ 
 		
-			$theory_id = $_GET['theory'];
-			$theory_name = $model->getTheoryid($theory_id);
+			$theoryid = $_GET['theory'];
+			$theory_name = $model->getTheoryid($theoryid);
 			
-			echo "<h4><a href=\"/e-learning-website/index.php?option=com_theorycontent&theory=$theory_id\"\">" . $theory_name . "</a></h4>";		
+			echo "<h4><a href=\"/e-learning-website/index.php?option=com_theorycontent&theory=$theoryid\"\">" . $theory_name . "</a></h4>";		
 			$dat = $model->getDat();
 			$video = $model->getVideo();
 			
@@ -61,7 +65,7 @@ class theorycontentViewtheoryContent extends JView
 			</video>
 			<?php	
 			}
-			$question = $model->getQuestion($theory_id,5);	
+			$question = $model->getQuestion($theoryid,5);	
 		}
 		parent::display($tpl);	
 		

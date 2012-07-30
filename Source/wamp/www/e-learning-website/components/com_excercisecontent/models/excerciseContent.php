@@ -15,7 +15,7 @@ jimport( 'joomla.application.component.model' );
 
 class excerciseContentModelexcerciseContent extends JModel
 {
-	function get_answer_correct($ID) 
+	function getAnswerCorrect($ID) 
 	{
 		$db =& JFactory::getDBO();
 		$query = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."' AND `answer_correct` = 1";
@@ -24,7 +24,7 @@ class excerciseContentModelexcerciseContent extends JModel
 		return $result;
 	} 
 	
-	function get_answer($ID) 
+	function getAnswer($ID) 
 	{
 		$db =& JFactory::getDBO();
 		$query = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."'";
@@ -46,12 +46,12 @@ class excerciseContentModelexcerciseContent extends JModel
 				<script type="text/javascript">
 					function ans_<?php echo($row[$i]['0']);?>()
 					{
-						alert("Ans for question \"<?php echo($row[$i]['5']);?>\" is : \"<?php echo($this->get_answer_correct($row[$i]['0'])) ;?>\"");				
+						alert("Ans for question \"<?php echo($row[$i]['5']);?>\" is : \"<?php echo($this->getAnswerCorrect($row[$i]['0'])) ;?>\"");				
 					}
 				</script>
 				<?php
 				$tmp = "";
-				$all_ans =   $this->get_answer($row[$i]['0']);
+				$all_ans =   $this->getAnswer($row[$i]['0']);
 				if(isset($all_ans))
 				{
 					$tmp = "<br>".($i+1).".";
@@ -99,7 +99,7 @@ class excerciseContentModelexcerciseContent extends JModel
 					
 				
 					
-					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->get_answer_correct($row[$i]['0'])."\" />";			
+					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->getAnswerCorrect($row[$i]['0'])."\" />";			
 					
 					$result = $result ."<br>".$tmp;	
 				}
@@ -112,7 +112,7 @@ class excerciseContentModelexcerciseContent extends JModel
 		
 	}
 	
-	 function get_subject_name() 
+	 function getSubjectName() 
 	{
 		$db =& JFactory::getDBO();
 		$query = "SELECT subject_name FROM `jos_subjects`";
@@ -121,7 +121,7 @@ class excerciseContentModelexcerciseContent extends JModel
 		return $result;
 	} 
 	
-	function get_subject_ID($subject) 
+	function getSubjectid($subject) 
 	{
 	
 		$db =& JFactory::getDBO();
@@ -132,35 +132,35 @@ class excerciseContentModelexcerciseContent extends JModel
 		
 	} 
 	
-	function get_chapter_name($subject_id)
+	function getChapterName($subjectid)
 	{
 		
 		$db =& JFactory::getDBO();
-		$query = "SELECT DISTINCT chapter_name FROM #__theories WHERE subjectid = " . $subject_id;
+		$query = "SELECT DISTINCT chapter_name FROM #__theories WHERE subjectid = " . $subjectid;
 		$db->setQuery( $query );
-		$chapter_name= $db->loadResultArray();
-		return $chapter_name;
+		$chapterName= $db->loadResultArray();
+		return $chapterName;
 	}
 	
-	function get_theory_name($chapter_name)
+	function getTheoryName($chapterName)
 	{
 		
 		$db =& JFactory::getDBO();
-		$query = "SELECT theory_name FROM #__theories WHERE chapter_name = \"" . $chapter_name . "\"";
+		$query = "SELECT theory_name FROM #__theories WHERE chapter_name = \"" . $chapterName . "\"";
 		$db->setQuery( $query );
-		$theory_name= $db->loadResultArray();
-		return $theory_name;
+		$theoryName= $db->loadResultArray();
+		return $theoryName;
 	
 	}
 	
-	function get_theory_id($theory_name)
+	function getTheoryid($theoryName)
 	{
 		
 		$db =& JFactory::getDBO();
-		$query = "SELECT theory_id FROM #__theories WHERE theory_name = \"" . $theory_name . "\"";
+		$query = "SELECT theory_id FROM #__theories WHERE theory_name = \"" . $theoryName . "\"";
 		$db->setQuery( $query );
-		$theory_id= $db->loadResult();
-		return $theory_id;
+		$theoryid= $db->loadResult();
+		return $theoryid;
 	
 	}
 	

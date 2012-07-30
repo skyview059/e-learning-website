@@ -42,11 +42,9 @@ class theoryContentModeltheoryContent extends JModel
 		$db =& JFactory::getDBO();
 		$query = "SELECT DISTINCT chapter_name FROM #__theories WHERE subjectid = " . $subjectid;
 		$db->setQuery( $query );
-		$columns= $db->loadResultArray();
-		foreach($columns as $column){
-			echo "<h4><a href=\"/e-learning-website/index.php?option=com_theorycontent&name=$column\"\">" . $column . "</a></h4>";		
-		}
-				
+		$chapterNames= $db->loadResultArray();
+			
+		return $chapterNames;		
 	}
 	
 	function getTheoryName()
@@ -56,11 +54,9 @@ class theoryContentModeltheoryContent extends JModel
 		$db =& JFactory::getDBO();
 		$query = "SELECT theory_id,theory_name FROM #__theories WHERE chapter_name = \"" . $name . "\"";
 		$db->setQuery( $query );
-		$columns= $db->loadRowList();
-		foreach($columns as $column){
-			echo "<h4><a href=\"/e-learning-website/index.php?option=com_theorycontent&theory=".$column['0']."\"\">" . $column['1'] . "</a></h4>";	
-		}
-		return $name;
+		$theorynames= $db->loadRowList();
+		
+		return $theorynames;
 	
 	}
 	
@@ -113,7 +109,7 @@ class theoryContentModeltheoryContent extends JModel
 		}
 	}
 	
-	function get_answer_correct($ID) 
+	function getAnswerCorrect($ID) 
 	{
 		$db =& JFactory::getDBO();
 		$query = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."' AND `answer_correct` = 1";
@@ -122,7 +118,7 @@ class theoryContentModeltheoryContent extends JModel
 		return $result;
 	} 
 	
-	function get_answer($ID) 
+	function getAnswer($ID) 
 	{
 		$db =& JFactory::getDBO();
 		$query = "SELECT answer_text FROM `jos_answers` WHERE `questionid` = '".$ID."'";
@@ -145,12 +141,12 @@ class theoryContentModeltheoryContent extends JModel
 				<script type="text/javascript">
 					function ans_<?php echo($row[$i]['0']);?>()
 					{
-						alert("Ans for question \"<?php echo($row[$i]['5']);?>\" is : \"<?php echo($this->get_answer_correct($row[$i]['0'])) ;?>\"");				
+						alert("Ans for question \"<?php echo($row[$i]['5']);?>\" is : \"<?php echo($this->getAnswerCorrect($row[$i]['0'])) ;?>\"");				
 					}
 				</script>
 				<?php
 				$tmp = "";
-				$all_ans =   $this->get_answer($row[$i]['0']);
+				$all_ans =   $this->getAnswer($row[$i]['0']);
 				if(isset($all_ans))
 				{
 					$tmp = "</br>".($i+1).".";
@@ -195,7 +191,7 @@ class theoryContentModeltheoryContent extends JModel
 						$tmp .= "</label><br><label>";
 					}
 					
-					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->get_answer_correct($row[$i]['0'])."\" />";			
+					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->getAnswerCorrect($row[$i]['0'])."\" />";			
 					
 					$result = $result ."<br>".$tmp;	
 				}

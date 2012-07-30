@@ -29,7 +29,7 @@ class excercisecontentViewexcerciseContent extends JView
 		
 		$subject ="";
 		$num = "";
-		$chapter_name = "";
+		$chapterName = "";
 		$theory = "";
 		if(isset($_POST["subject"]))
 		{$subject = $_POST["subject"];}
@@ -37,50 +37,54 @@ class excercisecontentViewexcerciseContent extends JView
 		if(isset($_POST["num"]))
 		{$num = $_POST["num"];}
 		
-		if(isset($_POST["chapter_name"]))
-		{$chapter_name = $_POST["chapter_name"];}
+		if(isset($_POST["chapterName"]))
+		{$chapterName = $_POST["chapterName"];}
 		
 		if(isset($_POST["theory"]))
 		{$theory = $_POST["theory"];}
 		
-		if($subject != ""  && $chapter_name != "" && $theory != "" && $num != ""){
-			$theoryid = $model->get_theory_id($theory);
+		if($theory != "" && $num != ""){
+			$theoryid = $model->getTheoryid($theory);
 			$question = $model->getQuestion($theoryid,$num);
 			if (isset($question))
 			{
-				echo "<b>Bạn đang làm bài tập môn <u>".$subject."</u> chương <u>". $chapter_name. "</u> bài <u>" .$theory.  "</u> </b><br />";
+				echo "<b>Bạn đang làm bài tập môn <u>".$subject."</u> chương <u>". $chapterName. "</u> bài <u>" .$theory.  "</u> </b><br />";
 				echo( $question );
 				echo "<a href=\"/e-learning-website/index.php?option=com_excercisecontent&view=excerciseContent&Itemid=17\">Back</a>";	
 			}	 	
 			
 		}else{
-			echo "<form action=\"\" method=\"post\">";
-			echo "Môn học :<select name=\"subject\">";
-			echo "<option></option>";
-			$all_subject =  $model->get_subject_name() ;
-			$i = 0;
-			while($all_subject[$i]!= ""){
-				if ($subject == $all_subject[$i]) 
-				{
-					echo "<option selected=\"selected\">".$all_subject[$i]."</option>";
-				} else{
-					echo "<option >".$all_subject[$i]."</option>";
-				}
-				$i++;
-			}	
-			echo "		</select>";
-			
-			
-			
-			if($subject != "")
-			{
-				$subject_id = $model->get_subject_ID($subject) ;
-				echo "</br>Chương :<select name=\"chapter_name\" >";
+		
+			if ($subject == "" && $chapterName =="" && $theory == "" && $num == ""){
+				echo "<form action=\"\" method=\"post\">";
+				echo "Môn học :<select name=\"subject\">";
 				echo "<option></option>";
-				$all_chapter =  $model->get_chapter_name($subject_id) ;
+				$all_subject =  $model->getSubjectName() ;
+				$i = 0;
+				while($all_subject[$i]!= ""){
+					if ($subject == $all_subject[$i]) 
+					{
+						echo "<option selected=\"selected\">".$all_subject[$i]."</option>";
+					} else{
+						echo "<option >".$all_subject[$i]."</option>";
+					}
+					$i++;
+				}	
+				echo "		</select>";
+			}
+			
+			
+			
+			if($subject != "" && $chapterName =="" && $theory == "" && $num == "")
+			{
+				$subject_id = $model->getSubjectid($subject) ;
+				echo "Môn học : " . $subject . "</br>";
+				echo "Chương :<select name=\"chapterName\" >";
+				echo "<option></option>";
+				$all_chapter =  $model->getChapterName($subject_id) ;
 				$i = 0;
 				while($all_chapter[$i]!= ""){
-					if ($chapter_name == $all_chapter[$i]) 
+					if ($chapterName == $all_chapter[$i]) 
 					{
 						echo "<option selected=\"selected\">".$all_chapter[$i]."</option>";
 					} else{
@@ -92,11 +96,11 @@ class excercisecontentViewexcerciseContent extends JView
 					
 			}
 			
-			if($subject !="" && $chapter_name != "")
+			if($subject !="" && $chapterName != "")
 			{
 				echo "</br>Bài :<select name=\"theory\" >";
 				echo "<option></option>";
-				$all_theory =  $model->get_theory_name($chapter_name) ;
+				$all_theory =  $model->getTheoryName($chapterName) ;
 				$i = 0;
 				while($all_theory[$i]!= ""){
 					if ($theory == $all_theory[$i]) 
@@ -109,19 +113,19 @@ class excercisecontentViewexcerciseContent extends JView
 				}	
 				echo "		</select>";		
 			}
-			
-			echo "</br>		</select>";
-			echo "Số lượng câu hỏi :<select name=\"num\">";
-			echo "<option></option>";
-			echo "<option>1</option>";
-			echo "<option>5</option>";
-			echo "<option>10</option>";
-			echo "<option>15</option>";
-			echo "		</select>";
+//			
+//			echo "</br>		</select>";
+//			echo "Số lượng câu hỏi :<select name=\"num\">";
+//			echo "<option></option>";
+//			echo "<option>1</option>";
+//			echo "<option>5</option>";
+//			echo "<option>10</option>";
+//			echo "<option>15</option>";
+//			echo "		</select>";
 			echo "<input type=\"submit\" value=\"Tiếp tục\"/>";
 			echo "</form>";
 			
-			echo"Subject = " . $subject . " Chapter = " . $chapter_name . " Theory = " . $theory;
+			echo"Subject = " . $subject . " Chapter = " . $chapterName . " Theory = " . $theory;
 			
 		}
 		 
