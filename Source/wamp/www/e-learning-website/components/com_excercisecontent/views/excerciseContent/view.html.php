@@ -5,8 +5,6 @@
 /**
  * @package    Joomla.Tutorials
  * @subpackage Components
- * @link http://docs.joomla.org/Developing_a_Model-View-Controller_Component_-_Part_2
- * @license    GNU/GPL
 	*/
 
 // No direct access
@@ -15,9 +13,9 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport( 'joomla.application.component.view');
 
 /**
- * HTML View class for the HelloWorld Component
+ * HTML View class for the Excercise Content Component
  *
- * @package    HelloWorld
+ * @package    Excercise Content
  */
 
 class excercisecontentViewexcerciseContent extends JView
@@ -31,6 +29,7 @@ class excercisecontentViewexcerciseContent extends JView
 		$num = "";
 		$chapterName = "";
 		$theory = "";
+		$difficulty = "";
 		if(isset($_POST["subject"]))
 		{$subject = $_POST["subject"];}
 		
@@ -43,19 +42,27 @@ class excercisecontentViewexcerciseContent extends JView
 		if(isset($_POST["theory"]))
 		{$theory = $_POST["theory"];}
 		
-		if($theory != "" && $num != ""){
+		if(isset($_POST["difficulty"]))
+		{$difficulty = $_POST["difficulty"];}
+		
+		if($theory != "" && $num != ""  && isset($_POST["difficulty"])){
 			$theoryid = $model->getTheoryid($theory);
-			$question = $model->getQuestion($theoryid,$num);
-			if (isset($question))
+			$question = $model->getQuestion($theoryid,$num,$difficulty);
+			
+			if (isset($question) && $question != "")
 			{
-				echo "<b>Bạn đang làm bài tập môn <u>".$subject."</u> chương <u>". $chapterName. "</u> bài <u>" .$theory.  "</u> </b><br />";
+				echo "<b>Bạn đang làm bài tập môn <u>".$subject."</u> chương <u>". $chapterName. "</u> bài <u>" .$theory.  "</u>";
+				if ($difficulty != "")
+				    echo  "với độ khó là <u>". $difficulty."</u></b><br />";
+				else
+					echo "</b><br />";
 				echo( $question );
-				echo "<a href=\"/e-learning-website/index.php?option=com_excercisecontent&view=excerciseContent&Itemid=17\">Back</a>";	
+				echo "<a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_excercisecontent&view=excerciseContent&Itemid=17\">Back</a>";
+					
 			}	 	
 			
 		}else{
 		
-			if ($subject == "" && $chapterName =="" && $theory == "" && $num == ""){
 				echo "<form action=\"\" method=\"post\">";
 				echo "Môn học :<select name=\"subject\">";
 				echo "<option></option>";
@@ -63,7 +70,7 @@ class excercisecontentViewexcerciseContent extends JView
 				$i = 0;
 				while($all_subject[$i]!= ""){
 					if ($subject == $all_subject[$i]) 
-					{
+					{	
 						echo "<option selected=\"selected\">".$all_subject[$i]."</option>";
 					} else{
 						echo "<option >".$all_subject[$i]."</option>";
@@ -71,15 +78,13 @@ class excercisecontentViewexcerciseContent extends JView
 					$i++;
 				}	
 				echo "		</select>";
-			}
 			
 			
 			
-			if($subject != "" && $chapterName =="" && $theory == "" && $num == "")
+			if($subject != "")
 			{
 				$subject_id = $model->getSubjectid($subject) ;
-				echo "Môn học : " . $subject . "</br>";
-				echo "Chương :<select name=\"chapterName\" >";
+				echo "</br>Chương :<select name=\"chapterName\" >";
 				echo "<option></option>";
 				$all_chapter =  $model->getChapterName($subject_id) ;
 				$i = 0;
@@ -98,7 +103,7 @@ class excercisecontentViewexcerciseContent extends JView
 			
 			if($subject !="" && $chapterName != "")
 			{
-				echo "</br>Bài :<select name=\"theory\" >";
+				echo "</br>Bài      :<select name=\"theory\" >";
 				echo "<option></option>";
 				$all_theory =  $model->getTheoryName($chapterName) ;
 				$i = 0;
@@ -113,20 +118,43 @@ class excercisecontentViewexcerciseContent extends JView
 				}	
 				echo "		</select>";		
 			}
-//			
-//			echo "</br>		</select>";
-//			echo "Số lượng câu hỏi :<select name=\"num\">";
-//			echo "<option></option>";
-//			echo "<option>1</option>";
-//			echo "<option>5</option>";
-//			echo "<option>10</option>";
-//			echo "<option>15</option>";
-//			echo "		</select>";
+			
+			if($subject !="" && $chapterName != "" && $theory != "")
+			{
+				$tmp = array (1,5,10,15);
+				echo "</br>		</select>";
+				echo "Số lượng câu hỏi :<select name=\"num\">";
+				echo "<option></option>";
+				$i = 0;
+				while($tmp[$i]!= ""){
+					if ($num == $tmp[$i]) 
+					{
+						echo "<option selected=\"selected\">".$tmp[$i]."</option>";
+					} else{
+						echo "<option>".$tmp[$i]."</option>";
+					}
+					$i++;
+				}	
+				echo "		</select>";
+			}
+			
+			if($subject !="" && $chapterName != "" && $theory != "" && $num != "")
+			{
+				$tmp = array (1,2,3,4,5);
+				echo "</br>		</select>";
+				echo "Độ khó :<select name=\"difficulty\">";
+				echo "<option></option>";
+				$i = 0;
+				while($tmp[$i]!= ""){
+					echo "<option>".$tmp[$i]."</option>";
+					$i++;
+				}
+				echo "		</select>";
+			}
 			echo "<input type=\"submit\" value=\"Tiếp tục\"/>";
 			echo "</form>";
-			
-			echo"Subject = " . $subject . " Chapter = " . $chapterName . " Theory = " . $theory;
-			
+			if($subject != "")
+				echo "<a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_excercisecontent&view=excerciseContent&Itemid=17\">Back</a>";
 		}
 		 
 		

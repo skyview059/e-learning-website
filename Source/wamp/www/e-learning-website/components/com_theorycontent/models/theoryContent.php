@@ -4,7 +4,7 @@
 /**
  * Theory Content Model for TheoryContent Component
  * 
- * @package    Joomla.Tutorials
+ * @package    Joomla
  * @subpackage Components
  */
 
@@ -14,7 +14,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport( 'joomla.application.component.model' );
 
 /**
- * Hello Model
+ * Theory Content Model
  *
  * @package    Joomla.Tutorials
  * @subpackage Components
@@ -106,7 +106,10 @@ class theoryContentModeltheoryContent extends JModel
 			{
 						echo $output[$i] . "<br/>";
 			}
+			return "Sucess";
 		}
+		else
+			return "Fail";
 	}
 	
 	function getAnswerCorrect($ID) 
@@ -134,8 +137,13 @@ class theoryContentModeltheoryContent extends JModel
 		$db->setQuery( $query );
 		$row = $db->loadRowList();
 		$i  = 0  ;
-		$result = "<h4> Các câu hỏi liên quan </h4>";
-		
+		$result = "";
+		if (isset($row['0']['0']))
+		{
+			$result = "<h4> Các câu hỏi liên quan </h4>";
+		}
+		else 
+			$result = "Dữ liệu về câu hỏi sẽ được cập nhật sau </br>";
 		while($i < sizeof($row)){
 				?>
 				<script type="text/javascript">
@@ -198,7 +206,7 @@ class theoryContentModeltheoryContent extends JModel
 				$i++;
 		}
 		$i  =  0;
-		echo $result;
+		return $result;
 		
 	}
 	

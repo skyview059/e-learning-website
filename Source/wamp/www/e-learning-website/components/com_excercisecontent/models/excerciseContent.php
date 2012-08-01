@@ -33,15 +33,22 @@ class excerciseContentModelexcerciseContent extends JModel
 		return $result;
 	} 
 	
-	function getQuestion($theoryid,$num)
+	function getQuestion($theoryid,$num,$difficulty)
 	{
 		$db =& JFactory::getDBO();
-		$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theoryid."' ORDER BY RAND( ) LIMIT ".$num;
+		if ($difficulty != "")
+		{	$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theoryid."' AND `question_difficult` = '" .$difficulty. "' ORDER BY RAND( ) LIMIT ".$num;}
+		else
+		{	$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theoryid."' ORDER BY RAND( ) LIMIT ".$num; }
 		$db->setQuery( $query );
 		$row = $db->loadRowList();
 		$i  = 0  ;
 		$result = "";
-				while($i < sizeof($row)){
+		if ($num > sizeof($row))
+		{
+			$result .="</br>Số lượng câu hỏi không đủ, hiện tại chỉ có ". sizeof($row). " câu hỏi có sẵn "  ;
+		}
+		while($i < sizeof($row)){								
 				?>
 				<script type="text/javascript">
 					function ans_<?php echo($row[$i]['0']);?>()
@@ -54,6 +61,7 @@ class excerciseContentModelexcerciseContent extends JModel
 				$all_ans =   $this->getAnswer($row[$i]['0']);
 				if(isset($all_ans))
 				{
+				
 					$tmp = "<br>".($i+1).".";
 					
 					$tmp .=$row[$i]['5']." <a onclick=\"ans_".$row[$i]['0']."()\" ><u>Hint</u></a>";
