@@ -149,7 +149,9 @@ class theoryContentModeltheoryContent extends JModel
 				<script type="text/javascript">
 					function ans_<?php echo($row[$i]['0']);?>()
 					{
-						alert("Ans for question \"<?php echo($row[$i]['5']);?>\" is : \"<?php echo($this->getAnswerCorrect($row[$i]['0'])) ;?>\"");				
+						var my_str = document.getElementById('<?php echo $i;?>').innerHTML;  
+						var comStr='Ans for question is : <?php echo($this->getAnswerCorrect($row[$i]['0'])) ;?>';  
+					    document.getElementById('<?php echo $i;?>').innerHTML = comStr;  		
 					}
 				</script>
 				<?php
@@ -159,7 +161,7 @@ class theoryContentModeltheoryContent extends JModel
 				{
 					$tmp = "</br>".($i+1).".";
 					
-					$tmp .=$row[$i]['5']." <a onclick=\"ans_".$row[$i]['0']."()\" ><u>Hint</u></a>";
+					$tmp .=$row[$i]['5'];
 					
 					$tmp .= "<br><label>";
 					if(isset($all_ans['0']))
@@ -199,6 +201,8 @@ class theoryContentModeltheoryContent extends JModel
 						$tmp .= "</label><br><label>";
 					}
 					
+					$tmp .=" <a onclick=\"ans_".$row[$i]['0']."()\" ><u>Answer</u></a></br>";
+					$tmp .="<b  id=\"$i\"  readonly></b >";
 					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->getAnswerCorrect($row[$i]['0'])."\" />";			
 					
 					$result = $result ."<br>".$tmp;	
