@@ -20,6 +20,7 @@ jimport( 'joomla.application.component.view');
 
 class excercisecontentViewexcerciseContent extends JView
 {
+
 	function display($tpl = null)
 	{
 		echo ("</br>");
@@ -45,7 +46,8 @@ class excercisecontentViewexcerciseContent extends JView
 		if(isset($_POST["difficulty"]))
 		{$difficulty = $_POST["difficulty"];}
 		
-		if($theory != "" && $num != ""  && isset($_POST["difficulty"])){
+		if($subject != "" && $chapterName != "" && $theory != "" && $num != ""  && isset($_POST["difficulty"])){
+			
 			$theoryid = $model->getTheoryid($theory);
 			$question = $model->getQuestion($theoryid,$num,$difficulty);
 			
@@ -61,69 +63,66 @@ class excercisecontentViewexcerciseContent extends JView
 					
 			}	 	
 			
-		}else{
-		
-				echo "<form action=\"\" method=\"post\">";
-				echo "Môn học :<select name=\"subject\">";
-				echo "<option></option>";
+		}else{echo "<form action=\"\" method=\"post\" align=\"left\" style =\"margin-left: 1000\" >";
+				echo "Môn học: <select name=\"subject\" onchange=\"this.form.submit()\" style=\"width: 100px\"";
+				echo ">";
+				
 				$all_subject =  $model->getSubjectName() ;
 				$i = 0;
-				while($all_subject[$i]!= ""){
-					if ($subject == $all_subject[$i]) 
-					{	
-						echo "<option selected=\"selected\">".$all_subject[$i]."</option>";
-					} else{
+				if ($subject !="")
+					echo "<option selected=\"selected\">".$subject."</option>";
+				else
+				{
+					echo "<option></option>";
+					while($all_subject[$i]!= ""){
 						echo "<option >".$all_subject[$i]."</option>";
+						$i++;
 					}
-					$i++;
 				}	
 				echo "		</select>";
-			
-			
-			
-			if($subject != "")
-			{
+				
 				$subject_id = $model->getSubjectid($subject) ;
-				echo "</br>Chương :<select name=\"chapterName\" >";
-				echo "<option></option>";
+				echo "</br>Chương: <select name=\"chapterName\" onchange=\"this.form.submit()\" style=\"width: 300px\">";
 				$all_chapter =  $model->getChapterName($subject_id) ;
 				$i = 0;
-				while($all_chapter[$i]!= ""){
-					if ($chapterName == $all_chapter[$i]) 
-					{
-						echo "<option selected=\"selected\">".$all_chapter[$i]."</option>";
-					} else{
+				if ($chapterName !="")
+					echo "<option selected=\"selected\">".$chapterName."</option>";
+				else
+				{
+					echo "<option></option>";
+					while($all_chapter[$i]!= ""){
 						echo "<option>".$all_chapter[$i]."</option>";
-					}
-					$i++;
-				}	
+						$i++;
+					}	
+				}
 				echo "		</select>";
 					
-			}
+		
 			
-			if($subject !="" && $chapterName != "")
-			{
-				echo "</br>Bài      :<select name=\"theory\" >";
-				echo "<option></option>";
+				echo "</br>Bài: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<select name=\"theory\" onchange=\"this.form.submit()\" style=\"width: 300px\">";
+				
 				$all_theory =  $model->getTheoryName($chapterName) ;
 				$i = 0;
-				while($all_theory[$i]!= ""){
-					if ($theory == $all_theory[$i]) 
-					{
-						echo "<option selected=\"selected\">".$all_theory[$i]."</option>";
-					} else{
-						echo "<option>".$all_theory[$i]."</option>";
-					}
-					$i++;
-				}	
+				if ($theory !="")
+					echo "<option selected=\"selected\">".$theory."</option>";
+				else
+				{
+					echo "<option></option>";
+					while($all_theory[$i]!= ""){
+						if ($theory == $all_theory[$i]) 
+						{
+							echo "<option selected=\"selected\" >".$all_theory[$i]."</option>";
+						} else{
+							echo "<option>".$all_theory[$i]."</option>";
+						}
+						$i++;
+					}	
+				}
 				echo "		</select>";		
-			}
-			
-			if($subject !="" && $chapterName != "" && $theory != "")
-			{
+				
 				$tmp = array (1,5,10,15);
 				echo "</br>		</select>";
-				echo "Số lượng câu hỏi :<select name=\"num\">";
+				echo "Số lượng câu hỏi:<select name=\"num\" style=\"width: 50px\">";
 				echo "<option></option>";
 				$i = 0;
 				while($tmp[$i]!= ""){
@@ -136,13 +135,10 @@ class excercisecontentViewexcerciseContent extends JView
 					$i++;
 				}	
 				echo "		</select>";
-			}
-			
-			if($subject !="" && $chapterName != "" && $theory != "" && $num != "")
-			{
+				
 				$tmp = array (1,2,3,4,5);
 				echo "</br>		</select>";
-				echo "Độ khó :<select name=\"difficulty\">";
+				echo "Độ khó: &nbsp;&nbsp<select name=\"difficulty\" style=\"width: 50px\">";
 				echo "<option></option>";
 				$i = 0;
 				while($tmp[$i]!= ""){
@@ -150,8 +146,7 @@ class excercisecontentViewexcerciseContent extends JView
 					$i++;
 				}
 				echo "		</select>";
-			}
-			echo "<input type=\"submit\" value=\"Tiếp tục\"/>";
+				echo "&nbsp;&nbsp <input type=\"submit\" value=\"Tiếp tục\"/>";
 			echo "</form>";
 			if($subject != "")
 				echo "<a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_excercisecontent&view=excerciseContent&Itemid=17\">Back</a>";
