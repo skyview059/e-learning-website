@@ -1,2 +1,0 @@
-<!-- HTML FOOTER -->
-</body></html>

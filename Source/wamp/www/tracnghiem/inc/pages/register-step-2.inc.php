@@ -1,5 +1,0 @@
-<?php
- 
-gotoLocation('index.php'); 
-  
-?>
