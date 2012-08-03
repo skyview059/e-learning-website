@@ -17,8 +17,13 @@
 			{
 				if($subject==$this->subjects[$i])
 				{
+					$j=0;
 					foreach($chapter as $chapterName)
 					{
+						if($j==4)
+						{
+							break;
+						}
 ?>
 						<div class="chapterName">
 							<div>
@@ -26,6 +31,7 @@
 							</div>
 						</div>
 <?php
+						$j++;
 					}
 				}
 			}
