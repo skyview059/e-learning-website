@@ -1385,9 +1385,6 @@ $sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users LEFT JOIN `phpb
 		VALUES ('19', $id)");
    }
    ?>
-   <script type="text/javascript">
-			alert("<?php print_r ($i_username)?> ");
-	</script>
 
 <?php
   /*--Huynt and Hungnt modify end--*/
