@@ -1358,7 +1358,7 @@ $i_time = time();
 } else {
 $sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users LEFT JOIN `phpbb_users` ON jos_users.`username` = phpbb_users.`username` WHERE jos_users.`username`=".$i_username." AND phpbb_users.`user_password` =".$i_pass_hash." AND jos_users.`user_enabled`=1 AND (jos_users.`user_expiredate`=0 OR jos_users.`user_expiredate`>".$i_time.")";
 
-	/*--Huynt modify start--*/ 
+	/*--Huynt and Hungnt modify start--*/ 
  //get id of username
   $con = mysql_connect("localhost","root","");
    mysql_select_db("db_e_learning", $con);
@@ -1390,7 +1390,7 @@ $sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users LEFT JOIN `phpb
 	</script>
 
 <?php
-  /*--Huynt modify end--*/
+  /*--Huynt and Hungnt modify end--*/
   
 }
 $i_rSet1 = $g_db->SelectLimit($sql_str, 1);
