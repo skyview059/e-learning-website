@@ -1341,6 +1341,8 @@ global $g_db, $G_SESSION, $srv_settings;
  'username' => $i_username,
  'user_password' => $i_password,
  ));
+ 
+ 
 }
 $i_username = $g_db->qstr($i_username, get_magic_quotes_gpc());
 if(get_magic_quotes_gpc())
@@ -1349,10 +1351,47 @@ $i_pass_hash = md5($i_password);
 $i_pass_hash = $g_db->qstr($i_pass_hash, 0);
 $i_time = time();
  
+ 
+ 
  if($i_isguest) {
  $sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users WHERE id=".SYSTEM_GROUP_GUEST_id." AND user_enabled=1";
 } else {
- $sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users LEFT JOIN `phpbb_users` ON jos_users.`username` = phpbb_users.`username` WHERE jos_users.`username`=".$i_username." AND phpbb_users.`user_password` =".$i_pass_hash." AND jos_users.`user_enabled`=1 AND (jos_users.`user_expiredate`=0 OR jos_users.`user_expiredate`>".$i_time.")";
+$sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users LEFT JOIN `phpbb_users` ON jos_users.`username` = phpbb_users.`username` WHERE jos_users.`username`=".$i_username." AND phpbb_users.`user_password` =".$i_pass_hash." AND jos_users.`user_enabled`=1 AND (jos_users.`user_expiredate`=0 OR jos_users.`user_expiredate`>".$i_time.")";
+
+	/*--Huynt modify start--*/ 
+ //get id of username
+  $con = mysql_connect("localhost","root","");
+   mysql_select_db("db_e_learning", $con);
+   $id = "";
+  $sql_str1 = "SELECT id FROM jos_users WHERE username=".$i_username;
+  $result1 = mysql_query($sql_str1);
+  while($row = mysql_fetch_array($result1))
+  {
+  		$id =  $row['id'];
+  }
+  //check if id exist in jos_group_user
+  $groupid = "";
+  $sql_str = "SELECT *  FROM jos_groups_users WHERE id=".$id;
+  $result2 = mysql_query($sql_str);
+  while($row = mysql_fetch_array($result2))
+  {
+  		$groupid =  $row['groupid'];
+  }
+   $groupid = $i_rSet1->fields['groupid'];
+   if ($groupid == "")
+   {
+   		
+		mysql_query("INSERT INTO jos_groups_users (groupid, id)
+		VALUES ('19', $id)");
+   }
+   ?>
+   <script type="text/javascript">
+			alert("<?php print_r ($i_username)?> ");
+	</script>
+
+<?php
+  /*--Huynt modify end--*/
+  
 }
 $i_rSet1 = $g_db->SelectLimit($sql_str, 1);
 if(!$i_rSet1) {

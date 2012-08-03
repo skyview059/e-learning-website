@@ -93,9 +93,11 @@ class theoryContentModeltheoryContent extends JModel
 		$query = "SELECT theory_file_dat_path FROM #__theories WHERE theory_id =\"" . $theory . "\"";
 		$db->setQuery( $query );
 		$dat = $db->loadResult();
-		if (isset($dat))
+		if ($dat != "")
+		$content = JPATH_URL.$dat;
+		if (isset($content))
 		{
-			$file = fopen($dat, "r");
+			$file = fopen($content, "r");
 			//Output a line of the file until the end is reached
 			while(!feof($file)){
 				  $buf = fgets($file);
