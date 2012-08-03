@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<profile>
+	<params addpath="/modules/mod_janewspro/elements" name="japarams">
+		<param 
+			name="group" 
+			type="japaramhelper" 
+			function="@group" level="3">
+				<option for="showimage" value="1" hideRow="true">thumbnail_mode,width,height,align</option>
+				<option for="thumbnail_mode" value="crop" hideRow="true">use_ratio</option>								
+		</param>		
+	  	
+		<param 
+			name="themesettings" 
+			type="japaramhelper" 
+			default="" 
+			level="2"
+			function="@title" 
+			label="Theme Settings" 
+			description="Theme Settings"/>
+			
+		<param 
+			name="themes" 
+			type="themes" 
+			default="" 
+			label="THEME Selection" 
+			description="THEME Selection DESC"/>
+		
+		<param 
+			name="displaysettings" 
+			type="japaramhelper" 
+			default="" 
+			level="2"
+			function="@title" 
+			label="Display Settings" 
+			description="Display Settings"/>
+		<param 
+			name="showusersetting" 
+			type="radio" 
+			default="1" 
+			label="SHOW USER SETTING TOOL" 
+			description="SHOW USER SETTING TOOL DESC">
+				<option value="1">Show</option>
+				<option value="0">Hide</option>
+		</param>						
+		<param 
+			name="cols" 
+			type="text" 
+			default="2" 
+			label="COLUMNS" 
+			description="COLUMNS DESC" />
+		<param 
+			name="introitems" 
+			type="text" 
+			default="1" 
+			label="INTRO ITEMS" 
+			description="INTRO ITEMS DESC" />
+		<param 
+			name="linkitems" 
+			type="text" 
+			default="3" 
+			label="LINK ITEMS" 
+			description="LINK ITEMS DESC" />
+		<param 
+			name="maxchars" 
+			type="text" 
+			default="0" 
+			label="MAX CHARS" 
+			description="MAX CHARS DESC" />
+		<param 
+			name="showcattitle" 
+			type="radio" 
+			default="1" 
+			label="SHOW CATEGORY TITLE" 
+			description="SHOW CATEGORY TITLE DESC">
+				<option value="1">Show</option>
+				<option value="0">Hide</option>
+		</param>	
+		<param 
+			name="showsubcattitle" 
+			type="radio" 
+			default="1" 
+			label="SHOW SUB CATEGORY TITLE" 
+			description="SHOW SUB CATEGORY TITLE DESC">
+				<option value="1">Show</option>
+				<option value="0">Hide</option>
+		</param>
+		
+		<param 
+			name="showcreator" 
+			type="radio" 
+			default="0" 
+			label="SHOW CREATE BY" 
+			description="SHOW CREATE BY DESC">
+				<option value="1">show</option>
+				<option value="0">hide</option>
+		</param>
+		<param 
+			name="showdate" 
+			type="radio" 
+			default="0" 
+			label="SHOW CREATE DATE" 
+			description="SHOW CREATE DATE DESC">
+				<option value="1">show</option>
+				<option value="0">hide</option>
+		</param>
+		<param 
+			name="timestamp" 
+			type="radio" 
+			default="0" 
+			label="ENABLE TIMESTAMP" 
+			description="ENABLE TIMESTAMP DESC">
+				<option value="1">show</option>
+				<option value="0">hide</option>
+		</param>	
+		<param 
+			name="showcontentfrontpage" 
+			type="radio" 
+			default="1" 
+			label="SHOW FRONT PAGE ARTICLES" 
+			description="SHOW FRONT PAGE ARTICLES DESC">
+				<option value="1">Show</option>
+				<option value="2">Show only front page articles</option>
+				<option value="0">Hide</option>	
+		</param>
+		<param 
+			name="showfeaturedItems" 
+			type="radio" 
+			default="1" 
+			label="SHOW Featured items" 
+			description="SHOW Featured items DESC">
+				<option value="1">Show</option>
+				<option value="2">Show only Featured Items</option>
+				<option value="0">Hide</option>				
+		</param>		
+		<param 
+			name="showreadmore" 
+			type="radio" 
+			default="0" 
+			label="SHOW READMORE" 
+			description="SHOW READMORE DESC">
+				<option value="1">show</option>
+				<option value="0">hide</option>
+		</param>	
+		<param 
+			name="showtooltip" 
+			type="radio" 
+			default="0" 
+			label="ENABLE TOOLTIP" 
+			description="ENABLE TOOLTIP DESC">
+				<option value="1">show</option>
+				<option value="0">hide</option>
+		</param>	
+		<!--<param 
+			name="hiddenClasses" 
+			type="textarea" 
+			default="" 
+			rows="3" 
+			cols="40" 
+			label="HIDDEN CLASSES" 
+			description="HIDDEN CLASSES DESC" />
+		--><param 
+			name="imagesettings" 
+			type="japaramhelper" 
+			default="" 
+			level="2"
+			function="@title" 
+			label="Image Settings" 
+			description="Image Settings"/>
+			
+		<param 
+			name="showimage" 
+			type="radio" 
+			default="1" 
+			label="SHOW IMAGE" 
+			description="SHOW IMAGE DESC">
+				<option value="1">show</option>
+				<option value="0">hide</option>
+		</param>
+		<param 
+			name="thumbnail_mode" 
+			type="list" 
+			default="crop" 
+			label="THUMBNAIL MODE" 
+			description="THUMBNAIL MODE DESC">
+				<option value="none">USING IMAGE SOURCE</option>
+				<option value="resize">USING RESIZE</option>
+				<option value="crop">USING CROP</option>
+		</param>
+		<param 
+			name="use_ratio" 
+			type="radio" 
+			default="1" 
+			label="RESIZE WITH THE RATIO" 
+			description="RESIZE WITH THE RATIO DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+		<param 
+			name="width" 
+			type="text" 
+			default="100" 
+			label="IMAGE WIDTH" 
+			description="IMAGE WIDTH DESC" />
+		<param 
+			name="height" 
+			type="text" 
+			default="100" 
+			label="IMAGE HEIGHT" 
+			description="IMAGE HEIGHT DESC" />		
+		<param 
+			name="align" 
+			type="radio" 
+			default="left" 
+			label="IMAGE ALIGN" 
+			description="IMAGE ALIGN DESC">
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+				<option value="0">None</option>
+		</param>
+			
+	</params>		
+</profile>

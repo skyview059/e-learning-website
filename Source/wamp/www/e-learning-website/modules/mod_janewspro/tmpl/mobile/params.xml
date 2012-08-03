@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<extprofile>
+	<params name="japarams">				
+	  	<param name="subcols" type="text" default="2" label="COLUMNS" description="COLUMNS DESC" />
+	</params>		
+</extprofile>

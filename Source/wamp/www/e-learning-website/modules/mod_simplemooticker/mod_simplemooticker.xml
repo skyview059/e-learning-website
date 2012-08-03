@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.4">
+<name>Simple Mooticker</name>
+<author>medien.stroeme</author>
+<creationDate>March 2009</creationDate>
+<authorEmail>info |at| medienstroeme.de</authorEmail>
+<authorUrl>http://www.medienstroeme.de</authorUrl>
+<license>GNU/GPL, see LICENSE.php</license>
+<version>1.5.4</version>
+<description>SIMPLE MOOTICKER SUCCESSFULLY INSTALLED</description>
+<languages>
+<language tag="en-GB">language/en-GB/en-GB.mod_simplemooticker.ini</language>
+<language tag="de-DE">language/de-DE/de-DE.mod_simplemooticker.ini</language>
+</languages>
+<files>
+<filename module="mod_simplemooticker">mod_simplemooticker.php</filename>
+<filename module="mod_simplemooticker">helper.php</filename>
+<filename module="mod_simplemooticker">index.html</filename>
+<filename module="mod_simplemooticker">image/simplemooticker.gif</filename>
+<filename module="mod_simplemooticker">image/index.html</filename>
+<filename module="mod_simplemooticker">scripts/mod_simplemooticker.js</filename>
+<filename module="mod_simplemooticker">scripts/mod_simplemooticker_mootools.js</filename>
+<filename module="mod_simplemooticker">scripts/index.html</filename>
+<filename module="mod_simplemooticker">stylesheet/mod_simplemooticker_css.php</filename>
+<filename module="mod_simplemooticker">stylesheet/index.html</filename>
+<filename module="mod_simplemooticker">tmpl/default.php</filename>
+<filename module="mod_simplemooticker">tmpl/index.html</filename>
+</files>
+
+<params>
+<param name="mootools" type="radio" default="0" label="SMT_MOOTOOLS" description="SMT_MOOTOOLS_DESCR">
+<option value="1">SMT_MOOTOOLS_ENABLE</option>
+<option value="0">SMT_MOOTOOLS_DISABLE</option>
+</param>
+<param name="@spacer" type="spacer" default="---------------------------------" label="" description="" />
+<param name="tstp" type="radio" default="1" label="SMT_SPEED" description="SMT_SPEED_DESCR">
+<option value="1">SMT_SPEED_SLOW</option>
+<option value="2">SMT_SPEED_MEDIUM</option>
+<option value="3">SMT_SPEED_FAST</option>
+<option value="4">SMT_SPEED_VERY_FAST</option>
+</param>
+<param name="tstpIE" type="radio" default="1" label="SMT_SPEED_IE" description="SMT_SPEED_DESCR">
+<option value="1">SMT_SPEED_SLOW</option>
+<option value="2">SMT_SPEED_MEDIUM</option>
+<option value="3">SMT_SPEED_FAST</option>
+<option value="4">SMT_SPEED_VERY_FAST</option>
+</param>
+<param name="@spacer" type="spacer" default="---------------------------------" label="" description="" />
+<param name="tdir" type="radio" default="left" label="SMT_DIRECTION" description="SMT_DIRECTION_DESCR">
+<option value="left">SMT_DIRECTION_RIGHT</option>
+<option value="right">SMT_DIRECTION_LEFT</option>
+</param>
+<param description="" label="" default="&lt;hr style='width:100%;height:3px;border:solid 3px #D04520;border-left:0;border-right:0;border-bottom:0;'&gt;" type="spacer" name="@spacer" />
+<param name="tccm" type="list" default="1" label="SMT_TICKER_CONTENT" description="SMT_TICKER_CONTENT_DESCR">
+<option value="1">SMT_TICKER_CONTENT_MANUALLY</option>
+<option value="0">SMT_TICKER_CONTENT_SEC_OR_CAT</option>
+</param>
+<param description="" label="" default="&lt;hr style='width:100%;height:3px;border:solid 3px #D04520;border-left:0;border-right:0;border-bottom:0;'&gt;" type="spacer" name="@spacer" />
+<param name="tcc" type="textarea" cols="40" rows="5" default="+++ Just a small scrolling &lt;a href=&quot;http://www.medienstroeme.de&quot; target=&quot;_blank&quot; title=&quot;Simple Mooticker made by medien.stroeme&quot;&gt;newsticker made by medien.stroeme&lt;/a&gt; +++" label="SMT_TICKER_CONTENT_MANUALLY2" description="SMT_TICKER_CONTENT_MANUALLY2_DESCR" />
+<param description="" label="" default="&lt;hr style='width:100%;height:3px;border:solid 3px #D04520;border-left:0;border-right:0;border-bottom:0;'&gt;" type="spacer" name="@spacer" />
+<param name="count" type="text" default="" label="SMT_TICKER_CONTENT_SEC_OR_CAT_ITEMS" description="SMT_TICKER_CONTENT_SEC_OR_CAT_ITEMS_DESCR" />
+<param name="ordering" type="list" default="c_dsc" label="SMT_TICKER_CONTENT_SEC_OR_CAT_ITEMS_ORDERING" description="SMT_TICKER_CONTENT_SEC_OR_CAT_ITEMS_ORDERING_OPTIONS_DESCR">
+<option value="c_dsc">SMT_TICKER_CONTENT_SEC_OR_CAT_ITEMS_ORDERING_ADDED_FIRST</option>
+<option value="m_dsc">SMT_TICKER_CONTENT_SEC_OR_CAT_ITEMS_ORDERING_MODIFIED_FIRST</option>
+</param>
+<param name="user_id" type="list" default="0" label="SMT_TICKER_CONTENT_SEC_OR_CAT_AUTHORS" description="SMT_TICKER_CONTENT_SEC_OR_CAT_AUTHORS_DESCR">
+<option value="0">SMT_TICKER_CONTENT_SEC_OR_CAT_AUTHORS_ANYONE</option>
+<option value="by_me">SMT_TICKER_CONTENT_SEC_OR_CAT_AUTHORS_ME</option>
+<option value="not_me">SMT_TICKER_CONTENT_SEC_OR_CAT_AUTHORS_NOT_ME</option>
+</param>
+<param name="@spacer" type="spacer" default="---------------------------------" label="" description="" />
+<param name="show_front" type="radio" default="1" label="SMT_TICKER_CONTENT_SEC_OR_CAT_FRONTPAGE_ITEMS" description="SMT_TICKER_CONTENT_SEC_OR_CAT_FRONTPAGE_ITEMS_DESCR">
+<option value="1">SMT_TICKER_CONTENT_SEC_OR_CAT_FRONTPAGE_ITEMS_SHOW</option>
+<option value="0">SMT_TICKER_CONTENT_SEC_OR_CAT_FRONTPAGE_ITEMS_HIDE</option>
+</param>
+<param name="secid" type="text" default="" label="SMT_TICKER_CONTENT_SEC_ID" description="SMT_TICKER_CONTENT_SEC_ID_DESCR" />
+<param name="catid" type="text" default="" label="SMT_TICKER_CONTENT_CAT_ID" description="SMT_TICKER_CONTENT_CAT_ID_DESCR" />
+<param name="@spacer" type="spacer" default="---------------------------------" label="" description="" />
+<param name="separator" type="text" default="+++" label="SMT_TICKER_CONTENT_SEC_OR_CAT_ITEM_SEPARATOR" description="SMT_TICKER_CONTENT_SEC_OR_CAT_ITEM_SEPARATOR_DESCR" />
+</params>
+
+
+<params group="advanced">
+<param name="tw" type="text" default="250" label="SMT_TICKER_WIDTH" description="SMT_TICKER_WIDTH_DESCR" />
+<param name="unityw" type="radio" default="px" label="SMT_TICKER_WIDTH_UNIT" description="SMT_TICKER_WIDTH_UNIT_DESCR">
+<option value="px">px</option>
+<option value="em">em</option>
+<option value="%">%</option>
+</param>
+<param name="th" type="text" default="20" label="SMT_TICKER_HEIGHT" description="SMT_TICKER_HEIGHT_DESCR" />
+<param name="unityh" type="radio" default="px" label="SMT_TICKER_HEIGHT_UNIT" description="SMT_TICKER_HEIGHT_UNIT_DESCR">
+<option value="px">px</option>
+<option value="em">em</option>
+</param>
+<param description="" label="" default="&lt;hr style='width:100%;height:3px;border:solid 3px #D04520;border-left:0;border-right:0;border-bottom:0;'&gt;" type="spacer" name="@spacer" />
+<param name="tmgt" type="text" default="0" label="SMT_TICKER_MARGIN_TOP" description="SMT_TICKER_MARGIN_DESCR" />
+<param name="tmgr" type="text" default="0" label="SMT_TICKER_MARGIN_RIGHT" description="SMT_TICKER_MARGIN_DESCR" />
+<param name="tmgb" type="text" default="0" label="SMT_TICKER_MARGIN_BOTTOM" description="SMT_TICKER_MARGIN_DESCR" />
+<param name="tmgl" type="text" default="0" label="SMT_TICKER_MARGIN_LEFT" description="SMT_TICKER_MARGIN_DESCR" />
+<param description="" label="" default="---------------------------------" type="spacer" name="@spacer" />
+<param name="tmgtie" type="text" default="0" label="SMT_TICKER_MARGIN_TOP_IE" description="SMT_TICKER_MARGIN_DESCR" />
+<param name="tmgrie" type="text" default="0" label="SMT_TICKER_MARGIN_RIGHT_IE" description="SMT_TICKER_MARGIN_DESCR" />
+<param name="tmgbie" type="text" default="0" label="SMT_TICKER_MARGIN_BOTTOM_IE" description="SMT_TICKER_MARGIN_DESCR" />
+<param name="tmglie" type="text" default="0" label="SMT_TICKER_MARGIN_LEFT_IE" description="SMT_TICKER_MARGIN_DESCR" />
+<param name="unitymg" type="radio" default="px" label="SMT_TICKER_MARGIN_UNIT" description="SMT_TICKER_MARGIN_UNIT_DESCR">
+<option value="px">px</option>
+<option value="em">em</option>
+<option value="%">%</option>
+</param>
+<param description="" label="" default="&lt;hr style='width:100%;height:3px;border:solid 3px #D04520;border-left:0;border-right:0;border-bottom:0;'&gt;" type="spacer" name="@spacer" />
+<param name="tbg" type="text" default="ffffff" label="SMT_TICKER_BACKGROUND" description="SMT_TICKER_BACKGROUND_DESCR" />
+<param name="tbst" type="list" default="none" label="SMT_TICKER_BORDER_STYLE" description="SMT_TICKER_BORDER_DESCR">
+<option value="none">None</option>
+<option value="solid">Solid</option>
+<option value="dotted">Dotted</option>
+<option value="dashed">Dashed</option>
+<option value="double">Double</option>
+<option value="groove">Groove</option>
+<option value="ridge">Ridge</option>
+<option value="inset">Inset</option>
+<option value="outset">Outset</option>
+</param>
+<param name="tbw" type="list" default="1" label="SMT_TICKER_BORDER_WIDTH" description="SMT_TICKER_BORDER_WIDTH_DESCR">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</param>
+<param name="tbc" type="text" default="000000" label="SMT_TICKER_BORDER_COLOR" description="SMT_TICKER_BORDER_COLOR_DESCR" />
+<param description="" label="" default="&lt;hr style='width:100%;height:3px;border:solid 3px #D04520;border-left:0;border-right:0;border-bottom:0;'&gt;" type="spacer" name="@spacer" />
+<param name="tff" type="list" default="arial,helvetica,sans-serif" label="SMT_TICKER_FONT_FAMILY" description="SMT_TICKER_FONT_FAMILY_DESCR">
+<option value="arial,helvetica,sans-serif">Arial, Helvetica, Sans-Serif</option>
+<option value="verdana,tahoma,geneva,sans-serif">Verdana, Tahoma, Geneva, Sans-Serif</option>
+<option value="'Times%20New%20Roman','Courier%20New',georgia">Times New Roman, Courier New, Georgia</option>
+<option value="'Comic%20Sans%20MS'">Comic Sans MS</option>	
+</param>
+<param name="tfs" type="text" default="12" label="SMT_TICKER_FONT_SIZE" description="SMT_TICKER_FONT_SIZE_DESCR" />
+<param name="unityfs" type="radio" default="px" label="SMT_TICKER_FONT_SIZE_UNIT" description="SMT_TICKER_FONT_SIZE_UNIT_DESCR">
+<option value="px">px</option>
+<option value="em">em</option>
+<option value="%">%</option>
+</param>
+<param name="tfc" type="text" default="000000" label="SMT_TICKER_FONT_COLOR" description="SMT_TICKER_FONT_COLOR_DESCR" />	
+<param name="tfw" type="radio" default="normal" label="SMT_TICKER_FONT_WEIGHT" description="SMT_TICKER_FONT_WEIGHT_DESCR">
+<option value="normal">SMT_TICKER_FONT_WEIGHT_NORMAL</option>
+<option value="bold">SMT_TICKER_FONT_WEIGHT_BOLD</option>		
+</param>
+<param description="" label="" default="&lt;hr style='width:100%;height:3px;border:solid 3px #D04520;border-left:0;border-right:0;border-bottom:0;'&gt;" type="spacer" name="@spacer" />
+<param name="tfv" type="radio" default="normal" label="SMT_TICKER_FONT_VARIANT" description="SMT_TICKER_FONT_VARIANT_DESCR">
+<option value="normal">SMT_TICKER_FONT_VARIANT_NONE</option>
+<option value="small-caps">SMT_TICKER_FONT_VARIANT_CAPS</option>	
+</param>
+<param name="ttt" type="list" default="none" label="SMT_TICKER_TEXT_TRANSFORM" description="SMT_TICKER_TEXT_TRANSFORM_DESCR">
+<option value="none">SMT_TICKER_TEXT_TRANSFORM_NONE</option>
+<option value="capitalize">SMT_TICKER_TEXT_TRANSFORM_CAPT</option>
+<option value="uppercase">SMT_TICKER_TEXT_TRANSFORM_UPPER</option>
+<option value="lowercase">SMT_TICKER_TEXT_TRANSFORM_LOWER</option>	
+</param>
+<param name="tls" type="text" default="0" label="SMT_TICKER_LETTER_SPC" description="SMT_TICKER_LETTER_SPC_DESCR" />
+<param name="unityls" type="radio" default="px" label="SMT_TICKER_LETTER_SPC_UNIT" description="SMT_TICKER_LETTER_SPC_UNIT_DESCR">
+<option value="px">px</option>
+<option value="em">em</option>
+</param>
+<param description="" label="" default="&lt;hr style='width:100%;height:3px;border:solid 3px #D04520;border-left:0;border-right:0;border-bottom:0;'&gt;" type="spacer" name="@spacer" />
+<param name="tlc" type="text" default="000000" label="SMT_TICKER_LINK_COLOR" description="SMT_TICKER_LINK_COLOR_DESCR" />
+<param name="tlch" type="text" default="ff6600" label="SMT_TICKER_LINK_COLOR_HOVER" description="SMT_TICKER_LINK_COLOR_HOVER_DESCR" />
+<param name="tfli" type="radio" default="underline" label="SMT_TICKER_LINK_UNDERLINED" description="SMT_TICKER_LINK_UNDERLINED_DESCR">
+<option value="underline">SMT_TICKER_LINK_UNDERLINED_YES</option>
+<option value="none">SMT_TICKER_LINK_UNDERLINED_NO</option>
+</param>
+</params>
+
+
+<params group="other">
+<param name="tns" type="textarea" cols="40" rows="5" default="Attention! Javascript must be enabled to read our newsticker." label="NO SCRIPT Text" description="SMT_TICKER_NOSCRIPT_DESCR" />
+</params>
+</install>

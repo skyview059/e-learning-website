@@ -53,14 +53,14 @@ require_once dirname(__FILE__) . DS . 'functions.php';
 							<div class="Post-inner">
 								<div class="PostContent">
 									<jdoc:include type="modules" name="breadcrumb" />
-									<jdoc:include type="message" />
+									<jdoc:include type="message" /> 
 								</div>
 								<div class="cleared"></div>
 							</div>
 						</div>
 					</div>
 					<?php endif; ?>
-					<jdoc:include type="component" />
+					<jdoc:include type="component" /> 
 				</div>
 			<!--
 			<div class="sidebar2">

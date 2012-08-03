@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<extprofile>
+	<params name="japarams">	
+		<param 
+			name="duration" 
+			type="text" 
+			default="1000" 
+			label="Duration" 
+			description="Time interval of the transition effect when autoplay is on in milliseconds. Value default is 1000."/>
+	</params>	
+</extprofile>

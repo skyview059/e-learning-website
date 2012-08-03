@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>JA News Pro Module</name>
+	<author>JoomlArt.com</author>
+	<creationDate>Jan 2010</creationDate>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0.3</version>
+	<description>JA NEWS PRO Module comes with rich backend and advanced features for easy configuration. It lets you manage news on frontpage more professionally.</description>
+	<languages>
+			<language tag="en-GB">en-GB.mod_janewspro.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_janewspro">mod_janewspro.php</filename>
+		<folder>assets</folder>
+		<folder>admin</folder>
+		<folder>profiles</folder>
+		<folder>elements</folder>
+		<folder>helpers</folder>
+		<folder>tmpl</folder>
+	</files>
+	<params  addpath="/modules/mod_janewspro/elements">
+		<param 
+			name="group" 
+			type="japaramhelper" 
+			function="@group" level="3">
+				<option for="source" value="JAK2Helper" hideRow="true">k2catsid,getChildren,K2Plugins</option>
+				<option for="source" value="JAFlexiHelper" hideRow="true">flexi_catsid,getFlexiChildren</option>
+				<option for="source" value="JANewsHelper" hideRow="true">catsid</option>
+				<option for="groupbysubcat" value="1" hideRow="true">maxSubCats</option>		
+		</param>	
+		<param name="moduleclass_sfx" type="text" default="" label="MODULE CLASS SUFFIX" description="MODULE CLASS SUFFIX DESC" />
+		<param 
+			name="profile" 
+			type="japaramhelper2" 
+			default="default"
+			label="Profile selection" 
+			description="Profile selection Desc"/>
+		<param 
+			name="settingcontent" 
+			type="japaramhelper" 
+			default="" 
+			function="@title" 
+			label="CONTENT SETTINGS" 
+			description="CONTENT SETTINGS" level="2"/>
+		<param 
+			name="groupbysubcat" 
+			type="radio" 
+			default="0" 
+			level="3"
+			label="Group by sub category" 
+			description="Group by sub category">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>		
+		<param 
+			name="source" 
+			type="radio" 
+			default="JANewsHelper" 
+			level="3"
+			label="FROM RESOURCE" 
+			description="FROM RESOURCE DESC">
+				<option value="JAK2Helper">K2</option>
+				<option value="JAFlexiHelper">FlexiContent</option>
+				<option value="JANewsHelper">Joomla Content</option>
+		</param>
+		
+		<param 
+			name="catsid" 
+			type="japaramhelper"
+			subtype="categories" 
+			default=""
+			level="3"
+			extension="com_content"
+			label="Select categories" 
+			multiple="true"
+			size="5"
+			description="Select categories desc" >
+		</param>
+		<param 
+			name="flexi_catsid" 
+			type="categoryFlexi"
+			default="" 
+			level="3"
+			label="Select Flexicontent categories" 
+			description="Select Flexicontent categories desc" >
+		</param>
+		<param 
+			name="getFlexiChildren" 
+			type="radio" 
+			default="1" 
+			label="Fetch items from flexi children categories" 
+			description="Fetch items from flexi children categories DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>				
+		</param>
+		
+		<param 
+			name="k2catsid" 
+			type="categoryK2" 
+			default="" 
+			level="3"
+			label="Select K2 categories" 
+			description="Select K2 categories desc" />
+		
+		<param 
+			name="getChildren" 
+			type="radio" 
+			default="1" 
+			label="Fetch items from children categories" 
+			description="Fetch items from children categories DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>				
+		</param>
+		
+		<param 
+			name="ordering" 
+			type="list" 
+			default="ordering" 
+			label="ARTICLE ORDER" 
+			description="ARTICLE ORDER DESC">
+				<option value="ordering">Ordering</option>
+				<option value="ordering DESC">Ordering Reverse</option>
+				<option value="title">Title Alphabetical</option>
+				<option value="title DESC">Title Reverse-Alphabetical</option>
+				<option value="hits desc">Most popular</option>
+				<option value="modified desc">Latest Modified</option>
+				<option value="created ASC">Oldest first</option>
+				<option value="created DESC">Most recent first</option>
+				<option value="rand">Random ordering</option>
+		</param>
+		
+		<param 
+		  	name="maxSubCats" 
+		  	type="text" 
+		  	default="-1" 
+		  	label="MAXIMUM SUBCATEGORIES" 
+		  	description="MAXIMUM SUBCATEGORIES DESC" />
+		  	
+		<param 
+			name="timerange" 
+			type="list" 
+			default="" 
+			label="TIME RANGE" 
+			description="TIME RANGE DESC">
+				<option value="">All time</option>
+				<option value="1">1 day</option>
+				<option value="3">3 days</option>
+				<option value="7">1 week</option>
+				<option value="15">2 weeks</option>
+				<option value="30">1 month</option>
+				<option value="180">6 months</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param 
+			name="K2Plugins" 
+			type="radio" 
+			default="1" 
+			label="Enable K2 plugins" 
+			description="Enable K2 plugins DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param 
+			name="JPlugins" 
+			type="radio" 
+			default="1" 
+			label="Enable Joomla Content plugins" 
+			description="Enable Joomla Content plugins DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param 
+			name="colors" 
+			type="textarea" 
+			cols="30" 
+			rows="10" 
+			default="" 
+			label="COLORS" 
+			description="COLORS_DESC" />
+		<param 
+			name="cache" 
+			type="list" 
+			default="1" 
+			label="Caching" 
+			description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param 
+			name="cache_time" 
+			type="text" 
+			default="900" 
+			label="Cache Time" 
+			description="The time before the module is recached" />
+	</params>
+</install>

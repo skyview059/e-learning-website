@@ -27,13 +27,20 @@ class HelloModelHello extends JModel
 	 */
 	function getGreeting()
 	{
-		
 		$db =& JFactory::getDBO();
 
-		$query = 'SELECT greeting FROM #__hello WHERE ID = 2';
-		
+		$query = 'SELECT greeting FROM #__hello';
 		$db->setQuery( $query );
 		$greeting = $db->loadResult();
+
 		return $greeting;
 	}
+	function getSubjectName() 
+	{
+		$db =& JFactory::getDBO();
+		$query = "SELECT subject_name FROM #__subjects";
+		$db->setQuery( $query );
+		$result = $db->loadResultArray();
+		return $result;
+	} 
 }

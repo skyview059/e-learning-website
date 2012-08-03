@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<extprofile>
+	<params name="japarams">				
+	  	<param name="showhits" type="radio" default="1" label="SHOW HITS COLUMN" description="SHOW HITS COLUMN DESC">
+	  		<option value="1">Show</option>
+	  		<option value="0">Hide</option>
+	  	</param>
+	</params>
+</extprofile>
