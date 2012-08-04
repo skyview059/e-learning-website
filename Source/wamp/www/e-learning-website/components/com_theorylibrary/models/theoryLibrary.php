@@ -19,7 +19,7 @@ jimport( 'joomla.application.component.model' );
  * @package    Joomla.Tutorials
  * @subpackage Components
  */
-class theoryLibraryModeltheoryLibrary extends JModel
+class TheoryLibraryModelTheoryLibrary extends JModel
 {	 
 	function getNumOfSubject()
 	{

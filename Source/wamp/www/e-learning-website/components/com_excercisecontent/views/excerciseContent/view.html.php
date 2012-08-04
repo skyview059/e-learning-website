@@ -18,7 +18,7 @@ jimport( 'joomla.application.component.view');
  * @package    Excercise Content
  */
 
-class excercisecontentViewexcerciseContent extends JView
+class ExcerciseContentViewExcerciseContent extends JView
 {
 
 	function display($tpl = null)

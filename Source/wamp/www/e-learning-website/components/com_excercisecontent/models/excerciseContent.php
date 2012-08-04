@@ -13,7 +13,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport( 'joomla.application.component.model' );
 
 
-class excerciseContentModelexcerciseContent extends JModel
+class ExcerciseContentModelExcerciseContent extends JModel
 {
 	function getAnswerCorrect($ID) 
 	{

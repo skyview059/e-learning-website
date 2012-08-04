@@ -18,7 +18,7 @@ jimport( 'joomla.application.component.view');
  * @package    TheoryContent
  */
 
-class theorycontentViewtheoryContent extends JView
+class TheoryContentViewTheoryContent extends JView
 {
 	function display($tpl = null)
 	{

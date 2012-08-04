@@ -19,7 +19,7 @@ jimport( 'joomla.application.component.model' );
  * @package    Joomla.Tutorials
  * @subpackage Components
  */
-class theoryContentModeltheoryContent extends JModel
+class TheoryContentModelTheoryContent extends JModel
 {
 	/**
 	 * Gets the greeting
