@@ -27,19 +27,17 @@ class TheoryContentModelTheoryContent extends JModel
 	 */
 	function getChapterName()
 	{
-		$Itemid=$_GET['Itemid'];
+		$itemid=$_GET['Itemid'];
 		
 		$db =& JFactory::getDBO();
-		$query = "SELECT name FROM #__menu WHERE id = " . $Itemid;
+		$query = "SELECT name FROM #__menu WHERE id = " . $itemid;
 		$db->setQuery( $query );
 		$theoryName = $db->loadResult();
 		
-		$db =& JFactory::getDBO();
 		$query = "SELECT subjectid FROM #__subjects WHERE subject_name = \"" . $theoryName . "\"";
 		$db->setQuery( $query );
 		$subjectid = $db->loadResult();
 		
-		$db =& JFactory::getDBO();
 		$query = "SELECT DISTINCT chapter_name FROM #__theories WHERE subjectid = " . $subjectid;
 		$db->setQuery( $query );
 		$chapterNames= $db->loadResultArray();
@@ -132,10 +130,10 @@ class TheoryContentModelTheoryContent extends JModel
 		return $result;
 	} 
 	
-	function getQuestion($theory_id,$num)
+	function getQuestion($theoryid,$num)
 	{
 		$db =& JFactory::getDBO();
-		$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theory_id	."' ORDER BY RAND( ) LIMIT ".$num;
+		$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theoryid	."' ORDER BY RAND( ) LIMIT ".$num;
 		$db->setQuery( $query );
 		$row = $db->loadRowList();
 		$i  = 0  ;
@@ -149,7 +147,7 @@ class TheoryContentModelTheoryContent extends JModel
 		while($i < sizeof($row)){
 				?>
 				<script type="text/javascript">
-					function ans_<?php echo($row[$i]['0']);?>()
+					function ans<?php echo($row[$i]['0']);?>()
 					{
 						var my_str = document.getElementById('<?php echo $i;?>').innerHTML;  
 						var comStr='Ans for question is : <?php echo($this->getAnswerCorrect($row[$i]['0'])) ;?>';  
@@ -158,52 +156,52 @@ class TheoryContentModelTheoryContent extends JModel
 				</script>
 				<?php
 				$tmp = "";
-				$all_ans =   $this->getAnswer($row[$i]['0']);
-				if(isset($all_ans))
+				$allAnswer =   $this->getAnswer($row[$i]['0']);
+				if(isset($allAnswer))
 				{
 					$tmp = "</br>".($i+1).".";
 					
 					$tmp .=$row[$i]['5'];
 					
 					$tmp .= "<br><label>";
-					if(isset($all_ans['0']))
+					if(isset($allAnswer['0']))
 					{
 						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_A\" />";
-						$tmp .="A. ".$all_ans['0'];
+						$tmp .="A. ".$allAnswer['0'];
 						$tmp .= "</label><br><label>";
 					}
-					if(isset($all_ans['1']))
+					if(isset($allAnswer['1']))
 					{
 						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"B\" id=\"question_".$row[$i]['0']."_B\" />";
-						$tmp .="B. ".$all_ans['1'];
+						$tmp .="B. ".$allAnswer['1'];
 						$tmp .= "</label><br><label>";
 					}
-					if(isset($all_ans['2']))
+					if(isset($allAnswer['2']))
 					{
 						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"C\" id=\"question_".$row[$i]['0']."_C\" />";
-						$tmp .="C. ".$all_ans['2'];
+						$tmp .="C. ".$allAnswer['2'];
 						$tmp .= "</label><br><label>";
 					}
-					if(isset($all_ans['3']))
+					if(isset($allAnswer['3']))
 					{
 						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"D\" id=\"question_".$row[$i]['0']."_D\" />";
-						$tmp .="D. ".$all_ans['3'];
+						$tmp .="D. ".$allAnswer['3'];
 						$tmp .= "</label><br><label>";
 					}
-					if(isset($all_ans['4']))
+					if(isset($allAnswer['4']))
 					{
 						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_E\" />";
-						$tmp .="E. ".$all_ans['4'];
+						$tmp .="E. ".$allAnswer['4'];
 						$tmp .= "</label><br><label>";
 					}
-					if(isset($all_ans['5']))
+					if(isset($allAnswer['5']))
 					{
 						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_F\" />";
-						$tmp .="F. ".$all_ans['5'];
+						$tmp .="F. ".$allAnswer['5'];
 						$tmp .= "</label><br><label>";
 					}
 					
-					$tmp .=" <a onclick=\"ans_".$row[$i]['0']."()\" ><u>Answer</u></a></br>";
+					$tmp .=" <a onclick=\"ans".$row[$i]['0']."()\" ><u>Answer</u></a></br>";
 					$tmp .="<b  id=\"$i\"  readonly></b >";
 					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->getAnswerCorrect($row[$i]['0'])."\" />";			
 					

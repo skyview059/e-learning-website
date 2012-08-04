@@ -67,31 +67,31 @@ class ExcerciseContentViewExcerciseContent extends JView
 				echo "Môn học: <select name=\"subject\" onchange=\"this.form.submit()\" style=\"width: 100px\"";
 				echo ">";
 				
-				$all_subject =  $model->getSubjectName() ;
+				$allSubject =  $model->getSubjectName() ;
 				$i = 0;
 				if ($subject !="")
 					echo "<option selected=\"selected\">".$subject."</option>";
 				else
 				{
 					echo "<option></option>";
-					while($all_subject[$i]!= ""){
-						echo "<option >".$all_subject[$i]."</option>";
+					while($allSubject[$i]!= ""){
+						echo "<option >".$allSubject[$i]."</option>";
 						$i++;
 					}
 				}	
 				echo "		</select>";
 				
-				$subject_id = $model->getSubjectid($subject) ;
+				$subjectid = $model->getSubjectid($subject) ;
 				echo "</br>Chương: <select name=\"chapterName\" onchange=\"this.form.submit()\" style=\"width: 300px\">";
-				$all_chapter =  $model->getChapterName($subject_id) ;
+				$allChapter =  $model->getChapterName($subjectid) ;
 				$i = 0;
 				if ($chapterName !="")
 					echo "<option selected=\"selected\">".$chapterName."</option>";
 				else
 				{
 					echo "<option></option>";
-					while($all_chapter[$i]!= ""){
-						echo "<option>".$all_chapter[$i]."</option>";
+					while($allChapter[$i]!= ""){
+						echo "<option>".$allChapter[$i]."</option>";
 						$i++;
 					}	
 				}
@@ -101,19 +101,19 @@ class ExcerciseContentViewExcerciseContent extends JView
 			
 				echo "</br>Bài: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<select name=\"theory\" onchange=\"this.form.submit()\" style=\"width: 300px\">";
 				
-				$all_theory =  $model->getTheoryName($chapterName) ;
+				$allTheory =  $model->getTheoryName($chapterName) ;
 				$i = 0;
 				if ($theory !="")
 					echo "<option selected=\"selected\">".$theory."</option>";
 				else
 				{
 					echo "<option></option>";
-					while($all_theory[$i]!= ""){
-						if ($theory == $all_theory[$i]) 
+					while($allTheory[$i]!= ""){
+						if ($theory == $allTheory[$i]) 
 						{
-							echo "<option selected=\"selected\" >".$all_theory[$i]."</option>";
+							echo "<option selected=\"selected\" >".$allTheory[$i]."</option>";
 						} else{
-							echo "<option>".$all_theory[$i]."</option>";
+							echo "<option>".$allTheory[$i]."</option>";
 						}
 						$i++;
 					}	
