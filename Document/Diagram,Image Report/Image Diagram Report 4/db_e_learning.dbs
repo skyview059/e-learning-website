@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="e-learn" database="MySql" >
-	<schema name="e-learn" schemaname="e-learn" defo="y" />
 	<schema name="db_e_learning" catalogname="db_e_learning" defo="y" >
 		<table name="jos_answers" >
 			<column name="questionid" type="INT" length="10" jt="4" mandatory="y" unsigned="y" >
@@ -1552,14 +1551,14 @@
 		</table>
 		<table name="jos_theories" >
 			<column name="theory_id" type="INT" length="10" jt="4" mandatory="y" autoincrement="y" />
-			<column name="chapter_link" type="VARCHAR" length="255" jt="12" />
-			<column name="chapter_name" type="VARCHAR" length="255" jt="12" />
-			<column name="subjectid" type="VARCHAR" length="255" jt="12" />
-			<column name="theory_description" type="VARCHAR" length="255" jt="12" />
-			<column name="theory_file_dat_path" type="VARCHAR" length="255" jt="12" />
-			<column name="theory_file_video_path" type="VARCHAR" length="255" jt="12" />
-			<column name="theory_name" type="VARCHAR" length="255" jt="12" />
-			<column name="theory_objective" type="VARCHAR" length="255" jt="12" />
+			<column name="chapter_link" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="chapter_name" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="subjectid" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="theory_description" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="theory_file_dat_path" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="theory_file_video_path" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="theory_name" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="theory_objective" type="VARCHAR" length="255" jt="12" mandatory="y" />
 			<index name="pk_jos_theories" unique="PRIMARY_KEY" >
 				<column name="theory_id" />
 			</index>
@@ -4044,108 +4043,140 @@
 			</index>
 		</table>
 	</schema>
+	<schema name="e-learn" schemaname="e-learn" defo="y" />
 	<connector name="MySql" database="MySql" driver_class="com.mysql.jdbc.Driver" driver_jar="mysql-connector-java-5.1.20-bin.jar" host="localhost" port="3306" instance="db_e_learning" user="root" schema_mapping="" />
 	<layout name="e-learn" >
-		<entity schema="db_e_learning" name="jos_banner" x="588" y="1526" />
-		<entity schema="db_e_learning" name="phpbb_zebra" x="672" y="1596" />
-		<entity schema="db_e_learning" name="phpbb_topics_track" x="672" y="1540" />
-		<entity schema="db_e_learning" name="phpbb_styles_imageset_data" x="616" y="1540" />
-		<entity schema="db_e_learning" name="phpbb_smilies" x="644" y="1540" />
-		<entity schema="db_e_learning" name="phpbb_sessions" x="616" y="1512" />
-		<entity schema="db_e_learning" name="phpbb_search_results" x="672" y="1540" />
-		<entity schema="db_e_learning" name="phpbb_ranks" x="644" y="1540" />
-		<entity schema="db_e_learning" name="phpbb_profile_fields_data" x="672" y="1540" />
-		<entity schema="db_e_learning" name="phpbb_privmsgs_rules" x="672" y="1540" />
-		<entity schema="db_e_learning" name="phpbb_posts" x="700" y="1512" />
-		<entity schema="db_e_learning" name="phpbb_modules" x="672" y="1554" />
-		<entity schema="db_e_learning" name="phpbb_groups" x="672" y="56" />
-		<entity schema="db_e_learning" name="phpbb_forums_access" x="868" y="42" />
-		<entity schema="db_e_learning" name="phpbb_extension_groups" x="616" y="1624" />
-		<entity schema="db_e_learning" name="phpbb_confirm" x="896" y="210" />
-		<entity schema="db_e_learning" name="phpbb_bookmarks" x="868" y="350" />
-		<entity schema="db_e_learning" name="phpbb_attachments" x="644" y="1540" />
-		<entity schema="db_e_learning" name="phpbb_acl_roles" x="700" y="1568" />
-		<entity schema="db_e_learning" name="phpbb_log" x="672" y="1540" />
-		<entity schema="db_e_learning" name="jos_weblinks" x="700" y="1512" />
-		<entity schema="db_e_learning" name="jos_answers" x="294" y="56" />
-		<entity schema="db_e_learning" name="jos_templates_menu" x="658" y="1512" />
-		<entity schema="db_e_learning" name="jos_session" x="812" y="126" />
-		<entity schema="db_e_learning" name="jos_categories" x="700" y="1512" />
-		<entity schema="db_e_learning" name="jos_questions" x="490" y="112" />
-		<entity schema="db_e_learning" name="jos_poll_data" x="644" y="1512" />
-		<entity schema="db_e_learning" name="jos_noixacl_multigroups" x="392" y="560" />
-		<entity schema="db_e_learning" name="jos_newsfeeds" x="616" y="1498" />
-		<entity schema="db_e_learning" name="jos_migration_backlinks" x="602" y="1512" />
-		<entity schema="db_e_learning" name="jos_groups_resources" x="700" y="1582" />
-		<entity schema="db_e_learning" name="jos_core_log_searches" x="616" y="1512" />
-		<entity schema="db_e_learning" name="jos_core_acl_aro_sections" x="616" y="1512" />
-		<entity schema="db_e_learning" name="jos_core_acl_aro" x="616" y="1526" />
-		<entity schema="db_e_learning" name="jos_menu_types" x="756" y="1498" />
-		<entity schema="db_e_learning" name="phpbb_styles_theme" x="672" y="1484" />
-		<entity schema="db_e_learning" name="jos_books" x="532" y="1526" />
-		<entity schema="db_e_learning" name="phpbb_topics_watch" x="588" y="1176" />
-		<entity schema="db_e_learning" name="phpbb_warnings" x="588" y="1162" />
-		<entity schema="db_e_learning" name="phpbb_topics" x="560" y="1176" />
-		<entity schema="db_e_learning" name="jos_components" x="644" y="1596" />
-		<entity schema="db_e_learning" name="phpbb_reports" x="560" y="1218" />
-		<entity schema="db_e_learning" name="phpbb_profile_fields_lang" x="560" y="1218" />
-		<entity schema="db_e_learning" name="phpbb_privmsgs_to" x="588" y="1232" />
-		<entity schema="db_e_learning" name="phpbb_poll_options" x="588" y="1274" />
-		<entity schema="db_e_learning" name="phpbb_login_attempts" x="658" y="420" />
-		<entity schema="db_e_learning" name="phpbb_icons" x="560" y="1316" />
-		<entity schema="db_e_learning" name="phpbb_forums_track" x="588" y="1288" />
-		<entity schema="db_e_learning" name="phpbb_styles" x="560" y="1526" />
-		<entity schema="db_e_learning" name="phpbb_extensions" x="644" y="1554" />
-		<entity schema="db_e_learning" name="phpbb_words" x="672" y="1568" />
-		<entity schema="db_e_learning" name="phpbb_disallow" x="588" y="1274" />
-		<entity schema="db_e_learning" name="phpbb_bots" x="588" y="1582" />
-		<entity schema="db_e_learning" name="phpbb_banlist" x="588" y="1582" />
-		<entity schema="db_e_learning" name="phpbb_user_group" x="1162" y="266" />
-		<entity schema="db_e_learning" name="phpbb_acl_roles_data" x="560" y="1596" />
-		<entity schema="db_e_learning" name="phpbb_acl_groups" x="588" y="1554" />
-		<entity schema="db_e_learning" name="phpbb_topics_posted" x="560" y="1568" />
-		<entity schema="db_e_learning" name="phpbb_search_wordlist" x="588" y="1554" />
-		<entity schema="db_e_learning" name="jos_tests_own" x="588" y="1484" />
-		<entity schema="db_e_learning" name="jos_content" x="644" y="1498" />
-		<entity schema="db_e_learning" name="phpbb_privmsgs" x="588" y="1246" />
-		<entity schema="db_e_learning" name="jos_bannerclient" x="490" y="1274" />
-		<entity schema="db_e_learning" name="jos_bannertrack" x="490" y="1246" />
-		<entity schema="db_e_learning" name="jos_gscales" x="490" y="462" />
-		<entity schema="db_e_learning" name="jos_results_answers" x="378" y="266" />
-		<entity schema="db_e_learning" name="jos_tests_questions" x="476" y="434" />
-		<entity schema="db_e_learning" name="phpbb_styles_imageset" x="602" y="1554" />
-		<entity schema="db_e_learning" name="phpbb_styles_template_data" x="560" y="1554" />
-		<entity schema="db_e_learning" name="phpbb_search_wordmatch" x="574" y="1610" />
-		<entity schema="db_e_learning" name="phpbb_sitelist" x="602" y="1582" />
-		<entity schema="db_e_learning" name="phpbb_profile_lang" x="602" y="1582" />
-		<entity schema="db_e_learning" name="phpbb_profile_fields" x="588" y="1568" />
-		<entity schema="db_e_learning" name="phpbb_privmsgs_folder" x="602" y="1582" />
-		<entity schema="db_e_learning" name="phpbb_poll_votes" x="588" y="1582" />
-		<entity schema="db_e_learning" name="phpbb_moderator_cache" x="588" y="1596" />
-		<entity schema="db_e_learning" name="phpbb_lang" x="574" y="1568" />
-		<entity schema="db_e_learning" name="phpbb_forums_watch" x="574" y="1568" />
-		<entity schema="db_e_learning" name="phpbb_drafts" x="574" y="1582" />
-		<entity schema="db_e_learning" name="phpbb_config" x="588" y="1582" />
-		<entity schema="db_e_learning" name="phpbb_bbcodes" x="588" y="1610" />
-		<entity schema="db_e_learning" name="jos_stats_agents" x="602" y="1540" />
-		<entity schema="db_e_learning" name="phpbb_acl_users" x="644" y="1582" />
-		<entity schema="db_e_learning" name="phpbb_acl_options" x="588" y="1624" />
-		<entity schema="db_e_learning" name="jos_vvcounter_logs" x="602" y="1582" />
-		<entity schema="db_e_learning" name="phpbb_sessions_keys" x="1022" y="154" />
-		<entity schema="db_e_learning" name="jos_tests_attempts" x="1176" y="154" />
-		<entity schema="db_e_learning" name="phpbb_forums" x="560" y="1554" />
-		<entity schema="db_e_learning" name="phpbb_styles_template" x="462" y="1204" />
-		<entity schema="db_e_learning" name="phpbb_reports_reasons" x="756" y="1512" />
-		<entity schema="db_e_learning" name="phpbb_users" x="42" y="112" >
+		<entity schema="db_e_learning" name="jos_banner" x="574" y="1540" />
+		<entity schema="db_e_learning" name="phpbb_zebra" x="658" y="1610" />
+		<entity schema="db_e_learning" name="phpbb_topics_track" x="658" y="1554" />
+		<entity schema="db_e_learning" name="phpbb_styles_imageset_data" x="602" y="1554" />
+		<entity schema="db_e_learning" name="phpbb_smilies" x="630" y="1554" />
+		<entity schema="db_e_learning" name="phpbb_sessions" x="602" y="1526" />
+		<entity schema="db_e_learning" name="phpbb_search_results" x="658" y="1554" />
+		<entity schema="db_e_learning" name="phpbb_ranks" x="630" y="1554" />
+		<entity schema="db_e_learning" name="phpbb_profile_fields_data" x="658" y="1554" />
+		<entity schema="db_e_learning" name="phpbb_privmsgs_rules" x="658" y="1554" />
+		<entity schema="db_e_learning" name="phpbb_posts" x="686" y="1526" />
+		<entity schema="db_e_learning" name="phpbb_modules" x="658" y="1568" />
+		<entity schema="db_e_learning" name="phpbb_extension_groups" x="602" y="1638" />
+		<entity schema="db_e_learning" name="phpbb_attachments" x="630" y="1554" />
+		<entity schema="db_e_learning" name="phpbb_acl_roles" x="686" y="1582" />
+		<entity schema="db_e_learning" name="phpbb_log" x="658" y="1554" />
+		<entity schema="db_e_learning" name="jos_weblinks" x="686" y="1526" />
+		<entity schema="db_e_learning" name="jos_templates_menu" x="644" y="1526" />
+		<entity schema="db_e_learning" name="jos_categories" x="686" y="1526" />
+		<entity schema="db_e_learning" name="jos_poll_data" x="630" y="1526" />
+		<entity schema="db_e_learning" name="jos_newsfeeds" x="602" y="1512" />
+		<entity schema="db_e_learning" name="jos_migration_backlinks" x="588" y="1526" />
+		<entity schema="db_e_learning" name="jos_groups_resources" x="686" y="1596" />
+		<entity schema="db_e_learning" name="jos_core_log_searches" x="602" y="1526" />
+		<entity schema="db_e_learning" name="jos_core_acl_aro_sections" x="602" y="1526" />
+		<entity schema="db_e_learning" name="jos_core_acl_aro" x="602" y="1540" />
+		<entity schema="db_e_learning" name="jos_menu_types" x="742" y="1512" />
+		<entity schema="db_e_learning" name="phpbb_styles_theme" x="658" y="1498" />
+		<entity schema="db_e_learning" name="jos_books" x="518" y="1540" />
+		<entity schema="db_e_learning" name="jos_components" x="630" y="1610" />
+		<entity schema="db_e_learning" name="phpbb_styles" x="546" y="1540" />
+		<entity schema="db_e_learning" name="phpbb_extensions" x="630" y="1568" />
+		<entity schema="db_e_learning" name="phpbb_words" x="658" y="1582" />
+		<entity schema="db_e_learning" name="phpbb_bots" x="574" y="1596" />
+		<entity schema="db_e_learning" name="phpbb_banlist" x="574" y="1596" />
+		<entity schema="db_e_learning" name="phpbb_user_group" x="1148" y="280" />
+		<entity schema="db_e_learning" name="phpbb_acl_roles_data" x="546" y="1610" />
+		<entity schema="db_e_learning" name="phpbb_acl_groups" x="574" y="1568" />
+		<entity schema="db_e_learning" name="phpbb_reports_reasons" x="742" y="1526" />
+		<entity schema="db_e_learning" name="jos_noixacl_adapters" x="42" y="938" />
+		<entity schema="db_e_learning" name="jos_noixacl_multigroups" x="42" y="868" />
+		<entity schema="db_e_learning" name="jos_tests" x="1204" y="420" />
+		<entity schema="db_e_learning" name="jos_tests_questions" x="1232" y="56" />
+		<entity schema="db_e_learning" name="jos_bannertrack" x="140" y="1330" />
+		<entity schema="db_e_learning" name="jos_bannerclient" x="308" y="1372" />
+		<entity schema="db_e_learning" name="jos_contact_details" x="126" y="1470" />
+		<entity schema="db_e_learning" name="jos_poll_date" x="420" y="1470" />
+		<entity schema="db_e_learning" name="jos_core_acl_aro_map" x="1218" y="1386" />
+		<entity schema="db_e_learning" name="jos_core_acl_groups_aro_map" x="966" y="1512" />
+		<entity schema="db_e_learning" name="jos_core_log_items" x="308" y="1386" />
+		<entity schema="db_e_learning" name="jos_messages_cfg" x="854" y="1484" />
+		<entity schema="db_e_learning" name="jos_poll_menu" x="322" y="1386" />
+		<entity schema="db_e_learning" name="jos_content_frontpage" x="896" y="1484" />
+		<entity schema="db_e_learning" name="jos_config" x="952" y="1442" />
+		<entity schema="db_e_learning" name="jos_core_acl_aro_groups" x="224" y="1414" />
+		<entity schema="db_e_learning" name="jos_visitors" x="952" y="1260" />
+		<entity schema="db_e_learning" name="jos_modules" x="364" y="1330" />
+		<entity schema="db_e_learning" name="jos_polls" x="882" y="1428" />
+		<entity schema="db_e_learning" name="jos_plugins" x="364" y="1344" />
+		<entity schema="db_e_learning" name="jos_content_rating" x="406" y="1330" />
+		<entity schema="db_e_learning" name="jos_resources" x="854" y="1428" />
+		<entity schema="db_e_learning" name="jos_messages" x="896" y="1400" />
+		<entity schema="db_e_learning" name="phpbb_disallow" x="756" y="1442" />
+		<entity schema="db_e_learning" name="phpbb_forums_track" x="854" y="1330" />
+		<entity schema="db_e_learning" name="phpbb_styles_template" x="266" y="1260" />
+		<entity schema="db_e_learning" name="phpbb_poll_options" x="756" y="1400" />
+		<entity schema="db_e_learning" name="jos_modules_menu" x="798" y="1400" />
+		<entity schema="db_e_learning" name="phpbb_privmsgs_to" x="728" y="1344" />
+		<entity schema="db_e_learning" name="phpbb_profile_fields_lang" x="126" y="1442" />
+		<entity schema="db_e_learning" name="phpbb_reports" x="1050" y="1372" />
+		<entity schema="db_e_learning" name="jos_sections" x="1092" y="1302" />
+		<entity schema="db_e_learning" name="phpbb_icons" x="336" y="1330" />
+		<entity schema="db_e_learning" name="phpbb_warnings" x="574" y="1344" />
+		<entity schema="db_e_learning" name="phpbb_topics" x="1050" y="1624" />
+		<entity schema="db_e_learning" name="phpbb_topics_watch" x="322" y="1666" />
+		<entity schema="db_e_learning" name="phpbb_confirm" x="658" y="1204" />
+		<entity schema="db_e_learning" name="jos_vvcounter_logs" x="924" y="1722" />
+		<entity schema="db_e_learning" name="phpbb_acl_options" x="308" y="1708" />
+		<entity schema="db_e_learning" name="jos_stats_agents" x="336" y="1680" />
+		<entity schema="db_e_learning" name="phpbb_bbcodes" x="308" y="1694" />
+		<entity schema="db_e_learning" name="phpbb_drafts" x="266" y="1652" />
+		<entity schema="db_e_learning" name="phpbb_forums_watch" x="868" y="1750" />
+		<entity schema="db_e_learning" name="phpbb_moderator_cache" x="826" y="1750" />
+		<entity schema="db_e_learning" name="phpbb_poll_votes" x="266" y="1652" />
+		<entity schema="db_e_learning" name="phpbb_forums" x="308" y="1652" />
+		<entity schema="db_e_learning" name="phpbb_privmsgs_folder" x="868" y="1722" />
+		<entity schema="db_e_learning" name="phpbb_profile_fields" x="210" y="1624" />
+		<entity schema="db_e_learning" name="phpbb_privmsgs" x="196" y="1316" />
+		<entity schema="db_e_learning" name="phpbb_profile_lang" x="882" y="1694" />
+		<entity schema="db_e_learning" name="phpbb_sitelist" x="322" y="1638" />
+		<entity schema="db_e_learning" name="phpbb_search_wordmatch" x="854" y="1694" />
+		<entity schema="db_e_learning" name="phpbb_styles_template_data" x="294" y="1652" />
+		<entity schema="db_e_learning" name="phpbb_styles_imageset" x="812" y="1722" />
+		<entity schema="db_e_learning" name="phpbb_config" x="826" y="1694" />
+		<entity schema="db_e_learning" name="jos_content" x="336" y="1652" />
+		<entity schema="db_e_learning" name="jos_tests_own" x="224" y="1638" />
+		<entity schema="db_e_learning" name="phpbb_lang" x="266" y="1638" />
+		<entity schema="db_e_learning" name="phpbb_search_wordlist" x="868" y="1708" />
+		<entity schema="db_e_learning" name="phpbb_acl_users" x="868" y="1638" />
+		<entity schema="db_e_learning" name="phpbb_topics_posted" x="322" y="1610" />
+		<entity schema="db_e_learning" name="jos_menu" x="322" y="1372" />
+		<entity schema="db_e_learning" name="phpbb_bookmarks" x="686" y="1148" />
+		<entity schema="db_e_learning" name="jos_tests_attempts" x="1260" y="154" />
+		<entity schema="db_e_learning" name="jos_results" x="1106" y="238" />
+		<entity schema="db_e_learning" name="jos_subjects" x="1274" y="266" />
+		<entity schema="db_e_learning" name="jos_gscales_grades" x="966" y="336" />
+		<entity schema="db_e_learning" name="jos_results_answers" x="896" y="518" />
+		<entity schema="db_e_learning" name="jos_questions" x="1064" y="532" />
+		<entity schema="db_e_learning" name="jos_etemplates" x="896" y="728" />
+		<entity schema="db_e_learning" name="jos_rtemplates" x="756" y="700" />
+		<entity schema="db_e_learning" name="jos_gscales" x="812" y="392" />
+		<entity schema="db_e_learning" name="jos_session" x="574" y="1190" />
+		<entity schema="db_e_learning" name="jos_answers" x="910" y="42" />
+		<entity schema="db_e_learning" name="jos_theories" x="1064" y="42" />
+		<entity schema="db_e_learning" name="phpbb_forums_access" x="504" y="952" />
+		<entity schema="db_e_learning" name="phpbb_users" x="98" y="140" >
 			<column name="user_id" />
 			<column name="group_id" />
 			<column name="user_email" />
 			<column name="user_login_attempts" />
 			<column name="user_password" />
-			<column name="user_permissions" />
 			<column name="username" />
+			<column name="user_lang" />
+			<column name="user_lastvisit" />
 		</entity>
-		<entity schema="db_e_learning" name="jos_users" x="126" y="266" >
+		<entity schema="db_e_learning" name="jos_noixacl_rules" x="168" y="938" />
+		<entity schema="db_e_learning" name="jos_noixacl_groups_level" x="238" y="924" />
+		<entity schema="db_e_learning" name="phpbb_sessions_keys" x="280" y="938" />
+		<entity schema="db_e_learning" name="phpbb_groups" x="84" y="322" />
+		<entity schema="db_e_learning" name="phpbb_login_attempts" x="252" y="448" />
+		<entity schema="db_e_learning" name="jos_users" x="280" y="112" >
 			<column name="id" />
 			<column name="gid" />
 			<column name="name" />
@@ -4153,39 +4184,16 @@
 			<column name="registerDate" />
 			<column name="username" />
 			<column name="usertype" />
+			<column name="email" />
+			<column name="lastvisitDate" />
+			<column name="user_enabled" />
+			<column name="user_joindate" />
+			<column name="user_lastname" />
+			<column name="user_logindate" />
+			<column name="user_passhash" />
 		</entity>
-		<entity schema="db_e_learning" name="jos_tests" x="280" y="224" />
-		<entity schema="db_e_learning" name="jos_rtemplates" x="700" y="686" />
-		<entity schema="db_e_learning" name="jos_results" x="1120" y="238" />
-		<entity schema="db_e_learning" name="jos_modules_menu" x="658" y="1302" />
-		<entity schema="db_e_learning" name="jos_resources" x="658" y="1260" />
-		<entity schema="db_e_learning" name="jos_plugins" x="742" y="1232" />
-		<entity schema="db_e_learning" name="jos_polls" x="602" y="1232" />
-		<entity schema="db_e_learning" name="jos_noixacl_rules" x="532" y="588" />
-		<entity schema="db_e_learning" name="jos_noixacl_adapters" x="560" y="602" />
-		<entity schema="db_e_learning" name="jos_noixacl_groups_level" x="532" y="560" />
-		<entity schema="db_e_learning" name="jos_modules" x="672" y="1260" />
-		<entity schema="db_e_learning" name="jos_messages" x="700" y="1246" />
-		<entity schema="db_e_learning" name="jos_gscales_grades" x="1064" y="252" />
-		<entity schema="db_e_learning" name="jos_subjects" x="1148" y="238" />
-		<entity schema="db_e_learning" name="jos_groups_tests" x="980" y="294" />
-		<entity schema="db_e_learning" name="jos_theories" x="1008" y="238" />
-		<entity schema="db_e_learning" name="jos_etemplates" x="854" y="700" />
-		<entity schema="db_e_learning" name="jos_core_acl_aro_groups" x="658" y="1274" />
-		<entity schema="db_e_learning" name="jos_content_frontpage" x="672" y="1288" />
-		<entity schema="db_e_learning" name="jos_poll_menu" x="700" y="1302" />
-		<entity schema="db_e_learning" name="jos_messages_cfg" x="700" y="1260" />
-		<entity schema="db_e_learning" name="jos_menu" x="630" y="1344" />
-		<entity schema="db_e_learning" name="jos_config" x="616" y="1288" />
-		<entity schema="db_e_learning" name="jos_groups_users" x="896" y="434" />
-		<entity schema="db_e_learning" name="jos_groups" x="1218" y="434" />
-		<entity schema="db_e_learning" name="jos_core_log_items" x="686" y="1316" />
-		<entity schema="db_e_learning" name="jos_core_acl_groups_aro_map" x="672" y="1274" />
-		<entity schema="db_e_learning" name="jos_core_acl_aro_map" x="700" y="1232" />
-		<entity schema="db_e_learning" name="jos_content_rating" x="644" y="1260" />
-		<entity schema="db_e_learning" name="jos_poll_date" x="672" y="1246" />
-		<entity schema="db_e_learning" name="jos_contact_details" x="672" y="1260" />
-		<entity schema="db_e_learning" name="jos_visitors" x="966" y="1246" />
-		<entity schema="db_e_learning" name="jos_sections" x="1106" y="1288" />
+		<entity schema="db_e_learning" name="jos_groups_users" x="448" y="154" />
+		<entity schema="db_e_learning" name="jos_groups_tests" x="644" y="84" />
+		<entity schema="db_e_learning" name="jos_groups" x="616" y="224" />
 	</layout>
 </project>
