@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="e_learning" database="MySql" >
+	<schema name="e_learning" schemaname="e_learning" defo="y" >
+		<table name="jos_users" >
+			<column name="id" type="INT" jt="4" mandatory="y" />
+			<column name="username" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="password" type="VARCHAR" length="100" jt="12" mandatory="y" />
+			<column name="usertype" type="VARCHAR" length="25" jt="12" mandatory="y" />
+			<column name="email" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<index name="pk_jos_users" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<fk name="fk_jos_users" to_schema="e_learning" to_table="jos_groups_users" >
+				<fk_column name="id" pk="id" />
+			</fk>
+			<fk name="fk_jos_users_0" to_schema="e_learning" to_table="jos_results" >
+				<fk_column name="id" pk="id" />
+			</fk>
+			<fk name="fk_jos_users_1" to_schema="e_learning" to_table="phpbb_user" >
+				<fk_column name="id" pk="user_id" />
+			</fk>
+			<fk name="fk_jos_users_2" to_schema="e_learning" to_table="jos_tests_attempts" >
+				<fk_column name="id" pk="id" />
+			</fk>
+		</table>
+		<table name="phpbb_user" >
+			<column name="user_id" type="INT" jt="4" mandatory="y" />
+			<column name="group_id" type="INT" jt="4" mandatory="y" />
+			<column name="user_email" type="VARCHAR" length="100" jt="12" mandatory="y" />
+			<column name="user_password" type="VARCHAR" length="40" jt="12" mandatory="y" />
+			<column name="username" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<index name="idx_phpbb_user" unique="PRIMARY_KEY" >
+				<column name="user_id" />
+			</index>
+		</table>
+		<table name="jos_groups_users" >
+			<column name="groupid" type="INT" jt="4" mandatory="y" />
+			<column name="id" type="INT" jt="4" mandatory="y" />
+			<index name="idx_jos_groups_users" unique="PRIMARY_KEY" >
+				<column name="groupid" />
+				<column name="id" />
+			</index>
+			<index name="pk_jos_groups_users" unique="UNIQUE" >
+				<column name="groupid" />
+			</index>
+			<index name="pk_jos_groups_users_0" unique="UNIQUE" >
+				<column name="id" />
+			</index>
+		</table>
+		<table name="jos_groups" >
+			<column name="groupid" type="INT" jt="4" mandatory="y" />
+			<column name="group_name" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="group_description" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="id" type="INT" jt="4" mandatory="y" />
+			<column name="name" type="VARCHAR" length="50" jt="12" mandatory="y" />
+			<index name="pk_jos_groups" unique="PRIMARY_KEY" >
+				<column name="groupid" />
+			</index>
+			<fk name="fk_jos_groups" to_schema="e_learning" to_table="jos_groups_users" >
+				<fk_column name="groupid" pk="groupid" />
+			</fk>
+			<fk name="fk_jos_groups_0" to_schema="e_learning" to_table="jos_groups_tests" >
+				<fk_column name="groupid" pk="groupid" />
+			</fk>
+		</table>
+		<table name="jos_groups_tests" >
+			<column name="groupid" type="INT" jt="4" mandatory="y" />
+			<column name="testid" type="INT" jt="4" mandatory="y" />
+			<index name="idx_jos_groups_tests" unique="PRIMARY_KEY" >
+				<column name="groupid" />
+				<column name="testid" />
+			</index>
+			<index name="pk_jos_groups_tests" unique="UNIQUE" >
+				<column name="groupid" />
+			</index>
+			<index name="pk_jos_groups_tests_0" unique="UNIQUE" >
+				<column name="testid" />
+			</index>
+		</table>
+		<table name="jos_tests" >
+			<column name="testid" type="INT" jt="4" mandatory="y" />
+			<column name="subjectid" type="INT" jt="4" mandatory="y" />
+			<column name="test_attempts" type="INT" jt="4" mandatory="y" />
+			<column name="test_time" type="INT" jt="4" mandatory="y" />
+			<column name="test_shuffleq" type="TINYINT" jt="-6" mandatory="y" />
+			<column name="test_shufflea" type="TINYINT" jt="-6" mandatory="y" />
+			<column name="test_enable" type="TINYINT" jt="-6" mandatory="y" />
+			<column name="test_name" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="test_createdate" type="INT" jt="4" mandatory="y" />
+			<column name="test_datestart" type="INT" jt="4" mandatory="y" />
+			<column name="test_dateend" type="INT" jt="4" mandatory="y" />
+			<index name="pk_jos_tests" unique="PRIMARY_KEY" >
+				<column name="testid" />
+			</index>
+			<index name="pk_jos_tests_0" unique="UNIQUE" >
+				<column name="subjectid" />
+			</index>
+			<fk name="fk_jos_tests" to_schema="e_learning" to_table="jos_groups_tests" >
+				<fk_column name="testid" pk="testid" />
+			</fk>
+			<fk name="fk_jos_tests_0" to_schema="e_learning" to_table="jos_tests_quetions" >
+				<fk_column name="testid" pk="testid" />
+			</fk>
+			<fk name="fk_jos_tests_1" to_schema="e_learning" to_table="jos_tests_attempts" >
+				<fk_column name="testid" pk="testid" />
+			</fk>
+			<fk name="fk_jos_tests_2" to_schema="e_learning" to_table="jos_results" >
+				<fk_column name="testid" pk="testid" />
+			</fk>
+		</table>
+		<table name="jos_questions" >
+			<column name="questionid" type="INT" jt="4" mandatory="y" />
+			<column name="chapter_name" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="question_difficult" type="INT" jt="4" mandatory="y" />
+			<column name="question_points" type="FLOAT" jt="7" mandatory="y" />
+			<column name="question_solution" type="TEXT" jt="-1" mandatory="y" />
+			<column name="question_time" type="INT" jt="4" mandatory="y" />
+			<column name="question_type" type="INT" jt="4" mandatory="y" />
+			<column name="question_type2" type="INT" jt="4" mandatory="y" />
+			<column name="subjectid" type="INT" jt="4" mandatory="y" />
+			<column name="theory_id" type="INT" jt="4" mandatory="y" />
+			<column name="question_text" type="TEXT" length="250" jt="-1" mandatory="y" />
+			<index name="pk_jos_questions" unique="PRIMARY_KEY" >
+				<column name="questionid" />
+			</index>
+			<index name="pk_jos_questions_0" unique="UNIQUE" >
+				<column name="subjectid" />
+			</index>
+			<index name="pk_jos_questions_1" unique="UNIQUE" >
+				<column name="theory_id" />
+			</index>
+			<fk name="fk_jos_questions" to_schema="e_learning" to_table="jos_answers" >
+				<fk_column name="questionid" pk="questionid" />
+			</fk>
+			<fk name="fk_jos_questions_0" to_schema="e_learning" to_table="jos_tests_quetions" >
+				<fk_column name="questionid" pk="questionid" />
+			</fk>
+		</table>
+		<table name="jos_subjects" >
+			<column name="subjectid" type="INT" jt="4" mandatory="y" />
+			<column name="subject_description" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="subject_image" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="subject_name" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<index name="pk_jos_subjects" unique="PRIMARY_KEY" >
+				<column name="subjectid" />
+			</index>
+			<fk name="fk_jos_subjects" to_schema="e_learning" to_table="jos_tests" >
+				<fk_column name="subjectid" pk="subjectid" />
+			</fk>
+			<fk name="fk_jos_subjects_0" to_schema="e_learning" to_table="jos_questions" >
+				<fk_column name="subjectid" pk="subjectid" />
+			</fk>
+			<fk name="fk_jos_subjects_1" to_schema="e_learning" to_table="jos_theories" >
+				<fk_column name="subjectid" pk="subjectid" />
+			</fk>
+		</table>
+		<table name="jos_theories" >
+			<column name="theory_id" type="INT" jt="4" mandatory="y" />
+			<column name="chapter_link" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="chapter_name" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="subjectid" type="INT" jt="4" mandatory="y" />
+			<column name="theory_description" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="theory_file_dat_path" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="theory_file_video_path" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="theory_name" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="theory_objective" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<index name="pk_jos_theories" unique="PRIMARY_KEY" >
+				<column name="theory_id" />
+			</index>
+			<index name="pk_jos_theories_0" unique="UNIQUE" >
+				<column name="subjectid" />
+			</index>
+			<fk name="fk_jos_theories" to_schema="e_learning" to_table="jos_questions" >
+				<fk_column name="theory_id" pk="theory_id" />
+			</fk>
+		</table>
+		<table name="jos_answers" >
+			<column name="questionid" type="INT" jt="4" mandatory="y" />
+			<column name="answerid" type="INT" jt="4" mandatory="y" />
+			<column name="answer_correct" type="TINYINT" jt="-6" mandatory="y" />
+			<column name="answer_feedback" type="TEXT" jt="-1" mandatory="y" />
+			<column name="answer_percents" type="FLOAT" jt="7" mandatory="y" />
+			<column name="answer_text" type="TEXT" length="250" jt="-1" mandatory="y" />
+			<index name="idx_jos_answers" unique="PRIMARY_KEY" >
+				<column name="questionid" />
+				<column name="answerid" />
+			</index>
+			<index name="pk_jos_answers" unique="UNIQUE" >
+				<column name="questionid" />
+			</index>
+		</table>
+		<table name="jos_tests_attempts" >
+			<column name="testid" type="INT" jt="4" mandatory="y" />
+			<column name="id" type="INT" jt="4" mandatory="y" />
+			<column name="test_attempt_count" type="INT" jt="4" mandatory="y" />
+			<index name="idx_jos_tests_attempts" unique="PRIMARY_KEY" >
+				<column name="testid" />
+				<column name="id" />
+			</index>
+			<index name="pk_jos_tests_attempts" unique="UNIQUE" >
+				<column name="testid" />
+			</index>
+			<index name="pk_jos_tests_attempts_0" unique="UNIQUE" >
+				<column name="id" />
+			</index>
+		</table>
+		<table name="jos_tests_quetions" >
+			<column name="testid" type="INT" jt="4" mandatory="y" />
+			<column name="test_questionid" type="INT" jt="4" mandatory="y" />
+			<column name="questionid" type="INT" jt="4" mandatory="y" />
+			<index name="idx_jos_tests_quetions" unique="PRIMARY_KEY" >
+				<column name="testid" />
+				<column name="test_questionid" />
+			</index>
+			<index name="pk_jos_tests_quetions" unique="UNIQUE" >
+				<column name="testid" />
+			</index>
+			<index name="pk_jos_tests_quetions_0" unique="UNIQUE" >
+				<column name="questionid" />
+			</index>
+		</table>
+		<table name="jos_results" >
+			<column name="resultid" type="INT" jt="4" mandatory="y" />
+			<column name="id" type="INT" jt="4" mandatory="y" />
+			<column name="result_datestart" type="DATE" jt="91" mandatory="y" />
+			<column name="result_points" type="FLOAT" jt="7" mandatory="y" />
+			<column name="result_timespent" type="INT" jt="4" mandatory="y" />
+			<column name="testid" type="INT" jt="4" mandatory="y" />
+			<column name="result_pointmax" type="INT" jt="4" mandatory="y" />
+			<index name="pk_jos_results" unique="PRIMARY_KEY" >
+				<column name="resultid" />
+			</index>
+			<index name="pk_jos_results_0" unique="UNIQUE" >
+				<column name="testid" />
+			</index>
+			<index name="pk_jos_results_1" unique="UNIQUE" >
+				<column name="id" />
+			</index>
+		</table>
+	</schema>
+	<layout name="e_learning" joined_routing="y" show_column_type="y" >
+		<entity schema="e_learning" name="jos_tests_quetions" x="714" y="378" />
+		<entity schema="e_learning" name="jos_groups" x="56" y="210" />
+		<entity schema="e_learning" name="jos_groups_users" x="350" y="238" />
+		<entity schema="e_learning" name="phpbb_user" x="56" y="42" />
+		<entity schema="e_learning" name="jos_answers" x="700" y="574" />
+		<entity schema="e_learning" name="jos_groups_tests" x="112" y="336" />
+		<entity schema="e_learning" name="jos_theories" x="42" y="434" />
+		<entity schema="e_learning" name="jos_subjects" x="70" y="644" />
+		<entity schema="e_learning" name="jos_users" x="350" y="56" />
+		<entity schema="e_learning" name="jos_tests_attempts" x="756" y="210" />
+		<entity schema="e_learning" name="jos_results" x="574" y="126" />
+		<entity schema="e_learning" name="jos_tests" x="420" y="336" />
+		<entity schema="e_learning" name="jos_questions" x="406" y="574" />
+	</layout>
+</project>
