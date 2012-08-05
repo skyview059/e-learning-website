@@ -50,7 +50,7 @@ class JConfig {
 	var $lifetime = '15';
 	var $session_handler = 'database';
 	var $password = '';
-	var $sitename = 'onthi.com';
+	var $sitename = '';
 	var $MetaDesc = 'Onthi.com - Trang web học tập trực tuyến';
 	var $MetaKeys = 'onthi, hocthi, luyenthi, hoctap';
 	var $offline_message = 'Website đang trong quá trình bảo trì, các bạn quay lại sau nhé ^^';
