@@ -2258,3 +2258,10 @@ td.key
 .mceToolbarTop {
   white-space: normal;
 }
+/*MinhNT - Add - Begin*/
+hr {
+ background: url('../images/book.gif') no-repeat center center;
+ height: 50px;
+ border: none;
+}
+/*MinhNT - Add - End*/

@@ -28,7 +28,8 @@ jQuery(document).ready(function(){
 });
 /* ]]> */
 </script>
-
+<hr/>
+<span style="color: #12576E; font-size: 18px; font-style:italic; font-weight:normal"> Hình ảnh </span>
 <div class="JT-ClearBox"></div>
 
 <div id="<?php echo $this->boxname; ?>wrapper">
@@ -36,7 +37,7 @@ jQuery(document).ready(function(){
 </div>
 	
 <div class="JT-ClearBox"></div>
-
+<hr/>
 <?php //echo $this->slideshowprofooter; ?>
 
 <script type="text/javascript">jQuery.noConflict();</script>
