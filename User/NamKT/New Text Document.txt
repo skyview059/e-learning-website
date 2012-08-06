@@ -1,1 +1,5 @@
 http://www.agilemodeling.com/artifacts/useCaseDiagram.htm
+
+http://en.wikipedia.org/wiki/Enterprise_application_integration
+
+http://en.wikipedia.org/wiki/Enterprise_Information_Integration
