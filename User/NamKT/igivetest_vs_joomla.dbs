@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="joomla_iGiveTest" database="MySql" >
+	<schema name="igivetest" catalogname="igivetest" defo="y" >
+		<table name="igt_groups_users" >
+			<column name="groupid" type="INT" length="10" jt="4" mandatory="y" unsigned="y" >
+				<defo>0</defo>
+			</column>
+			<column name="userid" type="INT" length="10" jt="4" mandatory="y" unsigned="y" >
+				<defo>0</defo>
+			</column>
+			<index name="pk_igt_groups_users" unique="PRIMARY_KEY" >
+				<column name="groupid" />
+				<column name="userid" />
+			</index>
+			<index name="pk_igt_groups_users_0" unique="UNIQUE" >
+				<column name="groupid" />
+			</index>
+			<index name="pk_igt_groups_users_1" unique="UNIQUE" >
+				<column name="userid" />
+			</index>
+			<fk name="fk_igt_groups_users" to_schema="joomla" to_table="jos_groups" delete_action="CASCADE" >
+				<fk_column name="groupid" pk="groupid" />
+			</fk>
+			<fk name="fk_igt_groups_users_0" to_schema="joomla" to_table="jos_users" delete_action="CASCADE" >
+				<fk_column name="userid" pk="id" />
+			</fk>
+		</table>
+	</schema>
+	<schema name="joomla" catalogname="joomla" defo="y" >
+		<table name="jos_groups" >
+			<column name="id" type="TINYINT" length="3" jt="-6" mandatory="y" unsigned="y" >
+				<defo>0</defo>
+			</column>
+			<column name="name" type="VARCHAR" length="50" jt="12" mandatory="y" >
+				<defo>&#039;&#039;</defo>
+			</column>
+			<column name="groupid" type="INT" jt="4" mandatory="y" />
+			<column name="group_description" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="group_name" type="VARCHAR" length="255" jt="12" mandatory="y" />
+			<column name="access_group" type="VARCHAR" length="100" jt="12" mandatory="y" />
+			<index name="pk_jos_groups" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<index name="pk_jos_groups_0" unique="UNIQUE" >
+				<column name="groupid" />
+			</index>
+		</table>
+		<table name="jos_session" >
+			<column name="session_id" type="VARCHAR" length="200" jt="12" mandatory="y" >
+				<defo>&#039;0&#039;</defo>
+			</column>
+			<column name="client_id" type="TINYINT" length="3" jt="-6" mandatory="y" unsigned="y" >
+				<defo>0</defo>
+			</column>
+			<column name="data" type="LONGTEXT" jt="-1" mandatory="y" />
+			<column name="gid" type="TINYINT" length="3" jt="-6" mandatory="y" unsigned="y" >
+				<defo>0</defo>
+			</column>
+			<column name="guest" type="TINYINT" jt="-6" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="time" type="VARCHAR" length="14" jt="12" mandatory="y" >
+				<defo>&#039;&#039;</defo>
+			</column>
+			<column name="userid" type="INT" jt="4" mandatory="y" >
+				<defo>0</defo>
+			</column>
+			<column name="username" type="VARCHAR" length="150" jt="12" mandatory="y" >
+				<defo>&#039;&#039;</defo>
+			</column>
+			<column name="usertype" type="VARCHAR" length="50" jt="12" mandatory="y" >
+				<defo>&#039;&#039;</defo>
+			</column>
+			<index name="pk_jos_session" unique="PRIMARY_KEY" >
+				<column name="session_id" />
+			</index>
+			<index name="whosonline" unique="NORMAL" >
+				<column name="guest" />
+				<column name="usertype" />
+			</index>
+			<index name="userid" unique="NORMAL" >
+				<column name="userid" />
+			</index>
+			<index name="time" unique="NORMAL" >
+				<column name="time" />
+			</index>
+			<index name="idx_jos_session" unique="NORMAL" >
+				<column name="client_id" />
+			</index>
+			<fk name="fk_jos_session" to_schema="joomla" to_table="jos_users" delete_action="CASCADE" >
+				<fk_column name="userid" pk="id" />
+			</fk>
+			<fk name="fk_jos_session_0" to_schema="joomla" to_table="jos_groups" delete_action="CASCADE" >
+				<fk_column name="client_id" pk="id" />
+			</fk>
+		</table>
+		<table name="jos_users" >
+			<column name="id" type="INT" length="10" jt="4" mandatory="y" autoincrement="y" />
+			<column name="activation" type="VARCHAR" length="100" jt="12" mandatory="y" >
+				<defo>&#039;&#039;</defo>
+			</column>
+			<column name="block" type="TINYINT" length="3" jt="-6" mandatory="y" >
+				<defo>0</defo>
+			</column>
+			<column name="email" type="VARCHAR" length="100" jt="12" mandatory="y" >
+				<defo>&#039;&#039;</defo>
+			</column>
+			<column name="gid" type="TINYINT" length="3" jt="-6" mandatory="y" unsigned="y" >
+				<defo>1</defo>
+			</column>
+			<column name="lastvisitDate" type="DATETIME" length="19" jt="93" mandatory="y" >
+				<defo>&#039;0000-00-00 00:00:00&#039;</defo>
+			</column>
+			<column name="name" type="VARCHAR" length="255" jt="12" mandatory="y" >
+				<defo>&#039;&#039;</defo>
+			</column>
+			<column name="params" type="TEXT" length="65535" jt="-1" mandatory="y" />
+			<column name="password" type="VARCHAR" length="100" jt="12" mandatory="y" >
+				<defo>&#039;&#039;</defo>
+			</column>
+			<column name="registerDate" type="DATETIME" length="19" jt="93" mandatory="y" >
+				<defo>&#039;0000-00-00 00:00:00&#039;</defo>
+			</column>
+			<column name="sendEmail" type="TINYINT" length="3" jt="-6" >
+				<defo>0</defo>
+			</column>
+			<column name="username" type="VARCHAR" length="150" jt="12" mandatory="y" >
+				<defo>&#039;&#039;</defo>
+			</column>
+			<column name="usertype" type="VARCHAR" length="25" jt="12" mandatory="y" >
+				<defo>&#039;&#039;</defo>
+			</column>
+			<index name="pk_jos_users" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<index name="usertype" unique="NORMAL" >
+				<column name="usertype" />
+			</index>
+			<index name="idx_name" unique="NORMAL" >
+				<column name="name" />
+			</index>
+			<index name="gid_block" unique="NORMAL" >
+				<column name="gid" />
+				<column name="block" />
+			</index>
+			<index name="username" unique="NORMAL" >
+				<column name="username" />
+			</index>
+			<index name="email" unique="NORMAL" >
+				<column name="email" />
+			</index>
+		</table>
+	</schema>
+	<schema name="joomla_iGiveTest" schemaname="joomla_iGiveTest" defo="y" />
+	<connector name="MySql" database="MySql" driver_class="com.mysql.jdbc.Driver" driver_jar="mysql-connector-java-5.1.20-bin.jar" host="localhost" port="3306" instance="igivetest" user="root" schema_mapping="" />
+	<layout name="joomla_iGiveTest" joined_routing="y" show_column_type="y" show_schema_name="y" >
+		<entity schema="igivetest" name="igt_groups_users" x="42" y="182" />
+		<entity schema="joomla" name="jos_session" x="546" y="196" >
+			<column name="session_id" />
+			<column name="client_id" />
+			<column name="userid" />
+			<column name="username" />
+			<column name="usertype" />
+		</entity>
+		<entity schema="joomla" name="jos_groups" x="252" y="42" >
+			<column name="id" />
+			<column name="name" />
+			<column name="groupid" />
+			<column name="group_description" />
+			<column name="group_name" />
+		</entity>
+		<entity schema="joomla" name="jos_users" x="266" y="224" >
+			<column name="id" />
+			<column name="email" />
+			<column name="password" />
+			<column name="username" />
+		</entity>
+	</layout>
+</project>
