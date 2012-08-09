@@ -25,14 +25,15 @@ class TheoryContentViewTheoryContent extends JView
 		$model =& $this->getModel();
 		
 		
-		if(isset($_GET['Itemid'])){
+		if(isset($_GET['Itemid']) ){
 			$chapterNames = $model->getChapterName();
 			foreach($chapterNames as $chapterName){
-			echo "<h4><a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_theorycontent&name=$chapterName\"\">" . $chapterName . "</a></h4>";		
+			echo "<h3><a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_theorycontent&Itemid=".$_GET['Itemid']."&name=$chapterName\"\">" . $chapterName . "</a></h3>";		
 			}
 		}
 		
-		if(isset($_GET['name'])){ 		
+		if(isset($_GET['name'])){ 	
+				
 			$theorynames = $model->getTheoryName();
 			foreach($theorynames as $theoryname){
 				echo "<h4><a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_theorycontent&theory=".$theoryname['0']."\"\">" . $theoryname['1'] . "</a></h4>";	
