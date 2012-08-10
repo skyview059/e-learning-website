@@ -23,7 +23,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 
 	function display($tpl = null)
 	{
-		echo ("</br>");
+	
 		$model =& $this->getModel();
 		
 		$subject ="";
@@ -63,7 +63,14 @@ class ExcerciseContentViewExcerciseContent extends JView
 					
 			}	 	
 			
-		}else{echo "<form action=\"\" method=\"post\" align=\"left\" style =\"margin-left: 1000\" >";
+		}else{
+				?>
+				</br>
+				<div>
+				<div class="exerciseLayer">Tìm kiếm bài tập</div>
+				<div class="exerciseContent">
+				<?php 
+				echo "<form action=\"\" method=\"post\" align=\"left\" style =\"margin-left: 1000\" >";
 				echo "Môn học: <select name=\"subject\" onchange=\"this.form.submit()\" style=\"width: 100px\"";
 				echo ">";
 				
@@ -82,7 +89,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 				echo "		</select>";
 				
 				$subjectid = $model->getSubjectid($subject) ;
-				echo "</br>Chương: <select name=\"chapterName\" onchange=\"this.form.submit()\" style=\"width: 300px\">";
+				echo "</br>Chương: &nbsp;<select name=\"chapterName\" onchange=\"this.form.submit()\" style=\"width: 300px\">";
 				$allChapter =  $model->getChapterName($subjectid) ;
 				$i = 0;
 				if ($chapterName !="")
@@ -99,7 +106,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 					
 		
 			
-				echo "</br>Bài: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<select name=\"theory\" onchange=\"this.form.submit()\" style=\"width: 300px\">";
+				echo "</br>Bài: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<select name=\"theory\" onchange=\"this.form.submit()\" style=\"width: 300px\">";
 				
 				$allTheory =  $model->getTheoryName($chapterName) ;
 				$i = 0;
@@ -122,7 +129,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 				
 				$tmp = array (1,5,10,15);
 				echo "</br>		</select>";
-				echo "Số lượng câu hỏi:<select name=\"num\" style=\"width: 50px\">";
+				echo "Số lượng câu hỏi:  <select name=\"num\" style=\"width: 50px\">";
 				echo "<option></option>";
 				$i = 0;
 				while($tmp[$i]!= ""){
@@ -146,10 +153,16 @@ class ExcerciseContentViewExcerciseContent extends JView
 					$i++;
 				}
 				echo "		</select>";
-				echo "&nbsp;&nbsp <input type=\"submit\" value=\"Tiếp tục\"/>";
+				echo "&nbsp;&nbsp <input class = \"exerciseSearch\" type=\"submit\" value=\"Tiếp tục\"/>";
 			echo "</form>";
 			if($subject != "")
 				echo "<a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_excercisecontent&view=excerciseContent&Itemid=17\">Back</a>";
+				
+				
+					?>
+				</div>
+				</div>
+				<?php 
 		}
 		 
 		
