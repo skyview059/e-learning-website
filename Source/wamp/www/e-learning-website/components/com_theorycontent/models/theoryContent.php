@@ -45,10 +45,9 @@ class TheoryContentModelTheoryContent extends JModel
 		return $chapterNames;		
 	}
 	
-	function getTheoryName()
+	function getTheoryName($name)
 	{
-		$name=$_GET['name'];
-		
+		//$name=$_GET['name'];
 		$db =& JFactory::getDBO();
 		$query = "SELECT theory_id,theory_name FROM #__theories WHERE chapter_name = \"" . $name . "\"";
 		$db->setQuery( $query );

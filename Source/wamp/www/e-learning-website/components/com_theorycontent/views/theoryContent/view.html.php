@@ -24,29 +24,76 @@ class TheoryContentViewTheoryContent extends JView
 	{
 		$model =& $this->getModel();
 		
+		if(!isset($_GET['theory'])){ 
 		
 		if(isset($_GET['Itemid']) ){
 			$chapterNames = $model->getChapterName();
+			if(isset($_GET['name'])){ 					
+				$chapter = $_GET['name'];
+				$index = array_search($chapter,$chapterNames);
+			}else{
+				$index = 0;
+			}
+?>
+			<div class="chapterLayer">
+<?php
+			$i=0;
 			foreach($chapterNames as $chapterName){
-			echo "<h3><a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_theorycontent&Itemid=".$_GET['Itemid']."&name=$chapterName\"\">" . $chapterName . "</a></h3>";		
+?>
+				<table class="chapterTable">
+				<tr>
+<?php				
+				if($i==$index){
+?>
+					<td width="20"><div align="center"><img src="<?php echo JPATH_URL.$this->baseurl;?>/images/red_globe.gif" width="16" height="16"></div></td>
+<?php				
+				}else{
+?>
+					<td width="20"><div align="center"><img src="<?php echo JPATH_URL.$this->baseurl;?>/images/blue_globe.gif" width="16" height="16"></div></td>
+<?php					
+				}
+?>
+					<td width="1"></td>
+					<td width="259"><div class="chapterLink"><a href="<?php echo JPATH_URL.$this->baseurl;?>/index.php?option=com_theorycontent&Itemid=<?php echo $_GET['Itemid'];?>&name=<?php echo $chapterName; ?>"><?php echo $chapterName; ?></a></div></td>
+				</tr>
+				</table>
+				<div class="endLine"><img src="<?php echo JPATH_URL.$this->baseurl;?>/images/line2.gif" width="295" height="4"></div>	
+<?php
+				$i++;
 			}
+?>
+			</div>
+<?php
 		}
-		
-		if(isset($_GET['name'])){ 	
-				
-			$theorynames = $model->getTheoryName();
-			foreach($theorynames as $theoryname){
-				echo "<h4><a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_theorycontent&theory=".$theoryname['0']."\"\">" . $theoryname['1'] . "</a></h4>";	
-			}
+		if(isset($_GET['name'])){ 					
+			$chapter = $_GET['name'];	
+		}else{
+			//$chapter = "Nhiệt học";
+			$chapter = $chapterNames['0'];
 		}
-		
-			
-		if(isset($_GET['theory'])){ 
-		
+		$theoryNames = $model->getTheoryName($chapter);
+?>
+		<div class="theoryLayer">
+<?php			
+		foreach($theoryNames as $theoryName){
+?>
+			<table class="chapterTable">
+			<tr>
+				<td width="30"><div align="center"><img src="<?php echo JPATH_URL.$this->baseurl;?>/images/arrow.gif" width="16" height="16"></div></td>
+				<td width="1"></td>
+				<td width="310"><div class="chapterLink"><a href="<?php echo JPATH_URL.$this->baseurl;?>/index.php?option=com_theorycontent&theory=<?php echo $theoryName['0'];?>"><?php echo $theoryName['1']; ?></a></div></td>
+			</tr>
+			</table>
+<?php		
+		}
+?>
+		</div>
+<?php			
+		}else{
 			$theoryid = $_GET['theory'];
 			$theoryName = $model->getTheoryid($theoryid);
 			
-			echo "<h4><a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_theorycontent&theory=$theoryid\"\">" . $theoryName . "</a></h4>";		
+			echo "<div><a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_theorycontent&theory=$theoryid\"\">" . $theoryName . "</a></div>";		
 			$dat = $model->getDat();
 			$video = $model->getVideo();
 			
@@ -57,7 +104,7 @@ class TheoryContentViewTheoryContent extends JView
 			
 			if (isset($video) )
 			{
-				echo "<h4> Video liên quan  </h4>";
+				echo "<div> Video liên quan  </div>";
 			?>	
 			<link href="<?php echo JPATH_URL.$this->baseurl; ?>/data//video-js/video-js.css" rel="stylesheet">
 			<script src="<?php echo JPATH_URL.$this->baseurl; ?>/data/video-js/video.js"></script>
@@ -75,14 +122,8 @@ class TheoryContentViewTheoryContent extends JView
 			{	
 				echo $question;
 			}
-			
-			
-			
-				
 		}
 		parent::display($tpl);	
-		
-		
 	}
 }
 ?>
