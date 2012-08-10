@@ -80,7 +80,6 @@ class ExcerciseContentViewExcerciseContent extends JView
 					echo "<option selected=\"selected\">".$subject."</option>";
 				else
 				{
-					echo "<option></option>";
 					while($allSubject[$i]!= ""){
 						echo "<option >".$allSubject[$i]."</option>";
 						$i++;
@@ -127,42 +126,53 @@ class ExcerciseContentViewExcerciseContent extends JView
 				}
 				echo "		</select>";		
 				
-				$tmp = array (1,5,10,15);
+				$num = array (1,5,10,15,50);
+				$numDefault = 10;
 				echo "</br>		</select>";
 				echo "Số lượng câu hỏi:  <select name=\"num\" style=\"width: 50px\">";
-				echo "<option></option>";
 				$i = 0;
-				while($tmp[$i]!= ""){
-					if ($num == $tmp[$i]) 
+				while($num[$i]!= ""){
+					if ($num[$i] == $numDefault) 
 					{
-						echo "<option selected=\"selected\">".$tmp[$i]."</option>";
+						echo "<option selected=\"selected\">".$num[$i]."</option>";
 					} else{
-						echo "<option>".$tmp[$i]."</option>";
+						echo "<option>".$num[$i]."</option>";
 					}
 					$i++;
 				}	
-				echo "		</select>";
 				
-				$tmp = array (1,2,3,4,5);
-				echo "</br>		</select>";
+				echo "		</select>";
+				?>
+					<div class = "exerciseSuggest">các giá trị lựa chọn là 5, 10 ,15, 50</div>
+				<?php
+				$diff = array (1,2,3,4,5);
+				$diffDefault = 3;
+				echo "</select>";
 				echo "Độ khó: &nbsp;&nbsp<select name=\"difficulty\" style=\"width: 50px\">";
-				echo "<option></option>";
 				$i = 0;
-				while($tmp[$i]!= ""){
-					echo "<option>".$tmp[$i]."</option>";
+				while($diff[$i]!= ""){
+					if ($diff[$i] == $diffDefault) 
+					{
+						echo "<option selected=\"selected\">".$diff[$i]."</option>";
+					} else{
+						echo "<option>".$diff[$i]."</option>";
+					}
+					
 					$i++;
 				}
 				echo "		</select>";
-				echo "&nbsp;&nbsp <input class = \"exerciseSearch\" type=\"submit\" value=\"Tiếp tục\"/>";
+				?>
+					<div class = "exerciseSuggest">có 5 mức từ 1 -> 5 tương ứng độ khó tăng dần</div>
+				<?php
+				echo "<input class = \"exerciseSearch\" type=\"submit\" value=\"Tiếp tục\"/>";
 			echo "</form>";
 			if($subject != "")
-				echo "<a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_excercisecontent&view=excerciseContent&Itemid=17\">Back</a>";
-				
-				
+				echo "<a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_excercisecontent&view=excerciseContent&Itemid=17\">Back</a>";			
 					?>
 				</div>
 				</div>
 				<?php 
+				
 		}
 		 
 		
