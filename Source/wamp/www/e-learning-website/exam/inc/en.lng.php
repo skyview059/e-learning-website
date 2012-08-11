@@ -612,7 +612,7 @@ $lngstr['page_signin_box_signin_intro'] = '<font color="red">Vui lòng đăng nh
 $lngstr['page_signin_box_signin'] = $lngstr['label_username'];
 $lngstr['page_signin_box_password'] = $lngstr['label_password'];
 $lngstr['page_signin_box_register_intro'] = '<b>Nếu bạn chưa có tài khoản?</b>Hãy đăng ký ngay bằng cách <a href="register.php">Kích Vào Đây</a>.';
-$lngstr['page_signin_box_lostpassword_intro'] = '<b>Bạn đã có tài khoản? </b> Nếu bạn <a href="lostpassword.php">quên mật khẩu</a>, Chúng tôi sẽ gửi lại qua mail của bạn.<br><br><b><H4><font color="red"> Hãy đăng nhập để làm bài thi</font>';
+$lngstr['page_signin_box_lostpassword_intro'] = '<b>Để làm bài thi, bạn cần phải xác thực lại tài khoản của mình trong hệ thống</b>.<br><br><b><H4><font color="red"> Hãy đăng nhập để làm bài thi</font>';
 $lngstr['page_signin']['test_code'] = 'Mã bài kiểm tra:';
 
 // Forgot password page:

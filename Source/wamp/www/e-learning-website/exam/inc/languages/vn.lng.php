@@ -271,7 +271,7 @@ $lngstr['label_test_testinstructions'] = 'Chỉ dẫn bài kiểm';
 $lngstr['page_test']['no_time_limit'] = 'Không tính thời gian';
 $lngstr['page_test']['test_timer_hint'] = 'Thời gian làm bài';
 $lngstr['page_test']['questionindicator'] = '%d của %d';
-$lngstr['page_test']['questionindicator_hint'] = 'Câu hỏi %d của %d';
+$lngstr['page_test']['questionindicator_hint'] = 'Câu hỏi %d / %d';
 $lngstr['page_test']['testname_hint'] = 'Tên bài kiểm';
 $lngstr['label_result_username'] = '<b>Tên Tham gia:</b> %s';
 $lngstr['label_result_testname'] = '<b>Bài kiểm tra</b> %s';
@@ -596,7 +596,7 @@ $lngstr['page_register']['no_userfield10'] = $lngstr['page_register']['no_userfi
 $lngstr['err_username_duplicate'] = 'Username này đã được sử dụng. Xin chọn username khác.<br>';
 $lngstr['err_groupname_duplicate'] = 'Tên nhóm này đã được sử dụng. Xin chọn tên nhóm khác.<br>';
 $lngstr['err_subjectname_duplicate'] = 'Tên đề tài này đã được sử dụng. Xin chọn tên phụ thuộc khác.<br>';
-$lngstr['err_signin_incorrect']  = 'Ko thể đăng nhập. Username hoặc password đã sai.<br>';
+$lngstr['err_signin_incorrect']  = 'Bạn đã nhập mật khẩu không chính xác. Hãy vui lòng kiểm tra lại mật khẩu của bạn.<br>';
 
 // Register page:
 $lngstr['page-register']['intro'] = 'Bạn có thể sử dụng mẫu (dạng) này để thêm một tài khoản.';
@@ -612,7 +612,7 @@ $lngstr['page_signin_box_signin_intro'] = '<font color="red">Vui lòng đăng nh
 $lngstr['page_signin_box_signin'] = $lngstr['label_username'];
 $lngstr['page_signin_box_password'] = $lngstr['label_password'];
 $lngstr['page_signin_box_register_intro'] = '<b>Nếu bạn chưa có tài khoản?</b>Hãy đăng ký ngay bằng cách <a href="register.php">Kích Vào Đây</a>.';
-$lngstr['page_signin_box_lostpassword_intro'] = '<b>Bạn đã có tài khoản? </b> Nếu bạn <a href="lostpassword.php">quên mật khẩu</a>, Chúng tôi sẽ gửi lại qua mail của bạn.<br><br><b><H4><font color="red"> Hãy đăng nhập để làm bài thi</font>';
+$lngstr['page_signin_box_lostpassword_intro'] = '<b>Để làm bài thi, bạn cần phải xác thực lại tài khoản của mình trong hệ thống</b>.<br><br><b><H4><font color="red"> Hãy đăng nhập để làm bài thi</font>';
 $lngstr['page_signin']['test_code'] = 'Mã bài kiểm tra:';
 
 // Forgot password page:
