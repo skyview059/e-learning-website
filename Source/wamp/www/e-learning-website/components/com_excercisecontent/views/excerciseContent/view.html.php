@@ -46,7 +46,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 		if(isset($_POST["difficulty"]))
 		{$difficulty = $_POST["difficulty"];}
 		
-		if($subject != "" && $chapterName != "" && $theory != "" && $num != ""  && isset($_POST["difficulty"])){
+		if($subject != "" && $chapterName != "" && $theory != "" && $num != ""  && isset($_POST["difficulty"]) && isset($_POST["go"]) ){
 			
 			$theoryid = $model->getTheoryid($theory);
 			$question = $model->getQuestion($theoryid,$num,$difficulty);
@@ -73,7 +73,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 				echo "<form action=\"\" method=\"post\" align=\"left\" style =\"margin-left: 1000\" >";
 				echo "Môn học: <select name=\"subject\" onchange=\"this.form.submit()\" style=\"width: 100px\"";
 				echo ">";
-				
+				echo "<option></option>";
 				$allSubject =  $model->getSubjectName() ;
 				$i = 0;
 				if ($subject !="")
@@ -105,7 +105,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 					
 		
 			
-				echo "</br>Bài: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<select name=\"theory\" onchange=\"this.form.submit()\" style=\"width: 300px\">";
+				echo "</br>Bài: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<select name=\"theory\" onchange=\"this.form.submit()\" style=\"width: 300px\">";
 				
 				$allTheory =  $model->getTheoryName($chapterName) ;
 				$i = 0;
@@ -126,7 +126,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 				}
 				echo "		</select>";		
 				
-				$num = array (1,5,10,15,50);
+				$num = array (1,5,10,15,20);
 				$numDefault = 10;
 				echo "</br>		</select>";
 				echo "Số lượng câu hỏi:  <select name=\"num\" style=\"width: 50px\">";
@@ -143,7 +143,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 				
 				echo "		</select>";
 				?>
-					<div class = "exerciseSuggest">các giá trị lựa chọn là 5, 10 ,15, 50</div>
+					<div class = "exerciseSuggest">các giá trị lựa chọn là 5, 10 ,15, 20</div>
 				<?php
 				$diff = array (1,2,3,4,5);
 				$diffDefault = 3;
@@ -164,7 +164,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 				?>
 					<div class = "exerciseSuggest">có 5 mức từ 1 -> 5 tương ứng độ khó tăng dần</div>
 				<?php
-				echo "<input class = \"exerciseSearch\" type=\"submit\" value=\"Tiếp tục\"/>";
+				echo "<input class = \"exerciseSearch\" name=\"go\" type=\"submit\" value=\"Tiếp tục\"/>";
 			echo "</form>";
 			if($subject != "")
 				echo "<a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_excercisecontent&view=excerciseContent&Itemid=17\">Back</a>";			

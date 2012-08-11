@@ -164,7 +164,7 @@ hr {
 	color: white;
 	background-color: #6495ED;
 	display: block;
-	font-size: 13px;
+	font-size: 15px;
 	height: 24px;
 	width: 200px;
 	margin-left: 10px;
@@ -176,7 +176,7 @@ hr {
 	padding: 5px 10px;
 	border: solid 1px #CCC;
 	font-family: Tahoma,Arial;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: bold;
 }
 
@@ -185,11 +185,12 @@ hr {
 	color: white;
 	font-weight: bold;
 	font-family: Tahoma,Arial;
+	font-size: 14px;
 }
 
 .exerciseSuggest{
 	font-style: italic;
-	font-size: 12px;
+	font-size: 14px;
 	font-family: Tahoma,Arial;
 	font-weight: 100;
 }
