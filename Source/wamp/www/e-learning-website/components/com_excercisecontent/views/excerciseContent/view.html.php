@@ -73,13 +73,14 @@ class ExcerciseContentViewExcerciseContent extends JView
 				echo "<form action=\"\" method=\"post\" align=\"left\" style =\"margin-left: 1000\" >";
 				echo "Môn học: <select name=\"subject\" onchange=\"this.form.submit()\" style=\"width: 100px\"";
 				echo ">";
-				echo "<option></option>";
+				
 				$allSubject =  $model->getSubjectName() ;
 				$i = 0;
 				if ($subject !="")
 					echo "<option selected=\"selected\">".$subject."</option>";
 				else
 				{
+					echo "<option></option>";
 					while($allSubject[$i]!= ""){
 						echo "<option >".$allSubject[$i]."</option>";
 						$i++;
