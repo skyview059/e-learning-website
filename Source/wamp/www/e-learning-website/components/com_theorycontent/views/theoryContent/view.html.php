@@ -92,18 +92,7 @@ class TheoryContentViewTheoryContent extends JView
 		}else{
 			$theoryid = $_GET['theory'];
 			$theoryName = $model->getTheoryid($theoryid);
-			?>
-			
-			<table class="chapterTable">
-			<tr>
-				<td width="30"><div align="center"><img src="<?php echo JPATH_URL.$this->baseurl;?>/images/arrow.gif" width="16" height="16"></div></td>
-				<td width="1"></td>
-				<td width="310"><div class="chapterLink"><a href="<?php echo JPATH_URL.$this->baseurl;?>/index.php?option=com_theorycontent&theory=<?php echo $theoryName;?>"><?php echo $theoryName; ?></a></div></td>
-			</tr>
-			</table>
-			<?php
-			
-			//echo "<div><h4><a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_theorycontent&theory=$theoryid\"\">" . $theoryName . "</a></h4></div>";		
+			echo "<div><h4><a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_theorycontent&theory=$theoryid\"\">" . $theoryName . "</a></h4></div>";		
 			$dat = $model->getDat();
 			$video = $model->getVideo();
 			
