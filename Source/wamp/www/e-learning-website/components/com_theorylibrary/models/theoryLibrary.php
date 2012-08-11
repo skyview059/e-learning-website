@@ -59,14 +59,28 @@ class TheoryLibraryModelTheoryLibrary extends JModel
 	{
 		$db =& JFactory::getDBO();
 		$query = "SELECT COUNT( DISTINCT chapter_name )
-					FROM jos_theories
-					WHERE subjectid = (
-					SELECT subjectid
-					FROM jos_subjects
-					WHERE subject_name = \"".$chapterName."\")";
+				  FROM jos_theories
+				  WHERE subjectid = (
+				  SELECT subjectid
+				  FROM jos_subjects
+				  WHERE subject_name = \"".$chapterName."\")";
 		$db->setQuery( $query );
 		$numOfChapter = $db->loadResult();
 		return $numOfChapter;
+	}
+	
+	function getItemIdArray(){
+		$db =& JFactory::getDBO();
+		
+		$query = 'SELECT #__menu.id
+				  FROM #__menu
+				  JOIN #__subjects
+				  WHERE #__menu.name = #__subjects.subject_name
+				  ORDER BY #__menu.id ASC';
+		$db->setQuery( $query );
+		$ItemIdArray = $db->loadResultArray();
+		
+		return $ItemIdArray;
 	}
 	
 	function getChapterNameArray()
@@ -91,36 +105,7 @@ class TheoryLibraryModelTheoryLibrary extends JModel
 			{
 				$chapterNameArray["$subjectArray[$i]"][$j] = $chapterNameSubjectArray[$j];
 			}
-			
-			/*
-			echo $numOfChapter."<br>";
-			
-			for ($j=0;$j<$numOfChapter;$j++)
-				echo $chapterNameArray[$j]."<br>";
-			*/
 		}
-		/*
-		foreach ($chapterNameArray as $subject=>$chapter)
-		{
-			echo $subject." ";
-			foreach($chapter as $chapterName)
-			{
-				echo $chapterName."<br>";
-			}
-		}
-		*/
-		//for($i=0; $i<$numOfSubject; $i++)
-		{
-			
-			/*
-			$numOfChapter = $this->getNumOfChapter($subjectArray[$i]);
-			for($j=0;$j<$numOfChapter;$j++)
-			{
-				echo $chapterNameArray["$subjectArray[$i]"][$j]."<br>";
-			}
-			*/
-		}
-		
 		return $chapterNameArray;
 	}
 	

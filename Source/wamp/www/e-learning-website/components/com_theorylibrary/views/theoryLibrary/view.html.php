@@ -28,6 +28,9 @@ class TheoryLibraryViewTheoryLibrary extends JView
 		$chapterNameArray = $model->getChapterNameArray();
 		$this->assignRef( 'chapterNameArray',  $chapterNameArray);
 		
+		$itemIdArray = $model->getItemIdArray();
+		$this->assignRef( 'itemIdArray', $itemIdArray);
+		
 		parent::display($tpl);
 	}
 }

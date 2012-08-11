@@ -115,16 +115,16 @@ class TheoryContentViewTheoryContent extends JView
 			if (isset($video) )
 			{
 				echo "<div> Video liên quan  </div>";
-			?>	
-			<link href="<?php echo JPATH_URL.$this->baseurl; ?>/data//video-js/video-js.css" rel="stylesheet">
-			<script src="<?php echo JPATH_URL.$this->baseurl; ?>/data/video-js/video.js"></script>
-			
-			<video id="my_video_1" class="video-js vjs-default-skin" controls
-			preload="auto" width="480" height="300" poster="my_video_poster.png"
-			data-setup="{}">
-			  <source src="<?php echo $video ?>" type='video/flv'>
-			</video>
-			<?php	
+				?>	
+				<link href="<?php echo JPATH_URL.$this->baseurl; ?>/data//video-js/video-js.css" rel="stylesheet">
+				<script src="<?php echo JPATH_URL.$this->baseurl; ?>/data/video-js/video.js"></script>
+				
+				<video id="my_video_1" class="video-js vjs-default-skin" controls
+				preload="auto" width="480" height="300" poster="my_video_poster.png"
+				data-setup="{}">
+				  <source src="<?php echo $video ?>" type='video/flv'>
+				</video>
+				<?php	
 			}
 			
 			$question = $model->getQuestion($theoryid,5);

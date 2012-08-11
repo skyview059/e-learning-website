@@ -27,7 +27,7 @@
 ?>
 						<div class="chapterName">
 							<div>
-								<a href="<?php echo $this->baseurl; ?>/index.php?option=com_theorycontent&name=<?php echo $chapterName; ?>"><?php echo $chapterName; ?></a>
+								<a href="<?php echo $this->baseurl; ?>/index.php?option=com_theorycontent&Itemid=<?php echo $this->itemIdArray[$i]; ?>&name=<?php echo $chapterName; ?>"><?php echo $chapterName; ?></a>
 							</div>
 						</div>
 <?php
