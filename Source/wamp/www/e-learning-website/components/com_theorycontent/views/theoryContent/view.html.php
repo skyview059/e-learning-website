@@ -92,7 +92,8 @@ class TheoryContentViewTheoryContent extends JView
 		}else{
 			$theoryid = $_GET['theory'];
 			$theoryName = $model->getTheoryid($theoryid);
-			echo "<div><h4><a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_theorycontent&theory=$theoryid\"\">" . $theoryName . "</a></h4></div>";		
+			echo "<div class=\"theoryContentLayer\">";
+			echo "<div align=\"center\" class=\"theoryName\">".$theoryName."</div>";		
 			$dat = $model->getDat();
 			$video = $model->getVideo();
 			
@@ -115,7 +116,7 @@ class TheoryContentViewTheoryContent extends JView
 				</video>
 				<?php	
 			}
-			
+			echo "</div>";
 			$question = $model->getQuestion($theoryid,5);
 			if (isset($question) )
 			{	
