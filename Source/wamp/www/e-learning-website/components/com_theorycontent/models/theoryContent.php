@@ -41,7 +41,6 @@ class TheoryContentModelTheoryContent extends JModel
 		$query = "SELECT DISTINCT chapter_name FROM #__theories WHERE subjectid = " . $subjectid;
 		$db->setQuery( $query );
 		$chapterNames= $db->loadResultArray();
-			
 		return $chapterNames;		
 	}
 	

@@ -55,7 +55,7 @@ class ExcerciseContentModelExcerciseContent extends JModel
 					{	
 						var my_str = document.getElementById('<?php echo $i;?>').innerHTML;  
 						var comStr='Đáp án của câu hỏi là : <?php echo($this->getAnswerCorrect($row[$i]['0'])) ;?>';  
-					    document.getElementById('<?php echo $i;?>').innerHTML = comStr;  
+					    document.getElementById('<?php echo $i ;?>').innerHTML = comStr;  
 					}
 				</script>
 				<?php
