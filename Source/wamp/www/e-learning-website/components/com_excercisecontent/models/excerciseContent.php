@@ -56,6 +56,7 @@ class ExcerciseContentModelExcerciseContent extends JModel
 						var my_str = document.getElementById('<?php echo $i;?>').innerHTML;  
 						var comStr='Đáp án của câu hỏi là : <?php echo($this->getAnswerCorrect($row[$i]['0'])) ;?>';  
 					    document.getElementById('<?php echo $i ;?>').innerHTML = comStr;  
+						
 					}
 				</script>
 				<?php
@@ -104,12 +105,12 @@ class ExcerciseContentModelExcerciseContent extends JModel
 					{
 						$tmp .= "<input type=\"radio\" name=\"question_".$row[$i]['0']."\" value=\"A\" id=\"question_".$row[$i]['0']."_F\" />";
 						$tmp .="F. ".$allAnswer['5'];
-						$tmp .= "</label><br><label>";
+						$tmp .= "</label><br>";
 					}
 					
-					$tmp .=" <a onclick=\"ans".$row[$i]['0']."()\" ><u>Answer</u></a></br>";
-					$tmp .="<b  id=\"$i\"  readonly></b >";
-					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->getAnswerCorrect($row[$i]['0'])."\" />";			
+					$tmp .=" <a onclick=\"ans".$row[$i]['0']."()\" ><u>Đáp án</u></a></br>";
+					$tmp .="<b  id=\"$i\"  readonly></b ></label>";
+					//$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->getAnswerCorrect($row[$i]['0'])."\" />";			
 					
 					$result = $result ."<br>".$tmp;	
 				}
