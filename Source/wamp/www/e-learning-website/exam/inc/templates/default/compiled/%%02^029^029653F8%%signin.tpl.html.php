@@ -19,7 +19,7 @@ $file = fopen($path, 'r');
 <br>
 <br><?php echo $this->_tpl_vars['lngstr']['page_signin_box_signin']; ?>
 
-<br><input  name=username class=inp type=text value="taoday  <?php echo $buf;?>" size=20>
+<br><input  name=username class=inp type=text value="<?php echo $buf;?>" size=20>
 
 
 <br><?php echo $this->_tpl_vars['lngstr']['page_signin_box_password']; ?>
