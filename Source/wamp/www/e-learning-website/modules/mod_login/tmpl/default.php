@@ -1,5 +1,9 @@
 <?php // no direct access
-defined('_JEXEC') or die('Restricted access'); ?>
+defined('_JEXEC') or die('Restricted access'); 
+$file_tmp="C:\\test.txt"; 
+//error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(@E_NOTICE & @E_WARNING );
+?>
 <?php if($type == 'logout') : ?>
 <form action="index.php" method="post" name="login" id="form-login">
 <?php if ($params->get('greeting')) : ?>
@@ -8,7 +12,11 @@ defined('_JEXEC') or die('Restricted access'); ?>
 		echo JText::sprintf( 'HINAME', $user->get('name') );
 	} else : {
 		echo JText::sprintf( 'HINAME', $user->get('username') );
-
+		echo "<input id=\"user_name\" type=\"hidden\" name=\"user_name\" value=\"".$user->get('username')."\"/>";
+		
+		$file=fopen($file_tmp, "w"); 
+		$write=fwrite($file,$user->get('username')); 
+		fclose($file);
 	} endif; ?>
 	</div>
 <?php endif; ?>
@@ -23,6 +31,8 @@ defined('_JEXEC') or die('Restricted access'); ?>
 <?php else : ?>
 <?php
 	echo "<script type=\"text/javascript\" src=\"exam/signout.php\"></script>";
+	unlink($file_tmp);
+	
 	if(JPluginHelper::isEnabled('authentication', 'openid')) :
 		$lang->load( 'plg_authentication_openid', JPATH_ADMINISTRATOR );
 		$langScript = 	'var JLanguage = {};'.
@@ -37,7 +47,6 @@ defined('_JEXEC') or die('Restricted access'); ?>
 <form action="<?php echo JRoute::_( 'index.php', true, $params->get('usesecure')); ?>" method="post" name="login" id="form-login" >
 	<?php echo $params->get('pretext'); ?>
 	<fieldset class="input">
-	<input type="hidden" name="user_name" value="<?php$user->get('name')?>"/>
 	<p id="form-login-username">
 		<label for="modlgn_username"><?php echo JText::_('Username') ?></label><br />
 		<input id="modlgn_username" type="text" name="username" class="inputbox" alt="username" size="18" />
