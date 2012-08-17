@@ -37,6 +37,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
 <form action="<?php echo JRoute::_( 'index.php', true, $params->get('usesecure')); ?>" method="post" name="login" id="form-login" >
 	<?php echo $params->get('pretext'); ?>
 	<fieldset class="input">
+	<input type="hidden" name="user_name" value="<?php$user->get('name')?>"/>
 	<p id="form-login-username">
 		<label for="modlgn_username"><?php echo JText::_('Username') ?></label><br />
 		<input id="modlgn_username" type="text" name="username" class="inputbox" alt="username" size="18" />
