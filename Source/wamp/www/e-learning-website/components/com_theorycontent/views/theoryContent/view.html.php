@@ -101,6 +101,8 @@ class TheoryContentViewTheoryContent extends JView
 			{	
 				echo "Dữ liệu sẽ được cập nhật trong thời gian tới </br>";
 			}
+			echo "</div>";
+			//End of theory division
 			
 			if (isset($video) )
 			{
@@ -116,7 +118,6 @@ class TheoryContentViewTheoryContent extends JView
 				</video>
 				<?php	
 			}
-			echo "</div>";
 			$question = $model->getQuestion($theoryid,5);
 			if (isset($question) )
 			{	

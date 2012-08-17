@@ -29,8 +29,7 @@ if (document.layers)
 window.captureEvents(Event.MOUSEDOWN);
 window.onmousedown=right; //--></script><?php endif; ?>
 <p><table cellpadding=0 cellspacing=0 border=0 width="100%">
-<tr><td width=200><?php echo $this->_tpl_vars['lngstr']['branding']['top_logo']; ?>
-</td><td width="100%" align=center class=top_section><?php echo $this->_tpl_vars['g_vars']['page']['title']; ?>
+<tr><td width="100%" align=center class=top_section><?php echo $this->_tpl_vars['g_vars']['page']['title']; ?>
 </td></tr>
 <tr><td colspan=2 height=1 width=100% style="background-color: #E7E9EF;"><img src="images/1x1.gif" width=1 height=1></td></tr>
 
