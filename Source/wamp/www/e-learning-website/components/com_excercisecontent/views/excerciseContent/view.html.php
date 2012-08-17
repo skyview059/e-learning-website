@@ -45,18 +45,29 @@ class ExcerciseContentViewExcerciseContent extends JView
 		
 		if(isset($_POST["difficulty"]))
 		{$difficulty = $_POST["difficulty"];}
-		
-		if($subject != "" && $chapterName != "" && $theory != "" && $num != ""  && isset($_POST["difficulty"]) && isset($_POST["go"]) ){
+		$choice;
+		if($subject != "" && $chapterName != "" && $num != ""  && isset($_POST["difficulty"]) && isset($_POST["go"]) ){
 			
 			//$theoryid = $model->getTheoryid($theory);
 			//$chaptername = $model->getTheoryid($theory);
-			$question = $model->getQuestion($chapterName,$num,$difficulty);
+			if ($theory == ''){
+				$choice =1;
+				$input = $chapterName;
+			}
+			else {
+				$choice = 2;
+				$input = $theory;
+			}
+			
+			$question = $model->getQuestion($input,$num,$difficulty,$choice);
 			
 			if (isset($question) && $question != "")
 			{
-				echo "<b>Bạn đang làm bài tập môn <u>".$subject."</u> chương <u>". $chapterName. "</u> bài <u>" .$theory.  "</u>";
-				if ($difficulty != "")
-				    echo  "với độ khó là <u>". $difficulty."</u></b><br />";
+				echo "<b>Bạn đang làm bài tập môn <u>".$subject."</u> chương <u>". $chapterName. "</u>";
+				if ($theory != "")
+					echo  " bài <u>" .$theory.  "</u>";
+				if ($difficulty != "Tự động")
+				    echo  " với độ khó là <u>". $difficulty."</u></b><br />";
 				else
 					echo "</b><br />";
 				echo( $question );
@@ -127,10 +138,12 @@ class ExcerciseContentViewExcerciseContent extends JView
 					}	
 				}
 				echo "		</select>";		
-				
+				?>
+					<div class = "exerciseSuggest"> Nếu không lựa chọn, nhấn tiếp tục để làm bài theo chương</div>
+				<?php
 				$num = array (1,5,10,15,20);
 				$numDefault = 10;
-				echo "</br>		</select>";
+				echo "</select>";
 				echo "Số lượng câu hỏi:  <select name=\"num\" style=\"width: 50px\">";
 				$i = 0;
 				while($num[$i]!= ""){
@@ -147,10 +160,10 @@ class ExcerciseContentViewExcerciseContent extends JView
 				?>
 					<div class = "exerciseSuggest">các giá trị lựa chọn là 5, 10 ,15, 20</div>
 				<?php
-				$diff = array (1,2,3,4,5);
-				$diffDefault = 3;
+				$diff = array (1,2,3,4,5,'Tự động');
+				$diffDefault = 'Tự động';
 				echo "</select>";
-				echo "Độ khó: &nbsp;&nbsp<select name=\"difficulty\" style=\"width: 50px\">";
+				echo "Độ khó: &nbsp;&nbsp<select name=\"difficulty\" style=\"width: 80px\">";
 				$i = 0;
 				while($diff[$i]!= ""){
 					if ($diff[$i] == $diffDefault) 
@@ -164,7 +177,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 				}
 				echo "		</select>";
 				?>
-					<div class = "exerciseSuggest">có 5 mức từ 1 -> 5 tương ứng độ khó tăng dần</div>
+					<div class = "exerciseSuggest">có 6 mức từ 1 -> 5 tương ứng độ khó tăng dần và tự động lựa chọn độ khó</div>
 				<?php
 				echo "<input class = \"exerciseSearch\" name=\"go\" type=\"submit\" value=\"Tiếp tục\"/>";
 			echo "</form>";

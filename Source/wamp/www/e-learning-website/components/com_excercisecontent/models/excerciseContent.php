@@ -33,13 +33,24 @@ class ExcerciseContentModelExcerciseContent extends JModel
 		return $result;
 	} 
 	
-	function getQuestion($chapterName,$num,$difficulty)
+	function getQuestion($input,$num,$difficulty,$choice)
 	{
 		$db =& JFactory::getDBO();
-		if ($difficulty != "")
-		{	$query = "SELECT * FROM `jos_questions` WHERE chapter_name = '".$chapterName."' AND `question_difficult` = '" .$difficulty. "' ORDER BY RAND( ) LIMIT ".$num;}
+		if ($difficulty != "Tự động"  )
+		{	
+			if($choice == 1)
+				$query = "SELECT * FROM `jos_questions` WHERE chapter_name = '".$input."' AND `question_difficult` = '" .$difficulty. "' ORDER BY RAND( ) LIMIT ".$num;
+			if($choice == 2)
+			$query = "SELECT * FROM `jos_questions` WHERE theoryid = '".$input."' AND `question_difficult` = '" .$difficulty. "' ORDER BY RAND( ) LIMIT ".$num;
+		}
 		else
-		{	$query = "SELECT * FROM `jos_questions` WHERE chapter_name = '".$chapterName."' ORDER BY RAND( ) LIMIT ".$num; }
+		{	
+			$query = "SELECT * FROM `jos_questions` WHERE chapter_name = '".$input."' ORDER BY RAND( ) LIMIT ".$num; 
+			if($choice == 1)
+				$query = "SELECT * FROM `jos_questions` WHERE chapter_name = '".$input."' ORDER BY RAND( ) LIMIT ".$num;
+			if($choice == 2)
+			$query = "SELECT * FROM `jos_questions` WHERE theoryid = '".$input."' ORDER BY RAND( ) LIMIT ".$num;
+		}
 		$db->setQuery( $query );
 		$row = $db->loadRowList();
 		$i  = 0  ;
