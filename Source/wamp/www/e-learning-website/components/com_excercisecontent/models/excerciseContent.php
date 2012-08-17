@@ -55,7 +55,7 @@ class ExcerciseContentModelExcerciseContent extends JModel
 		$row = $db->loadRowList();
 		$i  = 0  ;
 		$result = "";
-		if ($num > sizeof($row))
+		if ($num > sizeof($row) && sizeof($row) > 0)
 		{
 			$result .="</br>Số lượng câu hỏi không đủ, hiện tại chỉ có ". sizeof($row). " câu hỏi có sẵn "  ;
 		}

@@ -72,7 +72,7 @@ class ExcerciseContentViewExcerciseContent extends JView
 					echo "</b><br />";
 				echo( $question );
 				echo "<a href=\"".JPATH_URL.$this->baseurl."/index.php?option=com_excercisecontent&view=excerciseContent&Itemid=17\">Back</a>";
-					
+					print_r($question);
 			}	 	
 			
 		}else{
