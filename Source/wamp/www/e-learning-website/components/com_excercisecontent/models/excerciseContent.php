@@ -33,13 +33,13 @@ class ExcerciseContentModelExcerciseContent extends JModel
 		return $result;
 	} 
 	
-	function getQuestion($theoryid,$num,$difficulty)
+	function getQuestion($chapterName,$num,$difficulty)
 	{
 		$db =& JFactory::getDBO();
 		if ($difficulty != "")
-		{	$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theoryid."' AND `question_difficult` = '" .$difficulty. "' ORDER BY RAND( ) LIMIT ".$num;}
+		{	$query = "SELECT * FROM `jos_questions` WHERE chapter_name = '".$chapterName."' AND `question_difficult` = '" .$difficulty. "' ORDER BY RAND( ) LIMIT ".$num;}
 		else
-		{	$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theoryid."' ORDER BY RAND( ) LIMIT ".$num; }
+		{	$query = "SELECT * FROM `jos_questions` WHERE chapter_name = '".$chapterName."' ORDER BY RAND( ) LIMIT ".$num; }
 		$db->setQuery( $query );
 		$row = $db->loadRowList();
 		$i  = 0  ;

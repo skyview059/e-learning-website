@@ -48,8 +48,9 @@ class ExcerciseContentViewExcerciseContent extends JView
 		
 		if($subject != "" && $chapterName != "" && $theory != "" && $num != ""  && isset($_POST["difficulty"]) && isset($_POST["go"]) ){
 			
-			$theoryid = $model->getTheoryid($theory);
-			$question = $model->getQuestion($theoryid,$num,$difficulty);
+			//$theoryid = $model->getTheoryid($theory);
+			//$chaptername = $model->getTheoryid($theory);
+			$question = $model->getQuestion($chapterName,$num,$difficulty);
 			
 			if (isset($question) && $question != "")
 			{
