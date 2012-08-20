@@ -41,15 +41,20 @@ class ExcerciseContentModelExcerciseContent extends JModel
 			if($choice == 1)
 				$query = "SELECT * FROM `jos_questions` WHERE chapter_name = '".$input."' AND `question_difficult` = '" .$difficulty. "' ORDER BY RAND( ) LIMIT ".$num;
 			if($choice == 2)
-			$query = "SELECT * FROM `jos_questions` WHERE theoryid = '".$input."' AND `question_difficult` = '" .$difficulty. "' ORDER BY RAND( ) LIMIT ".$num;
+			{
+				$theoryid = $this->getTheoryid($input);
+				$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theoryid."' AND `question_difficult` = '" .$difficulty. "' ORDER BY RAND( ) LIMIT ".$num;
+			}
 		}
 		else
 		{	
-			$query = "SELECT * FROM `jos_questions` WHERE chapter_name = '".$input."' ORDER BY RAND( ) LIMIT ".$num; 
 			if($choice == 1)
 				$query = "SELECT * FROM `jos_questions` WHERE chapter_name = '".$input."' ORDER BY RAND( ) LIMIT ".$num;
 			if($choice == 2)
-			$query = "SELECT * FROM `jos_questions` WHERE theoryid = '".$input."' ORDER BY RAND( ) LIMIT ".$num;
+			{
+				$theoryid = $this->getTheoryid($input);
+				$query = "SELECT * FROM `jos_questions` WHERE theory_id = '".$theoryid."' ORDER BY RAND( ) LIMIT ".$num;
+			}
 		}
 		$db->setQuery( $query );
 		$row = $db->loadRowList();
