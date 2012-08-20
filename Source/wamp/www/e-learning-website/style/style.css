@@ -168,6 +168,157 @@ hr {
 	font-size:25px;
 	font-weight:bold;
 }
+.exerciseOptionLayout{
+	position:relative;
+	width:700px;
+	height:auto;
+	z-index:2;
+	left: 15px;
+	top: 15px;
+	float:left;
+	border:dotted;
+	border-width:1px;
+	border-color:#3399FF;
+	padding-right:0px;
+	padding-left:5px;
+	padding-top:0px;
+	padding-bottom:5px;
+	color:blue;
+	font-size: 15.5px;
+	font-weight:bold;
+}
+
+.exerciseLayout{
+	position:relative;
+	width:707px;
+	height:auto;
+	z-index:2;
+	left: 15px;
+	top: 15px;
+	float:left;
+	padding-top:15px;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.pageLink{
+	color:blue;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.pageLink a:link{
+	color:blue;
+	text-decoration: none;
+	font-size: 16px;
+} 
+
+.pageLink a:visited{
+	color:blue;
+	text-decoration: none;
+	font-size: 16px;
+} 
+.pageLink a:hover{
+	color:blue;
+	text-decoration: none;
+	font-size: 16px;
+} 
+
+
+.fieldsetSubject{
+	width:205px;
+	height:75px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#3399FF;
+	color:#0066FF;
+	font-size: 14px;
+	font-weight:none;
+	padding-bottom:21px;
+	float:left;
+}
+
+.fieldsetChapter{
+	width:400px;
+	height:81px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#3399FF;
+	color:#0066FF;
+	font-size: 14px;
+	font-weight:none;
+	float:right;
+	margin-right: 10px;
+}
+
+.fieldsetQuestion{
+	width:660px;
+	height:auto;
+	border-style:solid;
+	border-width:2px;
+	border-color:#3399FF;
+	float:left;
+	color:#0066FF;
+	font-size: 14px;
+	font-weight:none;
+}
+
+.exerciseOptionLayout legend{
+	color:#660099;
+	font-size: 16.5px;
+	font-weight:none;
+}
+
+.chapter1{
+	position:relative;
+	width:500px;
+	height:auto;
+	z-index:2;
+	left: 10px;
+	top: 10px;
+	float:left;
+	border:dotted;
+	border-width:solid;
+	border-color:#3399FF;
+	padding-right:0px;
+	padding-left:5px;
+	padding-top:0px;
+	padding-bottom:5px;
+	color:blue;
+	font-size: 15.5px;
+	font-weight:bold;
+}
+
+.exercise{
+	position:relative;
+	width:688px;
+	height:auto;
+	z-index:2;
+	padding-right:10px;
+	padding-left:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:black;
+	font-size: 13px;
+}
+
+.exercise span{
+	font-family: 'Times New Roman'; 
+	font-size: medium;
+}
+
+.startExercise{
+	position:relative;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+.sub{
+	position:relative;
+	height:50px;
+	top:300px;
+	z-index:3;
+}
 
 /*MinhNT - Add - End  */
 
@@ -175,7 +326,7 @@ hr {
 /*HuyNT - Add - Start  */
 
 /*Exercise Content */
-.exerciseLayer {
+.exerciseSearchLayer {
 	line-height: 24px;
 	padding-left: 10px;
 	font-weight: bold;
