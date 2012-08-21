@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Exercises</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2012-08-18</creationDate>
+	<author>MinhNT01135</author>
+	<authorEmail>minhnt01135@fpt.edu.vn</authorEmail>
+	<copyright>Copyright of onthi.com</copyright>
+	<license>License</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Exercises</description>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>exercises.php</filename>
+		<filename>index.html</filename>
+		<filename>models/exercises.php</filename>
+		<filename>models/index.html</filename>
+		<filename>views/index.html</filename>
+		<filename>views/exercises/index.html</filename>
+		<filename>views/exercises/view.html.php</filename>
+		<filename>views/exercises/tmpl/default.php</filename>
+		<filename>views/exercises/tmpl/index.html</filename>
+		<filename>views/exercises/tmpl/exercise.php</filename>
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>Exercises</menu>
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>exercises.php</filename>
+			<filename>index.html</filename>
+		</files>  
+	</administration>
+</install>
