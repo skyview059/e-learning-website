@@ -242,15 +242,29 @@
 		<entity schema="e_learning" name="jos_tests_quetions" x="714" y="378" />
 		<entity schema="e_learning" name="jos_groups" x="56" y="210" />
 		<entity schema="e_learning" name="jos_groups_users" x="350" y="238" />
-		<entity schema="e_learning" name="phpbb_user" x="56" y="42" />
-		<entity schema="e_learning" name="jos_answers" x="700" y="574" />
 		<entity schema="e_learning" name="jos_groups_tests" x="112" y="336" />
-		<entity schema="e_learning" name="jos_theories" x="42" y="434" />
-		<entity schema="e_learning" name="jos_subjects" x="70" y="644" />
 		<entity schema="e_learning" name="jos_users" x="350" y="56" />
 		<entity schema="e_learning" name="jos_tests_attempts" x="756" y="210" />
 		<entity schema="e_learning" name="jos_results" x="574" y="126" />
-		<entity schema="e_learning" name="jos_tests" x="420" y="336" />
-		<entity schema="e_learning" name="jos_questions" x="406" y="574" />
+		<entity schema="e_learning" name="jos_answers" x="700" y="574" />
+		<entity schema="e_learning" name="jos_subjects" x="70" y="644" />
+		<entity schema="e_learning" name="jos_questions" x="420" y="588" />
+		<entity schema="e_learning" name="jos_theories" x="42" y="434" />
+		<entity schema="e_learning" name="phpbb_user" x="56" y="42" />
+		<entity schema="e_learning" name="jos_tests" x="420" y="350" />
+		<group name="Group_questions_answers" color="cc9900" >
+			<entity schema="e_learning" name="jos_answers" />
+			<entity schema="e_learning" name="jos_questions" />
+		</group>
+		<group name="Group_subjects_theories" color="ff6699" >
+			<entity schema="e_learning" name="jos_subjects" />
+			<entity schema="e_learning" name="jos_theories" />
+		</group>
+		<group name="Group_users_groups" color="c4e0f9" >
+			<entity schema="e_learning" name="phpbb_user" />
+			<entity schema="e_learning" name="jos_groups" />
+			<entity schema="e_learning" name="jos_groups_users" />
+			<entity schema="e_learning" name="jos_users" />
+		</group>
 	</layout>
 </project>
