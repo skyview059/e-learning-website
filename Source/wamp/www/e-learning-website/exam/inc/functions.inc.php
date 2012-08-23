@@ -1351,13 +1351,6 @@ $i_pass_hash = md5($i_password);
 $i_pass_hash = $g_db->qstr($i_pass_hash, 0);
 $i_time = time();
  
- 
- 
- if($i_isguest) {
- $sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users WHERE id=".SYSTEM_GROUP_GUEST_id." AND user_enabled=1";
-} else {
-$sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users LEFT JOIN `phpbb_users` ON jos_users.`username` = phpbb_users.`username` WHERE jos_users.`username`=".$i_username." AND phpbb_users.`user_password` =".$i_pass_hash." AND jos_users.`user_enabled`=1 AND (jos_users.`user_expiredate`=0 OR jos_users.`user_expiredate`>".$i_time.")";
-
 	/*--Huynt and Hungnt modify start--*/ 
  //get id of username
   $con = mysql_connect("localhost","root","");
@@ -1388,6 +1381,13 @@ $sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users LEFT JOIN `phpb
 
 <?php
   /*--Huynt and Hungnt modify end--*/
+ 
+ 
+ if($i_isguest) {
+ $sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users WHERE id=".SYSTEM_GROUP_GUEST_id." AND user_enabled=1";
+} else {
+$sql_str = "SELECT * FROM ".$srv_settings['table_prefix']."users LEFT JOIN `phpbb_users` ON jos_users.`username` = phpbb_users.`username` WHERE jos_users.`username`=".$i_username." AND phpbb_users.`user_password` =".$i_pass_hash." AND jos_users.`user_enabled`=1 AND (jos_users.`user_expiredate`=0 OR jos_users.`user_expiredate`>".$i_time.")";
+
   
 }
 $i_rSet1 = $g_db->SelectLimit($sql_str, 1);
