@@ -188,24 +188,14 @@ function getTheory(chapterName)
 	if($end>count($this->exerciseArray)){
 		$end = count($this->exerciseArray);
 	}
+	/*
 	for($i=$start;$i<$end;$i++){
 		//echo "###".($i+1)."###";
 		$this->exerciseArray[$i]->display();
 	}
+	*/
+	for($i=0;$i<count($this->exerciseArray);$i++){
+		$this->exerciseArray[$i]->display();
+	}
 ?>
-	<div class="pageLink" align=center>
-<?php
-		$style = "";
-		for($i=1;$i<=$numOfPages&&$numOfPages!=1;$i++){
-			if($page==$i){
-				$style = "style = \"color:red; font-size=18;\"";
-			}else{
-				$style = "";
-			}
-?>	
-			<a <?php echo $style;?> href="index.php?option=com_exercises&view=exercises&Itemid=27&task=displayFull&page=<?php echo $i;?>"><b><?php echo $i;?></b>&nbsp;&nbsp;</a>
-<?php
-		}
-?>
-	</div>
 </div>

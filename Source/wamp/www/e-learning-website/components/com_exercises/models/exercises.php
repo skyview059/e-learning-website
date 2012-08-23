@@ -128,9 +128,9 @@ class ExercisesModelExercises extends JModel
 			$str = " WHERE subjectid = ".$subjectID;
 		}
 		if($str==""){
-			$query = "SELECT * FROM #__questions ORDER BY RAND() LIMIT 30";
+			$query = "SELECT * FROM #__questions ORDER BY RAND() LIMIT 0";
 		}else{
-			$query = "SELECT * FROM #__questions ".$str." ORDER BY RAND()";
+			$query = "SELECT * FROM #__questions ".$str;
 		}
 		//echo "<br>************<br>query = ".$query."<br>******************<br>";
 		$db->setQuery($query);
