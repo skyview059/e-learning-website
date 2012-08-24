@@ -168,6 +168,11 @@ function getTheory(chapterName)
 		</form>
 </div>
 <div class="exerciseLayout">
+<div class="exerciseSearch">
+	<form id="searchForm" name="searchForm" method="post" action="<?php echo JRoute::_( 'index.php?option=com_exercises&view=exercises&task=search'); ?>">
+		<input type="text" name="search" style="color:red; font-weight: bold; border-color:blue;"> <button type="submit" class="startExercise" align="center">Tìm bài</button>
+	</form>
+</div>
 <?php
 	//Exercise per page
 	if(count($this->exerciseArray)==0){

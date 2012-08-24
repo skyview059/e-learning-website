@@ -62,4 +62,17 @@ class ExercisesViewExercises extends JView
 		// call the parent class constructor in order to display the tmpl
 		parent::display($tpl);
 	}
+	
+	function search($search,$tpl = null)  {
+		//fetch the model assigned to this view by the controller
+		$model = $this->getModel();
+		
+		$subjectArray = $model->getSubjectArray();
+		$this->assignRef( 'subjectArray', $subjectArray );
+		
+		$searchExercise = $model->getExerciseSearch($search);
+		$this->assignRef( 'searchExercise', $searchExercise );
+		// call the parent class constructor in order to display the tmpl
+		parent::display($tpl);
+	}
 }

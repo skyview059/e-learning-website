@@ -37,6 +37,29 @@ class ExercisesController extends JController
 		$view->displayFull($subjectName,$chapterName,$theoryName);
 	}
 	
+	function search(){
+		$search = JRequest::getVar('search');
+		
+		$document =& JFactory::getDocument();
+
+		$viewType	= $document->getType();
+		$viewName	= JRequest::getCmd( 'view', $this->getName() );
+		// sets the template to ExerciseView
+		$viewLayout	= JRequest::getCmd( 'layout', 'search' );
+		// sets the view to someview.html.php
+		$view = & $this->getView($viewName,$viewType, '', array( 'base_path'=>$this->_basePath));
+		// Get/Create the model
+		if ($model = & $this->getModel($viewName)) {
+			// Push the model into the view (as default)
+			$view->setModel($model, true);		
+		}
+		// Set the layout
+		$view->setLayout($viewLayout);
+
+		// go off to the view and call the displaySomeView() method, also pass in $var variable
+		$view->search($search);
+	}
+	
 	function getChapter()
 	{
 		global $mainframe;

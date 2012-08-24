@@ -170,4 +170,44 @@ class ExercisesModelExercises extends JModel
 		}*/
 		return $exerciseArray;
 	}
+	
+	function getExerciseSearch($search)
+	{
+		$exerciseSearch=array(); 
+		$db =& JFactory::getDBO();
+		//Connect databse table question
+		
+		//Get parameter
+		$query = "SELECT * FROM #__questions WHERE questionid = ".$search;
+		
+		$db->setQuery($query);
+		$row = $db->loadRowList();
+		
+		for ($i=0;$i<sizeof($row);$i++)
+		{
+			$exercise = new Exercise();
+			//Load exerciseID
+			$exercise->exerciseID = $row[$i]['0'];
+			//Load question text. In table jos_question, question text is in column 5
+			$exercise->question = $row[$i]['5'];
+			//Load answers
+			//Connect databse table answers
+			$query = "SELECT answerid, answer_text, answer_correct FROM #__answers WHERE questionid = ".$row[$i]['0']." ORDER BY RAND()";
+			$db->setQuery($query);
+			$answer = $db->loadRowList();
+			
+			for($j=0;$j<sizeof($answer);$j++){
+				//Load answers text
+				$exercise->answers[$j] = $answer[$j]['1'];
+				//Load answer key - answer correct
+				if($answer[$j]['2']==1){
+					$exercise->key = $j+1;
+				}
+			}
+			//Insert exercise into exercise array
+			$exerciseSearch[$i] = $exercise;
+			unset($exercise);
+		}
+		return $exerciseSearch;
+	}
 }

@@ -100,11 +100,26 @@ function getTheory(chapterName)
 <div class="exerciseLayout">
 <div class="exerciseSearch">
 	<form id="searchForm" name="searchForm" method="post" action="<?php echo JRoute::_( 'index.php?option=com_exercises&view=exercises&task=search'); ?>">
-		<input type="text" name="search" style="color:red; font-weight: bold; border-color:blue;"> <button type="submit" class="startExercise" align="center">Tìm bài</button>
+<?php
+		if(count($this->searchExercise)==1){
+?>
+			<input type="text" name="search" style="color:red; font-weight: bold; border-color:blue;" value="<?php echo $this->searchExercise[0]->exerciseID; ?>"> <button type="submit" class="startExercise" align="center">Tìm bài</button>
+<?php
+		}else{
+?>
+			<input type="text" name="search" style="color:red; font-weight: bold; border-color:blue;"> <button type="submit" class="startExercise" align="center">Tìm bài</button>
+<?php
+		}
+?>
 	</form>
 </div>
 <?php
-	//Exercise per page
+	if(count($this->searchExercise)==0){
+?>
+		<div align="center" style="color:red; font-size:20px;">Chưa có bài tập phù hợp yêu cầu bạn chọn</div>
+<?php
+	}
+	/*Exercise per page
 	$epp = 10;
 	$numOfPages = ceil(count($this->exerciseArray)/$epp);
 	//echo "num = ".$numOfPages." so bai = ".count($this->exerciseArray);
@@ -118,26 +133,12 @@ function getTheory(chapterName)
 	if($end>count($this->exerciseArray)){
 		$end = count($this->exerciseArray);
 	}
-	/*for($i=$start;$i<$end;$i++){
+	for($i=$start;$i<$end;$i++){
 		//echo "###".($i+1)."###";
 		$this->exerciseArray[$i]->display();
 	}*/
-	for($i=0;$i<count($this->exerciseArray);$i++){
-		$this->exerciseArray[$i]->display();
+	for($i=0;$i<count($this->searchExercise);$i++){
+		$this->searchExercise[$i]->display();
 	}
 ?>
 </div>
-<!--
-			<fieldset class=\"fieldsetQuestion\">
-				<legend>Chọn số lượng câu hỏi và độ khó</legend>
-				<table width=\"100%\">
-					<tr>
-						<td width=\"50%\">
-							<span> Số lượng câu hỏi </span> <select name="numOfQues" width="50px"></select>
-						</td>
-						<td width=\"50%\">Độ khó </td>
-					</tr>
-				</table>
-			<fieldset>
-			 onchange="this.form.submit()" 
-			-->
