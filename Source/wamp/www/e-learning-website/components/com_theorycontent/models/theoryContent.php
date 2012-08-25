@@ -148,7 +148,7 @@ class TheoryContentModelTheoryContent extends JModel
 					function ans<?php echo($row[$i]['0']);?>()
 					{
 						var my_str = document.getElementById('<?php echo $i;?>').innerHTML;  
-						var comStr='Ans for question is : <?php echo($this->getAnswerCorrect($row[$i]['0'])) ;?>';  
+						var comStr='Đáp án là : <?php echo($this->getAnswerCorrect($row[$i]['0'])) ;?>';  
 					    document.getElementById('<?php echo $i;?>').innerHTML = comStr;  		
 					}
 				</script>
@@ -199,7 +199,7 @@ class TheoryContentModelTheoryContent extends JModel
 						$tmp .= "</label><br><label>";
 					}
 					
-					$tmp .=" <a onclick=\"ans".$row[$i]['0']."()\" ><u>Answer</u></a></br>";
+					$tmp .=" <a onclick=\"ans".$row[$i]['0']."()\" ><u>Xem đáp án</u></a></br>";
 					$tmp .="<b  id=\"$i\"  readonly></b >";
 					$tmp .="<br><input name=\"question_".$row[$i]['0']."\" type=\"hidden\" value=\"".$this->getAnswerCorrect($row[$i]['0'])."\" />";			
 					
