@@ -190,13 +190,16 @@ hr {
 
 .exerciseLayout{
 	position:relative;
-	width:707px;
+	width:706px;
 	height:auto;
 	z-index:2;
+	border:dotted;
+	border-width:1px;
+	border-color:#3399FF;
 	left: 15px;
 	top: 15px;
 	float:left;
-	padding-top:15px;
+	padding-top:0px;
 	margin-top:15px;
 	margin-bottom:15px;
 }
@@ -320,6 +323,19 @@ hr {
 	z-index:3;
 }
 
+.exerciseSearch{
+	position:relative;
+	width:auto;
+	height:auto;
+	z-index:2;
+	color:black;
+	font-weight: bold;
+	font-family: Tahoma,Arial;
+	font-size: 14px;
+	left:15px;
+	margin-bottom:15px;
+}
+
 /*MinhNT - Add - End  */
 
 
@@ -350,13 +366,7 @@ hr {
 	font-weight: bold;
 }
 
-.exerciseSearch{
-	background-color: #6495ED;
-	color: white;
-	font-weight: bold;
-	font-family: Tahoma,Arial;
-	font-size: 14px;
-}
+
 
 .exerciseSuggest{
 	font-style: italic;
