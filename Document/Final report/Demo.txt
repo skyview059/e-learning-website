@@ -1,0 +1,58 @@
+﻿UPDATE `jos_questions` SET `theory_id`='150' ,`chapter_name`='Các lo?i t? ti?ng anh' WHERE `theory_id` = '2'
+
+UPDATE `jos_questions` SET `theory_id`='151' ,`chapter_name`='Các lo?i t? ti?ng anh' WHERE `theory_id` = '3'
+
+UPDATE `jos_questions` SET `theory_id`='152' ,`chapter_name`='Các lo?i câu và l?i nói thư?ng g?p' WHERE `theory_id` = '4'
+
+UPDATE `jos_questions` SET `theory_id`='153' ,`chapter_name`='Các lo?i câu và l?i nói thư?ng g?p' WHERE `theory_id` = '5'
+
+
+
+
+
+
+
+
+UPDATE `jos_questions` SET `subjectid`='4' WHERE `chapter_name`='Vật lí hạt nhân'
+
+43
+
+kich ban demo
+
+trang chu + creat acc: 5
+noi dung chinh cua trang chu bao gom cac bai tin tuc
+day la giao dien trang chu cua chung em
+
+dau tien tao acc 
+...
+sau khi dang nhap o dien dan thi trang chu cung duoc dang nhap
+sau khi dang nhap thi nguoi su dung se co quyen lam de thi con neu khong dang nhap tab de thi khong duoc hien thi
+trong thu ien ly thuyet dua ra 4 mon dai so , hinh hoc, tieng anh , vat ly
+duoi moi mon la cac chuong 
+khi an vao mon dai so thi cac bai ly thuyet duoc to chuc thanh cac chuong
+(an vao phan menh de) day la noi dung cua 1 bai ly thuyet tieu de se duoc hien thi nhu sau....
+noi dung duoc trinh bai de nhin + de hieu
+duoi moi ly thuyet se co 1 so cau hoi lien quan de nguoi hoc se co the luyen tap ngay sau khi doc ly thuyet
+sau khi nguoi dung an tra loi thi co the xem doc luon dap an dung cua cau hoi day
+
+thu vien bai tap se co 4 mon khi tich vao 1 mon thi bai hoc va chuong se hien ra tuong ung voi mon do
+moi cau se chon dc 1 dap an xong an vao xem cau tra loi de xem dap an cau hoi
+nguoi dung co the chi lua chon theo mon hoc de lam bai tong hop
+
+trong phan de thi sau khi nguoi dung dang nhap o trang chu thi nguoi dung phai nhap lai pas de xac thuc acc
+day la giao dien cua ngoi dung binh thuong
+sau khi ann vao lam bai thi se hien ra cac bai thi dang cho phep lam
+
+sau khi lam xong se hien ra ket qua --> an vao kiem tra ket qua thi se xem duoc bai lam cua minh 
+an vao co the xem duoc chi tiet cua tung cau
+
+khi nguoi dung logout thi de thi cung logout luon
+
+o ben dien dan khi nguoi dung tao chu de moi thi se duoc thong bao ngay o trang chu
+
+o chuc nangn tin tuc se co giao dien nhu sau
+de tao them 1 bai tin tuc chung ta vao trang quan tri va dang nhap duoi quyen admin 
+
+tao 1 cau hoi trong exam
+tao 1 bai thi
+
