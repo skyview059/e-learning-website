@@ -31,7 +31,6 @@ if(!$i_rSet1) {
 echo '<p><form method=post action="question-bank.php'.getURLAddon().'" onsubmit="return submitForm();">';
 echo '<table class=rowtable2 cellpadding=5 cellspacing=1 border=0 width="100%">';
 $i_rowno = 0;
-writeTR2($lngstr['page_editquestion_type'], getSelectElement('question_type', $f_question_type, $m_question_types, ' onchange="updateQuestion();"'));
    
  $f_subjectid = isset($_GET['subjectid']) ? (int)readGetVar('subjectid') : $i_rSet1->fields['subjectid'];
    
@@ -65,7 +64,6 @@ switch ($f_question_type) {
  $m_answercount_items = array(0 => '');
 for($i=2; $i <= MAX_ANSWER_COUNT; $i++)
  $m_answercount_items[$i] = $i;
-writeTR2($lngstr['page_editquestion_answer_count'], getSelectElement('answercount', $f_answercount, $m_answercount_items, ' onchange="updateQuestion();"')); 
  if($f_answercount <= 0 && $i_answercount <= 0)
  $f_answercount = DEFAULT_ANSWER_COUNT; 
  writeTR2($lngstr['page_editquestion_question_text'], getTextEditor($G_SESSION['config_editortype'], 'question_text', !empty($i_rSet1->fields['question_text']) ? $i_rSet1->fields['question_text'] : $lngstr['page_editquestion_emptyquestion'])); 
