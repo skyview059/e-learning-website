@@ -1,19 +1,17 @@
-﻿UPDATE `jos_questions` SET `theory_id`='150' ,`chapter_name`='Các lo?i t? ti?ng anh' WHERE `theory_id` = '2'
+﻿- Trang chu
+- Tao account ben dien dan, dang nhap roi quay lai trang chu -> ca 2 da dc dang nhap
+- Thu vien ly thuyet
+- Thu vien bai tap, lua chon. 1 mon, lua chon theo chuong
+- De thi, nhap lai password de xac thuc tai khoan
+  -> lam bai thi, xem ket qua cua nguoi dung, co the xem chi tiet duoc tung cau tra loi
+  -> log out khoi de thi, thi trang chu cung log out.
+- O Trang chu, dang nhap quyen admin, demo phan chu de` moi', khi tao 1 bai viet moi' ben dien dan se~ tu dong cap nhat o trang chu
+- sang dien dan tao 1 bai viet
+- Demo tao 1 bai tin tuc, dang nhap vao administrator
+- Demo tao 1 cau hoi? trong exam
+- Demo tao 1 de thi trong exam
 
-UPDATE `jos_questions` SET `theory_id`='151' ,`chapter_name`='Các lo?i t? ti?ng anh' WHERE `theory_id` = '3'
 
-UPDATE `jos_questions` SET `theory_id`='152' ,`chapter_name`='Các lo?i câu và l?i nói thư?ng g?p' WHERE `theory_id` = '4'
-
-UPDATE `jos_questions` SET `theory_id`='153' ,`chapter_name`='Các lo?i câu và l?i nói thư?ng g?p' WHERE `theory_id` = '5'
-
-
-
-
-
-
-
-
-UPDATE `jos_questions` SET `subjectid`='4' WHERE `chapter_name`='Vật lí hạt nhân'
 
 43
 
